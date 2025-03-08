@@ -1,8 +1,25 @@
-[gd_scene load_steps=2 format=3 uid="uid://cd8g353hqck3h"]
+[gd_scene load_steps=5 format=3 uid="uid://cd8g353hqck3h"]
 
+[ext_resource type="Script" path="res://switch-panel/switch_panel.gd" id="1_4jndl"]
 [ext_resource type="PackedScene" uid="uid://cqu60r06x6a24" path="res://switch-panel/rope.tscn" id="1_tlpge"]
+[ext_resource type="PackedScene" uid="uid://ccy6k8mprrau1" path="res://panel/diagram_panel.tscn" id="3_xbvfo"]
+
+[sub_resource type="Curve2D" id="Curve2D_gk2py"]
 
 [node name="SwitchPanel" type="Node2D"]
+script = ExtResource("1_4jndl")
 
-[node name="Rope" parent="." instance=ExtResource("1_tlpge")]
-position = Vector2(1133, 75)
+[node name="Path2D" type="Path2D" parent="."]
+curve = SubResource("Curve2D_gk2py")
+
+[node name="PathFollow2D" type="PathFollow2D" parent="Path2D"]
+rotates = false
+
+[node name="DiagramPanel" parent="Path2D/PathFollow2D" instance=ExtResource("3_xbvfo")]
+position = Vector2(0, -900)
+
+[node name="Rope" parent="Path2D/PathFollow2D" instance=ExtResource("1_tlpge")]
+position = Vector2(1896, 33)
+
+[connection signal="panel_go_down" from="Path2D/PathFollow2D/Rope" to="." method="_on_rope_panel_go_down"]
+[connection signal="panel_go_up" from="Path2D/PathFollow2D/Rope" to="." method="_on_rope_panel_go_up"]

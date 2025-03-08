@@ -17,11 +17,10 @@ func _on_button_mouse_exited() -> void:
 	scale = Vector2(1, 1)
 
 
-func _on_pressed() -> void:
+func _on_button_pressed() -> void:
 	if is_down:
 		panel_go_up.emit()
 		is_down = false
 	else:
-		panel_go_up.emit()
+		panel_go_down.emit()
 		is_down = true
-		
