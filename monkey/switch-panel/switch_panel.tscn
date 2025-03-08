@@ -1,0 +1,8 @@
+[gd_scene load_steps=2 format=3 uid="uid://cd8g353hqck3h"]
+
+[ext_resource type="PackedScene" uid="uid://cqu60r06x6a24" path="res://switch-panel/rope.tscn" id="1_tlpge"]
+
+[node name="SwitchPanel" type="Node2D"]
+
+[node name="Rope" parent="." instance=ExtResource("1_tlpge")]
+position = Vector2(1133, 75)
