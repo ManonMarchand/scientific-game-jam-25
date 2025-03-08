@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cgvimopa4g6o4"
-path="res://.godot/imported/grooming_Veronique_1.png-e73a18382f3bce1a6fcef79a8d6cadeb.ctex"
+uid="uid://cqx2eyi1sv3fh"
+path="res://.godot/imported/caillou_Veronique_2.png-72ee05be14445c1420be74f0c3d770ec.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/monkeys/anim_singes/Véronique /grooming_Veronique_1.png"
-dest_files=["res://.godot/imported/grooming_Veronique_1.png-e73a18382f3bce1a6fcef79a8d6cadeb.ctex"]
+source_file="res://assets/monkeys/anim_singes/Véronique/caillou_Veronique_2.png"
+dest_files=["res://.godot/imported/caillou_Veronique_2.png-72ee05be14445c1420be74f0c3d770ec.ctex"]
 
 [params]
 

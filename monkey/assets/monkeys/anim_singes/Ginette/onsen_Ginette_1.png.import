@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://qdnu0butxd2g"
-path="res://.godot/imported/onsen_Veronique_2.png-c88ffb73b969d78f4bbd8de000e17b94.ctex"
+uid="uid://bp1d3s7ofs8sx"
+path="res://.godot/imported/onsen_Ginette_1.png-ac72a8880a49ad7b41c0098b429b0fc6.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/monkeys/anim_singes/Véronique /onsen_Veronique_2.png"
-dest_files=["res://.godot/imported/onsen_Veronique_2.png-c88ffb73b969d78f4bbd8de000e17b94.ctex"]
+source_file="res://assets/monkeys/anim_singes/Ginette/onsen_Ginette_1.png"
+dest_files=["res://.godot/imported/onsen_Ginette_1.png-ac72a8880a49ad7b41c0098b429b0fc6.ctex"]
 
 [params]
 
