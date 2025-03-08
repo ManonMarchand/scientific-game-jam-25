@@ -26,13 +26,15 @@ func _input(event: InputEvent) -> void:
 		elif event is InputEventMouseButton and event.is_released() and event.button_index == MOUSE_BUTTON_LEFT:
 			was_in_inventory = false
 			PlayerVariables.is_player_dragging = false
-			var tween : Tween = get_tree().create_tween()
+			
 			if can_be_dropped:
 				if on_inventory:
 					self.position = get_global_mouse_position() - offset
 				else:
+					var tween : Tween = get_tree().create_tween()
 					tween.tween_property(self, "position", reference_to_body.position, 0.2).set_ease(Tween.EASE_OUT)
 			else:
+				var tween : Tween = get_tree().create_tween()
 				tween.tween_property(self, "position", initial_position, 0.2).set_ease(Tween.EASE_OUT)
 			
 		
