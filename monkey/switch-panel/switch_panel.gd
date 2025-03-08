@@ -20,7 +20,6 @@ func _ready() -> void:
 	$Path2D.curve.add_point(Vector2(0,0))
 	$Path2D.curve.add_point(-$Path2D/PathFollow2D/Panel.transform.origin)
 
-
 func _process(delta: float) -> void:
 	if is_animating_down:
 		anim_current_time += delta
