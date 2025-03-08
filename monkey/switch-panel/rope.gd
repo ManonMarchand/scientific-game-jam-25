@@ -8,7 +8,11 @@ var is_down: bool = false
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
 	pass
-	
+
+# Called every frame. 'delta' is the elapsed time since the previous frame.
+func _process(_delta: float) -> void:
+	if Input.is_action_pressed("move_right"):
+		_on_button_pressed()
 
 func _on_button_mouse_entered() -> void:
 	scale = Vector2(1.05, 1.05)

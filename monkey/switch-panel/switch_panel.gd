@@ -20,11 +20,13 @@ func _ready() -> void:
 	$Path2D.curve.add_point(Vector2(0,0))
 	$Path2D.curve.add_point(-$Path2D/PathFollow2D/Panel.transform.origin)
 
+# Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta: float) -> void:
 	if is_animating_down:
 		anim_current_time += delta
 		if anim_current_time >= anim_total_time:
 			$Path2D/PathFollow2D.progress_ratio = 1
+			anim_current_time = anim_total_time
 			is_animating_down = false
 		else:
 			$Path2D/PathFollow2D.progress_ratio = anim_current_time/anim_total_time
@@ -33,16 +35,16 @@ func _process(delta: float) -> void:
 		anim_current_time -= delta
 		if anim_current_time <= 0:
 			$Path2D/PathFollow2D.progress_ratio = 0
+			anim_current_time = 0
 			is_animating_up = false
 		else:
 			$Path2D/PathFollow2D.progress_ratio = anim_current_time/anim_total_time
 
 
 func _on_rope_panel_go_down() -> void:
-	anim_current_time = 0.
 	is_animating_down = true
-	
+	is_animating_up = false
 
 func _on_rope_panel_go_up() -> void:
-	anim_current_time = anim_total_time
 	is_animating_up = true
+	is_animating_down = false
