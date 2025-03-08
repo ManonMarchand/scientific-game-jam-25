@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://chptysrnj37ek"
-path="res://.godot/imported/patate_Veronique_1.png-90d57413b9c9a9535c12b733009455c2.ctex"
+uid="uid://dae2qbdt30vag"
+path="res://.godot/imported/caillou_Veronique_1.png-96b0b9a5e5682bf880c6e0ccc9b67b44.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/monkeys/anim_singes/Véronique /patate_Veronique_1.png"
-dest_files=["res://.godot/imported/patate_Veronique_1.png-90d57413b9c9a9535c12b733009455c2.ctex"]
+source_file="res://assets/monkeys/anim_singes/Véronique/caillou_Veronique_1.png"
+dest_files=["res://.godot/imported/caillou_Veronique_1.png-96b0b9a5e5682bf880c6e0ccc9b67b44.ctex"]
 
 [params]
 

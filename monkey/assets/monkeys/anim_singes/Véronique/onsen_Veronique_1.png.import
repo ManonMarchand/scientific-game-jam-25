@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://ca7nslt1t641e"
-path="res://.godot/imported/onsen Véronique 1 (20250308025822).png-66c3bed51756e861ba0e7ba45d8f4c84.ctex"
+uid="uid://ufeth86xxhqy"
+path="res://.godot/imported/onsen_Veronique_1.png-b1df13dc230acab0b19eb01319d6fc8a.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/monkeys/anim_singes/Véronique /onsen Véronique 1 (20250308025822).png"
-dest_files=["res://.godot/imported/onsen Véronique 1 (20250308025822).png-66c3bed51756e861ba0e7ba45d8f4c84.ctex"]
+source_file="res://assets/monkeys/anim_singes/Véronique/onsen_Veronique_1.png"
+dest_files=["res://.godot/imported/onsen_Veronique_1.png-b1df13dc230acab0b19eb01319d6fc8a.ctex"]
 
 [params]
 

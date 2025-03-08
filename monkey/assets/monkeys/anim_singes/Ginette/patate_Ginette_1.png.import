@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://db56y7p1wlahw"
-path="res://.godot/imported/patate_Ginette_2.png-2810195e13c9bfdca9a33c2eb28d69df.ctex"
+uid="uid://bpenlxxkebsab"
+path="res://.godot/imported/patate_Ginette_1.png-84c26a1b87135cc24d140b9e591896cc.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/monkeys/anim_singes/Ginette /patate_Ginette_2.png"
-dest_files=["res://.godot/imported/patate_Ginette_2.png-2810195e13c9bfdca9a33c2eb28d69df.ctex"]
+source_file="res://assets/monkeys/anim_singes/Ginette/patate_Ginette_1.png"
+dest_files=["res://.godot/imported/patate_Ginette_1.png-84c26a1b87135cc24d140b9e591896cc.ctex"]
 
 [params]
 

@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://fev07m3u5b86"
-path="res://.godot/imported/grooming_Ginette_2.png-ff0ea7625f25e5c84c092d5f8c9e213e.ctex"
+uid="uid://c4tb4iq1nfrts"
+path="res://.godot/imported/caillou_Ginette_2.png-330177626cfd1d882e982d1ed2c1ecae.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/monkeys/anim_singes/Ginette /grooming_Ginette_2.png"
-dest_files=["res://.godot/imported/grooming_Ginette_2.png-ff0ea7625f25e5c84c092d5f8c9e213e.ctex"]
+source_file="res://assets/monkeys/anim_singes/Ginette/caillou_Ginette_2.png"
+dest_files=["res://.godot/imported/caillou_Ginette_2.png-330177626cfd1d882e982d1ed2c1ecae.ctex"]
 
 [params]
 

@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://33v4568rixql"
-path="res://.godot/imported/onsen_ginette_2.png-ebbba39fc7bb197e7f09ea7909f5ecf9.ctex"
+path="res://.godot/imported/onsen_ginette_2.png-fa6fa3b0d5fce66e534f58765df7a313.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/monkeys/anim_singes/Ginette /onsen_ginette_2.png"
-dest_files=["res://.godot/imported/onsen_ginette_2.png-ebbba39fc7bb197e7f09ea7909f5ecf9.ctex"]
+source_file="res://assets/monkeys/anim_singes/Ginette/onsen_ginette_2.png"
+dest_files=["res://.godot/imported/onsen_ginette_2.png-fa6fa3b0d5fce66e534f58765df7a313.ctex"]
 
 [params]
 
