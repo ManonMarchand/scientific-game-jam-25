@@ -1,0 +1,26 @@
+[gd_scene load_steps=3 format=3 uid="uid://d155qsi0t52r5"]
+
+[ext_resource type="PackedScene" uid="uid://cw0aiwfwwm1fo" path="res://monkey/monkey.tscn" id="1_gp1gk"]
+[ext_resource type="PackedScene" uid="uid://m0h11i3p4wpb" path="res://panel/portrait.tscn" id="2_3hjt1"]
+
+[node name="Draft" type="Node2D"]
+
+[node name="Monkey" parent="." instance=ExtResource("1_gp1gk")]
+position = Vector2(279, 895)
+monkey_animation = 1
+
+[node name="Monkey2" parent="." instance=ExtResource("1_gp1gk")]
+position = Vector2(644, 800)
+monkey_number = 1
+monkey_animation = 3
+
+[node name="Portrait" parent="." instance=ExtResource("2_3hjt1")]
+position = Vector2(523, 86)
+
+[node name="Portrait2" parent="." instance=ExtResource("2_3hjt1")]
+position = Vector2(221, 118)
+portrait_number = 1
+
+[node name="Monkey3" parent="." instance=ExtResource("1_gp1gk")]
+position = Vector2(1150, 732)
+monkey_animation = 4
