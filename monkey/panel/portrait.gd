@@ -3,14 +3,18 @@ class_name Portrait
 
 extends Node2D
 
+@export_group("Portrait properties")
 @export
 var portrait_number: int
+@export
+var portrait_image: Sprite2D
 
 var can_be_dragged: bool = false
 var can_be_dropped: bool = false
 var reference_to_body: Node2D
 var was_in_inventory: bool = true
 var on_inventory: bool = true
+var on_intruder: bool = false
 var offset: Vector2
 var initial_position: Vector2
 
@@ -29,13 +33,16 @@ func _input(event: InputEvent) -> void:
 		elif event is InputEventMouseButton and event.is_released() and event.button_index == MOUSE_BUTTON_LEFT:
 			was_in_inventory = false
 			PlayerVariables.is_player_dragging = false
-			
+			if len($Area2D.get_overlapping_areas()) > 0:
+				can_be_dropped = false
 			if can_be_dropped:
 				if on_inventory:
 					self.position = get_global_mouse_position() - offset
 				else:
 					var tween : Tween = get_tree().create_tween()
 					tween.tween_property(self, "position", reference_to_body.position, 0.2).set_ease(Tween.EASE_OUT)
+					if on_intruder:
+						PlayerVariables.layton_event.emit(portrait_number == PlayerVariables.intruder_monkey_number)
 			else:
 				var tween : Tween = get_tree().create_tween()
 				tween.tween_property(self, "position", initial_position, 0.2).set_ease(Tween.EASE_OUT)
@@ -59,6 +66,7 @@ func _on_area_2d_body_entered(body: Node2D) -> void:
 		body.modulate = Color.AQUAMARINE
 		reference_to_body = body
 		on_inventory = body.is_in_group("inventory")
+		on_intruder = body.is_in_group("trespasser_node")
 
 func _on_area_2d_body_exited(body: Node2D) -> void:
 	if body.is_in_group("dropable_area"):

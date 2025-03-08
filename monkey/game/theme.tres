@@ -1,0 +1,9 @@
+[gd_resource type="Theme" load_steps=2 format=3 uid="uid://dpdiloka1t8xb"]
+
+[ext_resource type="FontFile" uid="uid://dv2a4yk6s3fmj" path="res://assets/game_ui/hvd_edding.otf" id="1_dsyop"]
+
+[resource]
+default_font = ExtResource("1_dsyop")
+default_font_size = 45
+Label/colors/font_color = Color(0.929412, 0.109804, 0.141176, 1)
+Label/colors/font_outline_color = Color(0.929412, 0.109804, 0.141176, 1)

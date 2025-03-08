@@ -21,7 +21,7 @@ node_2 = NodePath("../diagram_node3")
 position = Vector2(950, 340)
 
 [node name="Portrait" parent="." instance=ExtResource("1_m32wa")]
-position = Vector2(1003, 138)
+position = Vector2(953, 166)
 
 [node name="diagram_node" parent="." instance=ExtResource("2_fmb8u")]
 position = Vector2(274, 151)
@@ -32,3 +32,6 @@ position = Vector2(149, 522)
 [node name="diagram_node3" parent="." instance=ExtResource("2_fmb8u")]
 position = Vector2(490, 432)
 is_trespaser_node = true
+
+[node name="Portrait2" parent="." instance=ExtResource("1_m32wa")]
+position = Vector2(994, 364)

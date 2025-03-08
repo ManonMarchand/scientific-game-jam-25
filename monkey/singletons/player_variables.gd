@@ -1,5 +1,8 @@
 extends Node
 
 var is_player_dragging: bool = false
+var intruder_monkey_number: int = 0
 
 signal player_clicked_monkey(monkey_number: int, select: bool)
+
+signal layton_event(monkey_identified: bool)

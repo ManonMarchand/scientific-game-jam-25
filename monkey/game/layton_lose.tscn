@@ -1,0 +1,11 @@
+[gd_scene load_steps=2 format=3 uid="uid://bn7jbo3hsu2at"]
+
+[ext_resource type="Theme" uid="uid://dpdiloka1t8xb" path="res://game/theme.tres" id="1_hqh7h"]
+
+[node name="LaytonLose" type="Node2D"]
+
+[node name="Label" type="Label" parent="."]
+offset_right = 40.0
+offset_bottom = 23.0
+theme = ExtResource("1_hqh7h")
+text = "Mais non c'est pas lui!"

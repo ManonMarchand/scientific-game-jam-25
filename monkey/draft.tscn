@@ -1,16 +1,20 @@
-[gd_scene load_steps=3 format=3 uid="uid://d155qsi0t52r5"]
+[gd_scene load_steps=6 format=3 uid="uid://d155qsi0t52r5"]
 
 [ext_resource type="PackedScene" uid="uid://cw0aiwfwwm1fo" path="res://monkey/monkey.tscn" id="1_gp1gk"]
+[ext_resource type="Script" path="res://panel/portrait.gd" id="1_hp4xy"]
 [ext_resource type="PackedScene" uid="uid://m0h11i3p4wpb" path="res://panel/portrait.tscn" id="2_3hjt1"]
+[ext_resource type="PackedScene" uid="uid://dwln8mmiw7tpp" path="res://panel/inventory.tscn" id="5_b6nir"]
+[ext_resource type="PackedScene" uid="uid://xj4y42plc61i" path="res://panel/diagram_node.tscn" id="5_x5s1r"]
 
 [node name="Draft" type="Node2D"]
+script = ExtResource("1_hp4xy")
 
 [node name="Monkey" parent="." instance=ExtResource("1_gp1gk")]
 position = Vector2(279, 895)
 monkey_animation = 1
 
 [node name="Monkey2" parent="." instance=ExtResource("1_gp1gk")]
-position = Vector2(644, 800)
+position = Vector2(465, 704)
 monkey_number = 1
 monkey_animation = 3
 
@@ -22,5 +26,18 @@ position = Vector2(221, 118)
 portrait_number = 1
 
 [node name="Monkey3" parent="." instance=ExtResource("1_gp1gk")]
-position = Vector2(1150, 732)
+position = Vector2(593, 894)
+monkey_number = 3
 monkey_animation = 4
+monkey_is_intruder = true
+
+[node name="Portrait3" parent="." instance=ExtResource("2_3hjt1")]
+position = Vector2(310, 346)
+portrait_number = 3
+
+[node name="diagram_node" parent="." instance=ExtResource("5_x5s1r")]
+position = Vector2(937, 184)
+is_trespaser_node = true
+
+[node name="Inventory" parent="." instance=ExtResource("5_b6nir")]
+position = Vector2(802, 687)

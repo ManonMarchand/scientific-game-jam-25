@@ -12,8 +12,5 @@ func _ready() -> void:
 	if not is_trespaser_node:
 		$ColorRect.modulate = Color(Color.AQUAMARINE, 0.5)
 	else:
+		add_to_group("trespasser_node")
 		$ColorRect.modulate = Color(Color.CRIMSON, 0.5)
-
-# Called every frame. 'delta' is the elapsed time since the previous frame.
-func _process(delta: float) -> void:
-	pass
