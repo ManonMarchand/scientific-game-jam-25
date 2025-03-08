@@ -3,6 +3,9 @@ class_name Portrait
 
 extends Node2D
 
+@export
+var portrait_number: int
+
 var can_be_dragged: bool = false
 var can_be_dropped: bool = false
 var reference_to_body: Node2D
@@ -13,7 +16,7 @@ var initial_position: Vector2
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
-	pass
+	PlayerVariables.player_clicked_monkey.connect(_player_clicked_monkey)
 
 func _input(event: InputEvent) -> void:
 	if can_be_dragged:
@@ -63,3 +66,10 @@ func _on_area_2d_body_exited(body: Node2D) -> void:
 		body.modulate = Color(Color.AQUAMARINE, 0.7)
 	if PlayerVariables.is_player_dragging and body.is_in_group("inventory"):
 		was_in_inventory = true
+		
+func _player_clicked_monkey(monkey_number: int, selected: bool):
+	if monkey_number == portrait_number:
+		if selected == true:
+			modulate = Color(1, 1, 1, 0.4)
+		else:
+			modulate = Color(1, 1, 1, 1)
