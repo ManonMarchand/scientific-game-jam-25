@@ -1,10 +1,13 @@
-[gd_scene load_steps=2 format=3 uid="uid://dl72pns4rmvwh"]
+[gd_scene load_steps=3 format=3 uid="uid://dl72pns4rmvwh"]
 
+[ext_resource type="Texture2D" uid="uid://djfxlyn2ju03u" path="res://assets/backgrounds/background0.png" id="1_4uraw"]
 [ext_resource type="PackedScene" uid="uid://cw0aiwfwwm1fo" path="res://monkey/monkey.tscn" id="1_d2nyh"]
 
 [node name="Substage" type="Node2D"]
 
 [node name="Backgroud" type="Sprite2D" parent="."]
+texture = ExtResource("1_4uraw")
+centered = false
 
 [node name="MonkeyList" type="Node2D" parent="."]
 
