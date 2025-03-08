@@ -8,15 +8,13 @@
 
 [node name="SwitchPanel" type="Node2D"]
 script = ExtResource("1_4jndl")
+panel_scene = ExtResource("3_xbvfo")
 
 [node name="Path2D" type="Path2D" parent="."]
 curve = SubResource("Curve2D_gk2py")
 
 [node name="PathFollow2D" type="PathFollow2D" parent="Path2D"]
 rotates = false
-
-[node name="DiagramPanel" parent="Path2D/PathFollow2D" instance=ExtResource("3_xbvfo")]
-position = Vector2(0, -900)
 
 [node name="Rope" parent="Path2D/PathFollow2D" instance=ExtResource("1_tlpge")]
 position = Vector2(1896, 33)
