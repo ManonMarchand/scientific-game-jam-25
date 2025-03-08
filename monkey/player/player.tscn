@@ -7,6 +7,7 @@
 size = Vector2(119, 120)
 
 [node name="MainCharacter" type="Area2D"]
+position = Vector2(900, 500)
 script = ExtResource("1_ddked")
 
 [node name="AnimatedSprite2D" type="Sprite2D" parent="."]
