@@ -25,9 +25,12 @@ position = Vector2(1003, 138)
 
 [node name="diagram_node" parent="." instance=ExtResource("2_fmb8u")]
 position = Vector2(274, 151)
+is_trespaser_node = false
 
 [node name="diagram_node2" parent="." instance=ExtResource("2_fmb8u")]
 position = Vector2(149, 522)
+is_trespaser_node = false
 
 [node name="diagram_node3" parent="." instance=ExtResource("2_fmb8u")]
 position = Vector2(490, 432)
+is_trespaser_node = true
