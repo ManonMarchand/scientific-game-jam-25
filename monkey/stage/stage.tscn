@@ -1,0 +1,17 @@
+[gd_scene load_steps=4 format=3 uid="uid://8b3ifmligndf"]
+
+[ext_resource type="PackedScene" uid="uid://cd8g353hqck3h" path="res://switch-panel/switch_panel.tscn" id="1_726vd"]
+[ext_resource type="Script" path="res://stage/stage.gd" id="1_mlk6n"]
+[ext_resource type="PackedScene" uid="uid://c4ysry6xndv5u" path="res://player/player.tscn" id="3_ukuwo"]
+
+[node name="Stage" type="Node2D"]
+script = ExtResource("1_mlk6n")
+
+[node name="SwitchPanel" parent="." instance=ExtResource("1_726vd")]
+panel_scene = null
+
+[node name="Player" parent="." instance=ExtResource("3_ukuwo")]
+position = Vector2(284, 696)
+
+[connection signal="leave_left" from="Player" to="." method="_on_player_leave_left"]
+[connection signal="leave_right" from="Player" to="." method="_on_player_leave_right"]

@@ -1,0 +1,52 @@
+extends Node2D
+
+@export var player_offset_on_arrival = 50
+@export var playable_width = 380
+@export var substage_list: Array[PackedScene]
+
+var nb_substage: int = 0
+var current_stage_index
+
+# Called when the node enters the scene tree for the first time.
+func _ready() -> void:
+	# Init player
+	$Player.set_screen(Vector2(0, 1080-playable_width), Vector2(1920, playable_width))
+	nb_substage = len(substage_list)
+	init_substage(0, true)
+
+
+func init_substage(stage_index: int, from_left: bool):
+	current_stage_index = stage_index
+	# Remove current substage if necessary
+	var substage_node = get_node_or_null("Substage")
+	if substage_node != null:
+		remove_child(substage_node)
+	# Create new substage
+	var new_substage = substage_list[stage_index].instantiate()
+	new_substage.name = "Substage"
+	new_substage.position = Vector2.ZERO
+	add_child(new_substage)
+	# Move player
+	if from_left:
+		$Player.position.x = player_offset_on_arrival
+	else:
+		$Player.position.x = get_viewport_rect().size.x - player_offset_on_arrival
+	
+	
+
+# Called every frame. 'delta' is the elapsed time since the previous frame.
+func _process(delta: float) -> void:
+	pass
+
+
+
+
+func _on_player_leave_left() -> void:
+	if current_stage_index == 0:
+		return
+	init_substage(current_stage_index - 1, false)
+
+func _on_player_leave_right() -> void:
+	if current_stage_index == nb_substage - 1:
+		return
+	init_substage(current_stage_index + 1, true)

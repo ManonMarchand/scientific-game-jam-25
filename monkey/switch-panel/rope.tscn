@@ -1,22 +1,22 @@
-[gd_scene load_steps=3 format=3 uid="uid://cqu60r06x6a24"]
+[gd_scene load_steps=4 format=3 uid="uid://cqu60r06x6a24"]
 
 [ext_resource type="Script" path="res://switch-panel/rope.gd" id="1_4sl2t"]
 [ext_resource type="Texture2D" uid="uid://dxph3ey2pdt6d" path="res://icon.svg" id="1_f17bt"]
 
-[node name="Rope" type="Node2D"]
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_fuli7"]
+radius = 15.0
+height = 230.0
+
+[node name="Rope" type="Area2D"]
+position = Vector2(390, 237)
 script = ExtResource("1_4sl2t")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
-position = Vector2(-8.34465e-07, 0.99999)
-scale = Vector2(0.25, 1.32812)
+scale = Vector2(0.25, 1.80469)
 texture = ExtResource("1_f17bt")
 
-[node name="Button" type="Button" parent="."]
-offset_left = -15.0
-offset_top = -83.0
-offset_right = 17.0
-offset_bottom = 85.0
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("CapsuleShape2D_fuli7")
 
-[connection signal="mouse_entered" from="Button" to="." method="_on_button_mouse_entered"]
-[connection signal="mouse_exited" from="Button" to="." method="_on_button_mouse_exited"]
-[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]
+[connection signal="mouse_entered" from="." to="." method="_on_mouse_entered"]
+[connection signal="mouse_exited" from="." to="." method="_on_mouse_exited"]
