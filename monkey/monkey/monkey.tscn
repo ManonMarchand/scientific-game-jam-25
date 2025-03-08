@@ -2,16 +2,16 @@
 
 [ext_resource type="Script" path="res://monkey/monkey.gd" id="1_703qr"]
 [ext_resource type="Texture2D" uid="uid://dxph3ey2pdt6d" path="res://icon.svg" id="1_ek0h2"]
-[ext_resource type="Texture2D" uid="uid://tfaqoeks5y8t" path="res://assets/monkeys/anim_singes/Ginette /onsen_ginette_1.png" id="4_snnun"]
-[ext_resource type="Texture2D" uid="uid://33v4568rixql" path="res://assets/monkeys/anim_singes/Ginette /onsen_ginette_2.png" id="5_31n4s"]
+[ext_resource type="Texture2D" uid="uid://bp1d3s7ofs8sx" path="res://assets/monkeys/anim_singes/Ginette/onsen_Ginette_1.png" id="4_snnun"]
+[ext_resource type="Texture2D" uid="uid://iis5ll080fq8" path="res://assets/monkeys/anim_singes/Ginette/onsen_Ginette_2.png" id="5_31n4s"]
 [ext_resource type="Texture2D" uid="uid://b25vdio22jjls" path="res://assets/monkeys/anim_singes/Jacques/onsen Jacques 1 (20250308025735).png" id="6_e7tyh"]
 [ext_resource type="Texture2D" uid="uid://c3wo23m7w00ph" path="res://assets/monkeys/anim_singes/Jacques/onsen Jacques 2 (20250308025745).png" id="7_6m5yr"]
 [ext_resource type="Texture2D" uid="uid://3ngpsco12u6q" path="res://assets/monkeys/anim_singes/Michel/onsen Michel 1 (20250308025757).png" id="8_htqx0"]
 [ext_resource type="Texture2D" uid="uid://chj167lk35url" path="res://assets/monkeys/anim_singes/Michel/onsen Michel 2 (20250308025805).png" id="9_7ao24"]
 [ext_resource type="Texture2D" uid="uid://b46x2c4ns7eql" path="res://assets/monkeys/anim_singes/Paul/onsen Paul 1 (20250308025715).png" id="9_a2p6e"]
 [ext_resource type="Texture2D" uid="uid://bcj6o0pybpolb" path="res://assets/monkeys/anim_singes/Paul/onsen Paul 2 (20250308025723).png" id="10_8dn8o"]
-[ext_resource type="Texture2D" uid="uid://ca7nslt1t641e" path="res://assets/monkeys/anim_singes/Véronique /onsen Véronique 1 (20250308025822).png" id="10_romxi"]
-[ext_resource type="Texture2D" uid="uid://l54ueccghj2r" path="res://assets/monkeys/anim_singes/Véronique /onsen Véronique 2 (20250308025837).png" id="11_5jms7"]
+[ext_resource type="Texture2D" uid="uid://ca7nslt1t641e" path="res://assets/monkeys/anim_singes/Véronique/onsen Véronique 1 (20250308025822).png" id="10_romxi"]
+[ext_resource type="Texture2D" uid="uid://l54ueccghj2r" path="res://assets/monkeys/anim_singes/Véronique/onsen Véronique 2 (20250308025837).png" id="11_5jms7"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_wf4h7"]
 radius = 67.0
