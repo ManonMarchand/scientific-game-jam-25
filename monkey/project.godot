@@ -11,8 +11,13 @@ config_version=5
 [application]
 
 config/name="monkey"
+run/main_scene="res://panel/portrait.tscn"
 config/features=PackedStringArray("4.3", "GL Compatibility")
 config/icon="res://icon.svg"
+
+[autoload]
+
+PlayerVariables="*res://singletons/player_variables.gd"
 
 [rendering]
 

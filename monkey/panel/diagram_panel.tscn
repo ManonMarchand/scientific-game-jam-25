@@ -1,0 +1,15 @@
+[gd_scene load_steps=3 format=3 uid="uid://ccy6k8mprrau1"]
+
+[ext_resource type="PackedScene" uid="uid://m0h11i3p4wpb" path="res://panel/portrait.tscn" id="1_m32wa"]
+[ext_resource type="PackedScene" uid="uid://xj4y42plc61i" path="res://panel/diagram_node.tscn" id="2_fmb8u"]
+
+[node name="DiagramPanel" type="Node2D"]
+
+[node name="Portrait" parent="." instance=ExtResource("1_m32wa")]
+position = Vector2(735, 341)
+
+[node name="diagram_node" parent="." instance=ExtResource("2_fmb8u")]
+position = Vector2(525, 188)
+
+[node name="diagram_node2" parent="." instance=ExtResource("2_fmb8u")]
+position = Vector2(339, 394)
