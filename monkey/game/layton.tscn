@@ -1,0 +1,43 @@
+[gd_scene load_steps=3 format=3 uid="uid://cadjfhwm5jsnq"]
+
+[ext_resource type="Theme" uid="uid://dpdiloka1t8xb" path="res://game/theme.tres" id="1_gpdfp"]
+
+[sub_resource type="GDScript" id="GDScript_kmrcj"]
+script/source = "@tool
+class_name LaytonScreen
+
+extends Node2D
+
+@export
+var is_win: bool = true
+
+func _init(is_win: bool):
+	self.is_win = is_win
+
+# Called when the node enters the scene tree for the first time.
+func _ready() -> void:
+	if not is_win:
+		$Win.visible = false
+	else:
+		$Loose.visible = false
+"
+
+[node name="Layton" type="Node2D"]
+script = SubResource("GDScript_kmrcj")
+is_win = null
+
+[node name="Win" type="Label" parent="."]
+offset_left = 471.0
+offset_top = 200.0
+offset_right = 511.0
+offset_bottom = 223.0
+theme = ExtResource("1_gpdfp")
+text = "Robot identifié"
+
+[node name="Loose" type="Label" parent="."]
+offset_left = 547.0
+offset_top = 242.0
+offset_right = 631.0
+offset_bottom = 299.0
+theme = ExtResource("1_gpdfp")
+text = "Raté"
