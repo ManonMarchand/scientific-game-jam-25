@@ -29,7 +29,7 @@ func _input(event: InputEvent) -> void:
 			var tween : Tween = get_tree().create_tween()
 			if can_be_dropped:
 				if on_inventory:
-					self.position = get_global_mouse_position()
+					self.position = get_global_mouse_position() - offset
 				else:
 					tween.tween_property(self, "position", reference_to_body.position, 0.2).set_ease(Tween.EASE_OUT)
 			else:
