@@ -5,6 +5,7 @@
 [node name="Substage" type="Node2D"]
 
 [node name="Backgroud" type="Sprite2D" parent="."]
+centered = false
 
 [node name="MonkeyList" type="Node2D" parent="."]
 
