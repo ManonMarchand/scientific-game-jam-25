@@ -1,0 +1,26 @@
+[gd_scene load_steps=5 format=3 uid="uid://b2e7yoamjm6gs"]
+
+[ext_resource type="Script" path="res://game/intro.gd" id="1_pu7ta"]
+[ext_resource type="Texture2D" uid="uid://cw6pcj67wllb1" path="res://assets/intro/logo.png" id="2_4bwe5"]
+[ext_resource type="FontFile" uid="uid://dv2a4yk6s3fmj" path="res://assets/game_ui/hvd_edding.otf" id="2_3208t"]
+
+[sub_resource type="Theme" id="Theme_58k1x"]
+default_font = ExtResource("2_3208t")
+default_font_size = 45
+Label/colors/font_color = Color(0.929412, 0.109804, 0.141176, 1)
+Label/colors/font_outline_color = Color(0.929412, 0.109804, 0.141176, 1)
+
+[node name="Intro" type="Node2D"]
+script = ExtResource("1_pu7ta")
+
+[node name="Label" type="Label" parent="."]
+offset_left = 872.0
+offset_top = 926.0
+offset_right = 1857.0
+offset_bottom = 1032.0
+theme = SubResource("Theme_58k1x")
+text = "Appuyez sur n'importe quelle touche pour commencer..."
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(940, 343)
+texture = ExtResource("2_4bwe5")

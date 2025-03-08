@@ -18,6 +18,7 @@ config/icon="res://icon.svg"
 [autoload]
 
 PlayerVariables="*res://singletons/player_variables.gd"
+GameManager="*res://game/game_manager.gd"
 
 [display]
 
