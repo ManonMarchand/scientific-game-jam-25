@@ -1,0 +1,19 @@
+[gd_scene load_steps=2 format=3 uid="uid://cvstndax8udtw"]
+
+[ext_resource type="PackedScene" uid="uid://cw0aiwfwwm1fo" path="res://monkey/monkey.tscn" id="1_jic2f"]
+
+[node name="TestGrooming" type="Node2D"]
+
+[node name="Monkey" parent="." instance=ExtResource("1_jic2f")]
+position = Vector2(396, 830)
+monkey_name = null
+monkey_number = null
+monkey_animation = 17
+monkey_is_intruder = null
+
+[node name="Monkey2" parent="." instance=ExtResource("1_jic2f")]
+position = Vector2(810, 837)
+monkey_name = null
+monkey_number = null
+monkey_animation = 12
+monkey_is_intruder = null

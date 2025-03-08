@@ -9,4 +9,4 @@
 [node name="MonkeyList" type="Node2D" parent="."]
 
 [node name="Monkey" parent="MonkeyList" instance=ExtResource("1_3gnmr")]
-position = Vector2(668, 730)
+position = Vector2(562, 678)

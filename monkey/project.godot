@@ -25,6 +25,10 @@ GameManager="*res://game/game_manager.gd"
 window/size/viewport_width=1920
 window/size/viewport_height=1080
 
+[dotnet]
+
+project/assembly_name="monkey"
+
 [global_group]
 
 dropable_area=""

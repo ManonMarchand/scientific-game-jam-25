@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://chj167lk35url"
-path="res://.godot/imported/onsen_Michel_2.png-c99953385df3ab2bf12a3f72b0eeb012.ctex"
+uid="uid://4fhx88ufrc26"
+path="res://.godot/imported/idle_Jean_2.png-408c7210d5bb1ec8a36fd79c15f35b75.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/monkeys/anim_singes/Michel/onsen_Michel_2.png"
-dest_files=["res://.godot/imported/onsen_Michel_2.png-c99953385df3ab2bf12a3f72b0eeb012.ctex"]
+source_file="res://assets/monkeys/anim_singes/Jean/idle_Jean_2.png"
+dest_files=["res://.godot/imported/idle_Jean_2.png-408c7210d5bb1ec8a36fd79c15f35b75.ctex"]
 
 [params]
 

@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://b2jbm4kcumy8s"
-path="res://.godot/imported/grooming_michel_1.png-44aee0264665a7cb08359e7f4ec78a2f.ctex"
+path="res://.godot/imported/grooming_Michel_1.png-32680c77b64583e7d3036a9b2b656311.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/monkeys/anim_singes/Michel/grooming_michel_1.png"
-dest_files=["res://.godot/imported/grooming_michel_1.png-44aee0264665a7cb08359e7f4ec78a2f.ctex"]
+source_file="res://assets/monkeys/anim_singes/Michel/grooming_Michel_1.png"
+dest_files=["res://.godot/imported/grooming_Michel_1.png-32680c77b64583e7d3036a9b2b656311.ctex"]
 
 [params]
 

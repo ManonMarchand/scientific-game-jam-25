@@ -1,0 +1,37 @@
+[gd_scene load_steps=5 format=3 uid="uid://cpnxvtyosj725"]
+
+[ext_resource type="PackedScene" uid="uid://xj4y42plc61i" path="res://panel/diagram_node.tscn" id="1_02n26"]
+[ext_resource type="PackedScene" uid="uid://dwln8mmiw7tpp" path="res://panel/inventory.tscn" id="2_4qcb3"]
+[ext_resource type="PackedScene" uid="uid://bu53lurbsq12e" path="res://panel/link.tscn" id="3_e3sxs"]
+[ext_resource type="PackedScene" uid="uid://m0h11i3p4wpb" path="res://panel/portrait.tscn" id="3_yv04q"]
+
+[node name="Level1" type="Node2D"]
+
+[node name="case1" parent="." instance=ExtResource("1_02n26")]
+position = Vector2(257, 240)
+
+[node name="case2" parent="." instance=ExtResource("1_02n26")]
+position = Vector2(732, 239)
+is_trespaser_node = false
+
+[node name="case3" parent="." instance=ExtResource("1_02n26")]
+position = Vector2(498, 451)
+is_trespaser_node = true
+
+[node name="link12" parent="." node_paths=PackedStringArray("node_1", "node_2") instance=ExtResource("3_e3sxs")]
+position = Vector2(492, 746)
+node_1 = NodePath("../case1")
+node_2 = NodePath("../case2")
+
+[node name="Portrait" parent="." instance=ExtResource("3_yv04q")]
+position = Vector2(1238, 201)
+
+[node name="Portrait2" parent="." instance=ExtResource("3_yv04q")]
+position = Vector2(1240, 362)
+
+[node name="Portrait3" parent="." instance=ExtResource("3_yv04q")]
+position = Vector2(1225, 523)
+
+[node name="Inventory" parent="." instance=ExtResource("2_4qcb3")]
+z_index = -1
+position = Vector2(1275, 412)
