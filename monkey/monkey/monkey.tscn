@@ -1,17 +1,57 @@
-[gd_scene load_steps=15 format=3 uid="uid://cw0aiwfwwm1fo"]
+[gd_scene load_steps=55 format=3 uid="uid://cw0aiwfwwm1fo"]
 
 [ext_resource type="Script" path="res://monkey/monkey.gd" id="1_703qr"]
 [ext_resource type="Texture2D" uid="uid://dxph3ey2pdt6d" path="res://icon.svg" id="1_ek0h2"]
+[ext_resource type="Texture2D" uid="uid://b6j432dje0ybh" path="res://assets/monkeys/anim_singes/Ginette/caillou_Ginette_1.png" id="2_4lupo"]
+[ext_resource type="Texture2D" uid="uid://c4tb4iq1nfrts" path="res://assets/monkeys/anim_singes/Ginette/caillou_Ginette_2.png" id="3_is6cc"]
+[ext_resource type="Texture2D" uid="uid://gbi4c5b8j6ru" path="res://assets/monkeys/anim_singes/Jacques/caillou_Jacques_1.png" id="4_6tql0"]
 [ext_resource type="Texture2D" uid="uid://bp1d3s7ofs8sx" path="res://assets/monkeys/anim_singes/Ginette/onsen_Ginette_1.png" id="4_snnun"]
 [ext_resource type="Texture2D" uid="uid://iis5ll080fq8" path="res://assets/monkeys/anim_singes/Ginette/onsen_Ginette_2.png" id="5_31n4s"]
-[ext_resource type="Texture2D" uid="uid://b25vdio22jjls" path="res://assets/monkeys/anim_singes/Jacques/onsen Jacques 1 (20250308025735).png" id="6_e7tyh"]
-[ext_resource type="Texture2D" uid="uid://c3wo23m7w00ph" path="res://assets/monkeys/anim_singes/Jacques/onsen Jacques 2 (20250308025745).png" id="7_6m5yr"]
-[ext_resource type="Texture2D" uid="uid://3ngpsco12u6q" path="res://assets/monkeys/anim_singes/Michel/onsen Michel 1 (20250308025757).png" id="8_htqx0"]
-[ext_resource type="Texture2D" uid="uid://chj167lk35url" path="res://assets/monkeys/anim_singes/Michel/onsen Michel 2 (20250308025805).png" id="9_7ao24"]
-[ext_resource type="Texture2D" uid="uid://b46x2c4ns7eql" path="res://assets/monkeys/anim_singes/Paul/onsen Paul 1 (20250308025715).png" id="9_a2p6e"]
-[ext_resource type="Texture2D" uid="uid://bcj6o0pybpolb" path="res://assets/monkeys/anim_singes/Paul/onsen Paul 2 (20250308025723).png" id="10_8dn8o"]
-[ext_resource type="Texture2D" uid="uid://ca7nslt1t641e" path="res://assets/monkeys/anim_singes/Véronique/onsen Véronique 1 (20250308025822).png" id="10_romxi"]
-[ext_resource type="Texture2D" uid="uid://l54ueccghj2r" path="res://assets/monkeys/anim_singes/Véronique/onsen Véronique 2 (20250308025837).png" id="11_5jms7"]
+[ext_resource type="Texture2D" uid="uid://w7256yw2on01" path="res://assets/monkeys/anim_singes/Jacques/caillou_Jacques_2.png" id="5_hct8w"]
+[ext_resource type="Texture2D" uid="uid://cv5waipjylwe6" path="res://assets/monkeys/anim_singes/Jean/caillou_Jean_1.png" id="6_6p23p"]
+[ext_resource type="Texture2D" uid="uid://b25vdio22jjls" path="res://assets/monkeys/anim_singes/Jacques/onsen_Jacques_1.png" id="6_e7tyh"]
+[ext_resource type="Texture2D" uid="uid://ddrmr5q8j5531" path="res://assets/monkeys/anim_singes/Michel/caillou_Michel_1.png" id="6_kj11e"]
+[ext_resource type="Texture2D" uid="uid://cgktqmlv23qte" path="res://assets/monkeys/anim_singes/Jean/caillou_Jean_2.png" id="7_4pisj"]
+[ext_resource type="Texture2D" uid="uid://c3wo23m7w00ph" path="res://assets/monkeys/anim_singes/Jacques/onsen_Jacques_2.png" id="7_6m5yr"]
+[ext_resource type="Texture2D" uid="uid://dkyin3a4rtu53" path="res://assets/monkeys/anim_singes/Michel/caillou_Michel_2.png" id="7_gdf8t"]
+[ext_resource type="Texture2D" uid="uid://t7uadtr8mvrf" path="res://assets/monkeys/anim_singes/Paul/caillou_Paul_1.png" id="8_bklqq"]
+[ext_resource type="Texture2D" uid="uid://3ngpsco12u6q" path="res://assets/monkeys/anim_singes/Michel/onsen_Michel_1.png" id="8_htqx0"]
+[ext_resource type="Texture2D" uid="uid://chj167lk35url" path="res://assets/monkeys/anim_singes/Michel/onsen_Michel_2.png" id="9_7ao24"]
+[ext_resource type="Texture2D" uid="uid://b46x2c4ns7eql" path="res://assets/monkeys/anim_singes/Paul/onsen_Paul_1.png" id="9_a2p6e"]
+[ext_resource type="Texture2D" uid="uid://c17r0628rsfd7" path="res://assets/monkeys/anim_singes/Paul/caillou_Paul_2.png" id="9_m0358"]
+[ext_resource type="Texture2D" uid="uid://bcj6o0pybpolb" path="res://assets/monkeys/anim_singes/Paul/onsen_Paul_2.png" id="10_8dn8o"]
+[ext_resource type="Texture2D" uid="uid://dae2qbdt30vag" path="res://assets/monkeys/anim_singes/Véronique/caillou_Veronique_1.png" id="10_kavfi"]
+[ext_resource type="Texture2D" uid="uid://ca7nslt1t641e" path="res://assets/monkeys/anim_singes/Véronique/onsen_Veronique_1.png" id="10_romxi"]
+[ext_resource type="Texture2D" uid="uid://l54ueccghj2r" path="res://assets/monkeys/anim_singes/Véronique/onsen_Veronique_2.png" id="11_5jms7"]
+[ext_resource type="Texture2D" uid="uid://cqx2eyi1sv3fh" path="res://assets/monkeys/anim_singes/Véronique/caillou_Veronique_2.png" id="11_o2lxs"]
+[ext_resource type="Texture2D" uid="uid://d4jiy1vi7mo0q" path="res://assets/monkeys/anim_singes/Ginette/grooming_Ginette_1.png" id="12_ksctn"]
+[ext_resource type="Texture2D" uid="uid://fev07m3u5b86" path="res://assets/monkeys/anim_singes/Ginette/grooming_Ginette_2.png" id="13_qry4n"]
+[ext_resource type="Texture2D" uid="uid://ca1xrl1xg3mux" path="res://assets/monkeys/anim_singes/Jacques/grooming_Jacques_1.png" id="14_ks10e"]
+[ext_resource type="Texture2D" uid="uid://sywjgqcsfvcj" path="res://assets/monkeys/anim_singes/Jacques/grooming_Jacques_2.png" id="15_sjpy0"]
+[ext_resource type="Texture2D" uid="uid://b2jbm4kcumy8s" path="res://assets/monkeys/anim_singes/Michel/grooming_Michel_1.png" id="16_juwhk"]
+[ext_resource type="Texture2D" uid="uid://d277rdjxudwv8" path="res://assets/monkeys/anim_singes/Michel/grooming_Michel_2.png" id="17_3kq0m"]
+[ext_resource type="Texture2D" uid="uid://dsf23quo0ggxd" path="res://assets/monkeys/anim_singes/Paul/grooming_Paul_1.png" id="18_4i68b"]
+[ext_resource type="Texture2D" uid="uid://cbky378t3unrp" path="res://assets/monkeys/anim_singes/Jean/grooming_Jean_1.png" id="18_em2n2"]
+[ext_resource type="Texture2D" uid="uid://1dmkikdhds5t" path="res://assets/monkeys/anim_singes/Jean/grooming_Jean_2.png" id="19_n2amm"]
+[ext_resource type="Texture2D" uid="uid://dwjrvknomvgrd" path="res://assets/monkeys/anim_singes/Paul/grooming_Paul_2.png" id="19_q402u"]
+[ext_resource type="Texture2D" uid="uid://cgvimopa4g6o4" path="res://assets/monkeys/anim_singes/Véronique/grooming_Veronique_1.png" id="20_vttpn"]
+[ext_resource type="Texture2D" uid="uid://hl5on6xuk5t3" path="res://assets/monkeys/anim_singes/Véronique/grooming_Veronique_2.png" id="21_q5rdk"]
+[ext_resource type="Texture2D" uid="uid://db5atm1ppfdjc" path="res://assets/monkeys/anim_singes/Jean/idle_Jean_1.png" id="27_komxl"]
+[ext_resource type="Texture2D" uid="uid://4fhx88ufrc26" path="res://assets/monkeys/anim_singes/Jean/idle_Jean_2.png" id="28_u55sk"]
+[ext_resource type="Texture2D" uid="uid://bpenlxxkebsab" path="res://assets/monkeys/anim_singes/Ginette/patate_Ginette_1.png" id="33_j3y4w"]
+[ext_resource type="Texture2D" uid="uid://m3eepywv3s3d" path="res://assets/monkeys/anim_singes/Jean/onsen_Jean_1.png" id="33_ymue5"]
+[ext_resource type="Texture2D" uid="uid://dxqlewhbr44np" path="res://assets/monkeys/anim_singes/Jean/onsen_Jean_2.png" id="34_4elb3"]
+[ext_resource type="Texture2D" uid="uid://db56y7p1wlahw" path="res://assets/monkeys/anim_singes/Ginette/patate_Ginette_2.png" id="34_nh8s6"]
+[ext_resource type="Texture2D" uid="uid://dny1melm42rne" path="res://assets/monkeys/anim_singes/Jacques/patate_Jacques_1.png" id="35_o8eyv"]
+[ext_resource type="Texture2D" uid="uid://ciixrsbr51lmn" path="res://assets/monkeys/anim_singes/Jacques/patate_Jacques_2.png" id="36_du0wa"]
+[ext_resource type="Texture2D" uid="uid://bhvuut1n2g8cv" path="res://assets/monkeys/anim_singes/Michel/patate_Michel_1.png" id="37_psxin"]
+[ext_resource type="Texture2D" uid="uid://diqfif1i0h370" path="res://assets/monkeys/anim_singes/Michel/patate_Michel_2.png" id="38_3sork"]
+[ext_resource type="Texture2D" uid="uid://bo8y6xvahxiu8" path="res://assets/monkeys/anim_singes/Paul/patate_Paul_1.png" id="39_k3mv0"]
+[ext_resource type="Texture2D" uid="uid://vru86jxybs0m" path="res://assets/monkeys/anim_singes/Paul/patate_Paul_2.png" id="40_m6b7i"]
+[ext_resource type="Texture2D" uid="uid://chptysrnj37ek" path="res://assets/monkeys/anim_singes/Véronique/patate_Veronique_1.png" id="41_uugql"]
+[ext_resource type="Texture2D" uid="uid://bsnelygntq0xk" path="res://assets/monkeys/anim_singes/Véronique/patate_Veronique_2.png" id="42_7unq3"]
+[ext_resource type="Texture2D" uid="uid://dl033m4ddw2bs" path="res://assets/monkeys/anim_singes/Jean/patate_Jean_1.png" id="45_rpfjn"]
+[ext_resource type="Texture2D" uid="uid://c7i43b8uvre4i" path="res://assets/monkeys/anim_singes/Jean/patate_Jean_2.png" id="46_ifyb6"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_wf4h7"]
 radius = 67.0
@@ -21,10 +61,178 @@ height = 134.0
 animations = [{
 "frames": [{
 "duration": 1.0,
+"texture": ExtResource("2_4lupo")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_is6cc")
+}],
+"loop": true,
+"name": &"caillou_ginette",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("4_6tql0")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_hct8w")
+}],
+"loop": true,
+"name": &"caillou_jacques",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("6_6p23p")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_4pisj")
+}],
+"loop": true,
+"name": &"caillou_jean",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("6_kj11e")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_gdf8t")
+}],
+"loop": true,
+"name": &"caillou_michel",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("8_bklqq")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_m0358")
+}],
+"loop": true,
+"name": &"caillou_paul",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("10_kavfi")
+}, {
+"duration": 1.0,
+"texture": ExtResource("11_o2lxs")
+}],
+"loop": true,
+"name": &"caillou_veronique",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("12_ksctn")
+}, {
+"duration": 1.0,
+"texture": ExtResource("13_qry4n")
+}],
+"loop": true,
+"name": &"grooming_ginette",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("14_ks10e")
+}, {
+"duration": 1.0,
+"texture": ExtResource("15_sjpy0")
+}],
+"loop": true,
+"name": &"grooming_jacques",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("18_em2n2")
+}, {
+"duration": 1.0,
+"texture": ExtResource("19_n2amm")
+}],
+"loop": true,
+"name": &"grooming_jean",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("16_juwhk")
+}, {
+"duration": 1.0,
+"texture": ExtResource("17_3kq0m")
+}],
+"loop": true,
+"name": &"grooming_michel",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("18_4i68b")
+}, {
+"duration": 1.0,
+"texture": ExtResource("19_q402u")
+}],
+"loop": true,
+"name": &"grooming_paul",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("20_vttpn")
+}, {
+"duration": 1.0,
+"texture": ExtResource("21_q5rdk")
+}],
+"loop": true,
+"name": &"grooming_veronique",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
 "texture": ExtResource("1_ek0h2")
 }],
 "loop": true,
 "name": &"idle",
+"speed": 5.0
+}, {
+"frames": [],
+"loop": true,
+"name": &"idle_ginette",
+"speed": 5.0
+}, {
+"frames": [],
+"loop": true,
+"name": &"idle_jacques",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("27_komxl")
+}, {
+"duration": 1.0,
+"texture": ExtResource("28_u55sk")
+}],
+"loop": true,
+"name": &"idle_jean",
+"speed": 5.0
+}, {
+"frames": [],
+"loop": true,
+"name": &"idle_michel",
+"speed": 5.0
+}, {
+"frames": [],
+"loop": true,
+"name": &"idle_paul",
+"speed": 5.0
+}, {
+"frames": [],
+"loop": true,
+"name": &"idle_veronique",
 "speed": 5.0
 }, {
 "frames": [{
@@ -47,6 +255,17 @@ animations = [{
 }],
 "loop": true,
 "name": &"onsen_jacques",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("33_ymue5")
+}, {
+"duration": 1.0,
+"texture": ExtResource("34_4elb3")
+}],
+"loop": true,
+"name": &"onsen_jean",
 "speed": 5.0
 }, {
 "frames": [{
@@ -81,6 +300,72 @@ animations = [{
 "loop": true,
 "name": &"onsen_veronique",
 "speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("33_j3y4w")
+}, {
+"duration": 1.0,
+"texture": ExtResource("34_nh8s6")
+}],
+"loop": true,
+"name": &"patate_ginette",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("35_o8eyv")
+}, {
+"duration": 1.0,
+"texture": ExtResource("36_du0wa")
+}],
+"loop": true,
+"name": &"patate_jacques",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("45_rpfjn")
+}, {
+"duration": 1.0,
+"texture": ExtResource("46_ifyb6")
+}],
+"loop": true,
+"name": &"patate_jean",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("37_psxin")
+}, {
+"duration": 1.0,
+"texture": ExtResource("38_3sork")
+}],
+"loop": true,
+"name": &"patate_michel",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("39_k3mv0")
+}, {
+"duration": 1.0,
+"texture": ExtResource("40_m6b7i")
+}],
+"loop": true,
+"name": &"patate_paul",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("41_uugql")
+}, {
+"duration": 1.0,
+"texture": ExtResource("42_7unq3")
+}],
+"loop": true,
+"name": &"patate_veronique",
+"speed": 5.0
 }]
 
 [node name="Monkey" type="Node2D"]
@@ -93,7 +378,7 @@ shape = SubResource("CapsuleShape2D_wf4h7")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 sprite_frames = SubResource("SpriteFrames_3ti58")
-animation = &"onsen_michel"
+animation = &"caillou_veronique"
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 visible = false
