@@ -31,9 +31,14 @@ var mouse_on_monkey: bool = false
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
 	var proportion: float = (global_position[1] - (1080 - 335)) / 335
-	var scale_to_apply = 0.65 + proportion * 0.45 
-	scale =  Vector2(scale_to_apply, scale_to_apply)
+	var scale_to_apply = 0.65 + proportion * 0.45
+	if global_position[1] < (1080 - 335):
+		scale = Vector2(0.65, 0.65)
+	else:
+		scale =  Vector2(scale_to_apply, scale_to_apply)
 	$AnimatedSprite2D.play(animations_correspondances[monkey_animation], 1.0)
+	if monkey_is_intruder:
+		PlayerVariables.intruder_monkey_number = monkey_number
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta: float) -> void:
