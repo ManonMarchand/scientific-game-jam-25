@@ -6,12 +6,13 @@
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_3qel4"]
 size = Vector2(99, 100)
 
-[node name="diagram_node" type="StaticBody2D" groups=["dropable"]]
+[node name="diagram_node" type="StaticBody2D" groups=["dropable_area"]]
 script = ExtResource("1_m4sxd")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 shape = SubResource("RectangleShape2D_3qel4")
 
 [node name="ColorRect" type="Sprite2D" parent="."]
+modulate = Color(0.498039, 1, 0.831373, 0.5)
 scale = Vector2(0.15, 0.15)
 texture = ExtResource("2_rcg3s")
