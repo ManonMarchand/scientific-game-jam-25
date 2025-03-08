@@ -1,5 +1,8 @@
 extends Area2D
 
+signal leave_right
+signal leave_left
+
 @export var speed = 400  # speed (pixel/s)
 @export var min_scale: float = 0.65
 @export var max_scale: float = 1.
@@ -46,8 +49,10 @@ func _process(delta: float) -> void:
 	# Clamp left and right
 	if position.x <= screen_origin.x:
 		position.x = screen_origin.x
+		leave_left.emit()
 	if position.x >= screen_origin.x + screen_size.x:
 		position.x = screen_origin.x + screen_size.x
+		leave_right.emit()
 	
 	# Compute scale
 	var y_prop = (position.y - screen_origin.y) / screen_size.y
