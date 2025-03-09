@@ -1,0 +1,15 @@
+[gd_scene load_steps=2 format=3 uid="uid://b1g71sbbyducj"]
+
+[ext_resource type="Texture2D" uid="uid://c4rdadcnwfcku" path="res://assets/game_ui/ecran_layton/ILLU_THANKS FOR PLAYING_FOND BLANC.png" id="1_b6mrl"]
+
+[node name="End" type="Node2D"]
+
+[node name="ColorRect" type="ColorRect" parent="."]
+offset_left = -192.0
+offset_top = -136.0
+offset_right = 2072.0
+offset_bottom = 1136.0
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(965, 540)
+texture = ExtResource("1_b6mrl")
