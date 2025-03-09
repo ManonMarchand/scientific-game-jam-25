@@ -6,9 +6,16 @@ extends Node2D
 
 var nb_substage: int = 0
 var current_stage_index
+var win_screen: PackedScene
+var lose_screen: PackedScene
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
+	# Connect win signal
+	PlayerVariables.layton_event.connect(_on_guess)
+	# Load win and lose scenes
+	win_screen = load("res://game/layton_win.tscn")
+	lose_screen = load("res://game/layton_lose.tscn")
 	# Init player
 	$Player.set_screen(Vector2(0, 1080-playable_width), Vector2(1920, playable_width))
 	nb_substage = len(substage_list)
@@ -35,10 +42,8 @@ func init_substage(stage_index: int, from_left: bool):
 	
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
-func _process(delta: float) -> void:
+func _process(_delta: float) -> void:
 	pass
-
-
 
 
 func _on_player_leave_left() -> void:
@@ -50,3 +55,15 @@ func _on_player_leave_right() -> void:
 	if current_stage_index == nb_substage - 1:
 		return
 	init_substage(current_stage_index + 1, true)
+
+func _on_guess(is_win: bool):
+	# Create right node
+	var scene_to_load: CanvasItem
+	if is_win:
+		scene_to_load = win_screen.instantiate()
+	else:
+		scene_to_load = lose_screen.instantiate()
+	# Put scene in front
+	scene_to_load.z_index = 20
+	# Add scene
+	add_child(scene_to_load)

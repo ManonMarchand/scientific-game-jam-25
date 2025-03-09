@@ -1,0 +1,22 @@
+[gd_scene load_steps=7 format=3 uid="uid://fgxvqty5txbk"]
+
+[ext_resource type="Script" path="res://stage/stage.gd" id="1_8ncw5"]
+[ext_resource type="PackedScene" uid="uid://bcr686mxvmrxu" path="res://test/substage_test_1.tscn" id="2_17jud"]
+[ext_resource type="PackedScene" uid="uid://cd8g353hqck3h" path="res://switch-panel/switch_panel.tscn" id="2_svu8s"]
+[ext_resource type="PackedScene" uid="uid://c2pelb8fdylsm" path="res://test/substage_test_2.tscn" id="3_id3nl"]
+[ext_resource type="PackedScene" uid="uid://c4ysry6xndv5u" path="res://player/player.tscn" id="3_l58xo"]
+[ext_resource type="PackedScene" uid="uid://dy5imff4lw4qe" path="res://test/panel_test.tscn" id="5_ob3uc"]
+
+[node name="Stage" type="Node2D"]
+script = ExtResource("1_8ncw5")
+substage_list = Array[PackedScene]([ExtResource("2_17jud"), ExtResource("3_id3nl")])
+
+[node name="SwitchPanel" parent="." instance=ExtResource("2_svu8s")]
+z_index = 5
+panel_scene = ExtResource("5_ob3uc")
+
+[node name="Player" parent="." instance=ExtResource("3_l58xo")]
+position = Vector2(284, 696)
+
+[connection signal="leave_left" from="Player" to="." method="_on_player_leave_left"]
+[connection signal="leave_right" from="Player" to="." method="_on_player_leave_right"]

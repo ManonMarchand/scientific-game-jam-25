@@ -1,0 +1,46 @@
+[gd_scene load_steps=6 format=3 uid="uid://dy5imff4lw4qe"]
+
+[ext_resource type="PackedScene" uid="uid://bu53lurbsq12e" path="res://panel/link.tscn" id="1_1h4xr"]
+[ext_resource type="Texture2D" uid="uid://dxph3ey2pdt6d" path="res://icon.svg" id="1_u4rvl"]
+[ext_resource type="PackedScene" uid="uid://xj4y42plc61i" path="res://panel/diagram_node.tscn" id="2_2o77u"]
+[ext_resource type="PackedScene" uid="uid://m0h11i3p4wpb" path="res://panel/portrait.tscn" id="3_2iul3"]
+[ext_resource type="PackedScene" uid="uid://dwln8mmiw7tpp" path="res://panel/inventory.tscn" id="4_4bekm"]
+
+[node name="Level1" type="Node2D"]
+
+[node name="Background" type="Sprite2D" parent="."]
+z_index = -2
+scale = Vector2(15, 8.4375)
+texture = ExtResource("1_u4rvl")
+centered = false
+
+[node name="link12" parent="." node_paths=PackedStringArray("node_1", "node_2") instance=ExtResource("1_1h4xr")]
+position = Vector2(492, 746)
+node_1 = NodePath("../case1")
+node_2 = NodePath("../case2")
+
+[node name="case1" parent="." instance=ExtResource("2_2o77u")]
+position = Vector2(257, 240)
+
+[node name="case2" parent="." instance=ExtResource("2_2o77u")]
+position = Vector2(732, 239)
+
+[node name="case3" parent="." instance=ExtResource("2_2o77u")]
+position = Vector2(498, 451)
+is_trespaser_node = true
+
+[node name="Portrait" parent="." instance=ExtResource("3_2iul3")]
+position = Vector2(1238, 201)
+portrait_number = 1
+
+[node name="Portrait2" parent="." instance=ExtResource("3_2iul3")]
+position = Vector2(1237, 372)
+portrait_number = 2
+
+[node name="Portrait3" parent="." instance=ExtResource("3_2iul3")]
+position = Vector2(1225, 523)
+portrait_number = 3
+
+[node name="Inventory" parent="." instance=ExtResource("4_4bekm")]
+z_index = -1
+position = Vector2(1492, 401)
