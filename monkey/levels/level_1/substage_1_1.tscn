@@ -1,0 +1,13 @@
+[gd_scene load_steps=2 format=3 uid="uid://dxau4qp75dy7t"]
+
+[ext_resource type="PackedScene" uid="uid://cw0aiwfwwm1fo" path="res://monkey/monkey.tscn" id="1_osiq5"]
+
+[node name="Substage" type="Node2D"]
+
+[node name="Backgroud" type="Sprite2D" parent="."]
+centered = false
+
+[node name="MonkeyList" type="Node2D" parent="."]
+
+[node name="Monkey" parent="MonkeyList" instance=ExtResource("1_osiq5")]
+position = Vector2(562, 678)
