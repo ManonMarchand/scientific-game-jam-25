@@ -1,4 +1,4 @@
-[gd_scene load_steps=55 format=3 uid="uid://cw0aiwfwwm1fo"]
+[gd_scene load_steps=65 format=3 uid="uid://cw0aiwfwwm1fo"]
 
 [ext_resource type="Script" path="res://monkey/monkey.gd" id="1_703qr"]
 [ext_resource type="Texture2D" uid="uid://dxph3ey2pdt6d" path="res://icon.svg" id="1_ek0h2"]
@@ -37,15 +37,25 @@
 [ext_resource type="Texture2D" uid="uid://cgvimopa4g6o4" path="res://assets/monkeys/anim_singes/Véronique/grooming_Veronique_1.png" id="20_vttpn"]
 [ext_resource type="Texture2D" uid="uid://hl5on6xuk5t3" path="res://assets/monkeys/anim_singes/Véronique/grooming_Veronique_2.png" id="21_q5rdk"]
 [ext_resource type="Texture2D" uid="uid://db5atm1ppfdjc" path="res://assets/monkeys/anim_singes/Jean/idle_Jean_1.png" id="27_komxl"]
+[ext_resource type="Texture2D" uid="uid://d1bbyek7tl5fu" path="res://assets/monkeys/anim_singes/Ginette/idle_Ginette_1.png" id="27_o4xf0"]
+[ext_resource type="Texture2D" uid="uid://bj1y53gx8fvx8" path="res://assets/monkeys/anim_singes/Ginette/idle_Ginette_2.png" id="28_jy2gy"]
 [ext_resource type="Texture2D" uid="uid://4fhx88ufrc26" path="res://assets/monkeys/anim_singes/Jean/idle_Jean_2.png" id="28_u55sk"]
+[ext_resource type="Texture2D" uid="uid://cvsacxv3nimiq" path="res://assets/monkeys/anim_singes/Jacques/idle_Jacques_1.png" id="29_errm3"]
+[ext_resource type="Texture2D" uid="uid://dpysj6a67dlt1" path="res://assets/monkeys/anim_singes/Jacques/idle_Jacques_2.png" id="30_r3w0d"]
+[ext_resource type="Texture2D" uid="uid://j4mx464xf4v6" path="res://assets/monkeys/anim_singes/Michel/idle_Michel_1.png" id="33_65vtn"]
 [ext_resource type="Texture2D" uid="uid://bpenlxxkebsab" path="res://assets/monkeys/anim_singes/Ginette/patate_Ginette_1.png" id="33_j3y4w"]
 [ext_resource type="Texture2D" uid="uid://m3eepywv3s3d" path="res://assets/monkeys/anim_singes/Jean/onsen_Jean_1.png" id="33_ymue5"]
 [ext_resource type="Texture2D" uid="uid://dxqlewhbr44np" path="res://assets/monkeys/anim_singes/Jean/onsen_Jean_2.png" id="34_4elb3"]
+[ext_resource type="Texture2D" uid="uid://cberddddwxx4i" path="res://assets/monkeys/anim_singes/Michel/idle_Michel_2.png" id="34_ibdgs"]
 [ext_resource type="Texture2D" uid="uid://db56y7p1wlahw" path="res://assets/monkeys/anim_singes/Ginette/patate_Ginette_2.png" id="34_nh8s6"]
+[ext_resource type="Texture2D" uid="uid://cna0ugctdu0i7" path="res://assets/monkeys/anim_singes/Paul/idle_Paul_1.png" id="35_jx4w0"]
 [ext_resource type="Texture2D" uid="uid://dny1melm42rne" path="res://assets/monkeys/anim_singes/Jacques/patate_Jacques_1.png" id="35_o8eyv"]
 [ext_resource type="Texture2D" uid="uid://ciixrsbr51lmn" path="res://assets/monkeys/anim_singes/Jacques/patate_Jacques_2.png" id="36_du0wa"]
+[ext_resource type="Texture2D" uid="uid://b08bq5ub2ai5c" path="res://assets/monkeys/anim_singes/Paul/idle_Paul_2.png" id="36_m04rp"]
+[ext_resource type="Texture2D" uid="uid://b1fx2bnwsb6b4" path="res://assets/monkeys/anim_singes/Véronique/idle_Veronique_1.png" id="37_2dw60"]
 [ext_resource type="Texture2D" uid="uid://bhvuut1n2g8cv" path="res://assets/monkeys/anim_singes/Michel/patate_Michel_1.png" id="37_psxin"]
 [ext_resource type="Texture2D" uid="uid://diqfif1i0h370" path="res://assets/monkeys/anim_singes/Michel/patate_Michel_2.png" id="38_3sork"]
+[ext_resource type="Texture2D" uid="uid://c1kbmm18f8ai0" path="res://assets/monkeys/anim_singes/Véronique/idle_Veronique_2.png" id="38_6qiso"]
 [ext_resource type="Texture2D" uid="uid://bo8y6xvahxiu8" path="res://assets/monkeys/anim_singes/Paul/patate_Paul_1.png" id="39_k3mv0"]
 [ext_resource type="Texture2D" uid="uid://vru86jxybs0m" path="res://assets/monkeys/anim_singes/Paul/patate_Paul_2.png" id="40_m6b7i"]
 [ext_resource type="Texture2D" uid="uid://chptysrnj37ek" path="res://assets/monkeys/anim_singes/Véronique/patate_Veronique_1.png" id="41_uugql"]
@@ -199,12 +209,24 @@ animations = [{
 "name": &"idle",
 "speed": 5.0
 }, {
-"frames": [],
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("27_o4xf0")
+}, {
+"duration": 1.0,
+"texture": ExtResource("28_jy2gy")
+}],
 "loop": true,
 "name": &"idle_ginette",
 "speed": 5.0
 }, {
-"frames": [],
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("29_errm3")
+}, {
+"duration": 1.0,
+"texture": ExtResource("30_r3w0d")
+}],
 "loop": true,
 "name": &"idle_jacques",
 "speed": 5.0
@@ -220,17 +242,35 @@ animations = [{
 "name": &"idle_jean",
 "speed": 5.0
 }, {
-"frames": [],
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("33_65vtn")
+}, {
+"duration": 1.0,
+"texture": ExtResource("34_ibdgs")
+}],
 "loop": true,
 "name": &"idle_michel",
 "speed": 5.0
 }, {
-"frames": [],
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("35_jx4w0")
+}, {
+"duration": 1.0,
+"texture": ExtResource("36_m04rp")
+}],
 "loop": true,
 "name": &"idle_paul",
 "speed": 5.0
 }, {
-"frames": [],
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("37_2dw60")
+}, {
+"duration": 1.0,
+"texture": ExtResource("38_6qiso")
+}],
 "loop": true,
 "name": &"idle_veronique",
 "speed": 5.0
@@ -378,7 +418,8 @@ shape = SubResource("CapsuleShape2D_wf4h7")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 sprite_frames = SubResource("SpriteFrames_3ti58")
-animation = &"caillou_veronique"
+animation = &"caillou_ginette"
+frame_progress = 0.0457962
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 visible = false

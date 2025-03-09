@@ -1,0 +1,151 @@
+[gd_scene load_steps=2 format=3 uid="uid://cvstndax8udtw"]
+
+[ext_resource type="PackedScene" uid="uid://cw0aiwfwwm1fo" path="res://monkey/monkey.tscn" id="1_owgik"]
+
+[node name="TestGrooming" type="Node2D"]
+position = Vector2(25, 191)
+
+[node name="Monkey1" parent="." instance=ExtResource("1_owgik")]
+position = Vector2(105, 881)
+monkey_animation = 1
+
+[node name="Monkey2" parent="." instance=ExtResource("1_owgik")]
+position = Vector2(354, 885)
+monkey_animation = 7
+
+[node name="Monkey3" parent="." instance=ExtResource("1_owgik")]
+position = Vector2(606, 888)
+monkey_animation = 13
+
+[node name="Monkey4" parent="." instance=ExtResource("1_owgik")]
+position = Vector2(846, 894)
+monkey_animation = 19
+
+[node name="Monkey5" parent="." instance=ExtResource("1_owgik")]
+position = Vector2(1107, 891)
+monkey_animation = 25
+
+[node name="Monkey6" parent="." instance=ExtResource("1_owgik")]
+z_index = -1
+position = Vector2(255, 722)
+monkey_animation = 2
+
+[node name="Monkey7" parent="." instance=ExtResource("1_owgik")]
+z_index = -1
+position = Vector2(504, 726)
+monkey_animation = 8
+
+[node name="Monkey8" parent="." instance=ExtResource("1_owgik")]
+z_index = -1
+position = Vector2(756, 729)
+monkey_animation = 14
+
+[node name="Monkey9" parent="." instance=ExtResource("1_owgik")]
+z_index = -1
+position = Vector2(996, 735)
+monkey_animation = 20
+
+[node name="Monkey10" parent="." instance=ExtResource("1_owgik")]
+z_index = -1
+position = Vector2(1257, 732)
+monkey_animation = 26
+
+[node name="Monkey11" parent="." instance=ExtResource("1_owgik")]
+z_index = -2
+position = Vector2(402, 566)
+monkey_animation = 3
+
+[node name="Monkey12" parent="." instance=ExtResource("1_owgik")]
+z_index = -2
+position = Vector2(651, 570)
+monkey_animation = 9
+
+[node name="Monkey13" parent="." instance=ExtResource("1_owgik")]
+z_index = -2
+position = Vector2(903, 573)
+monkey_animation = 15
+
+[node name="Monkey14" parent="." instance=ExtResource("1_owgik")]
+z_index = -2
+position = Vector2(1143, 579)
+monkey_animation = 21
+
+[node name="Monkey15" parent="." instance=ExtResource("1_owgik")]
+z_index = -2
+position = Vector2(1404, 576)
+monkey_animation = 27
+
+[node name="Monkey16" parent="." instance=ExtResource("1_owgik")]
+z_index = -3
+position = Vector2(561, 422)
+monkey_animation = 4
+
+[node name="Monkey17" parent="." instance=ExtResource("1_owgik")]
+z_index = -3
+position = Vector2(810, 426)
+monkey_animation = 10
+
+[node name="Monkey18" parent="." instance=ExtResource("1_owgik")]
+z_index = -3
+position = Vector2(1062, 429)
+monkey_animation = 16
+
+[node name="Monkey19" parent="." instance=ExtResource("1_owgik")]
+z_index = -3
+position = Vector2(1302, 435)
+monkey_animation = 22
+
+[node name="Monkey20" parent="." instance=ExtResource("1_owgik")]
+z_index = -3
+position = Vector2(1563, 432)
+monkey_animation = 28
+
+[node name="Monkey21" parent="." instance=ExtResource("1_owgik")]
+z_index = -4
+position = Vector2(711, 296)
+monkey_animation = 5
+
+[node name="Monkey22" parent="." instance=ExtResource("1_owgik")]
+z_index = -4
+position = Vector2(960, 300)
+monkey_animation = 11
+
+[node name="Monkey23" parent="." instance=ExtResource("1_owgik")]
+z_index = -4
+position = Vector2(1212, 303)
+monkey_animation = 17
+
+[node name="Monkey24" parent="." instance=ExtResource("1_owgik")]
+z_index = -4
+position = Vector2(1452, 309)
+monkey_animation = 23
+
+[node name="Monkey25" parent="." instance=ExtResource("1_owgik")]
+z_index = -4
+position = Vector2(1713, 306)
+monkey_animation = 29
+
+[node name="Monkey26" parent="." instance=ExtResource("1_owgik")]
+z_index = -5
+position = Vector2(852, 173)
+monkey_animation = 6
+
+[node name="Monkey27" parent="." instance=ExtResource("1_owgik")]
+z_index = -5
+position = Vector2(1101, 177)
+monkey_animation = 12
+
+[node name="Monkey28" parent="." instance=ExtResource("1_owgik")]
+z_index = -5
+position = Vector2(1353, 180)
+monkey_animation = 18
+
+[node name="Monkey29" parent="." instance=ExtResource("1_owgik")]
+z_index = -5
+position = Vector2(1593, 186)
+monkey_animation = 24
+
+[node name="Monkey30" parent="." instance=ExtResource("1_owgik")]
+z_index = -5
+position = Vector2(1854, 183)
+monkey_animation = 30
