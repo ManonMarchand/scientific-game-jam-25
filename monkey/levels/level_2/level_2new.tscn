@@ -1,0 +1,13 @@
+[gd_scene load_steps=4 format=3 uid="uid://dkj6kbh01s8kv"]
+
+[ext_resource type="PackedScene" uid="uid://cd8g353hqck3h" path="res://switch-panel/switch_panel.tscn" id="1_na31g"]
+[ext_resource type="PackedScene" uid="uid://ccrtfsh16jrah" path="res://levels/level_2/level_2_panel.tscn" id="2_46qx6"]
+[ext_resource type="PackedScene" uid="uid://dl72pns4rmvwh" path="res://levels/level_1/substage_level_1_1.tscn" id="3_gd8nn"]
+
+[node name="Level1Main" type="Node2D"]
+
+[node name="SwitchPanel" parent="." instance=ExtResource("1_na31g")]
+panel_scene = ExtResource("2_46qx6")
+
+[node name="Substage2" parent="." instance=ExtResource("3_gd8nn")]
+z_index = -1
