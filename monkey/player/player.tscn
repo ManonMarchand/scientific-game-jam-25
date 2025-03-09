@@ -1,18 +1,56 @@
-[gd_scene load_steps=4 format=3 uid="uid://c4ysry6xndv5u"]
+[gd_scene load_steps=10 format=3 uid="uid://c4ysry6xndv5u"]
 
 [ext_resource type="Script" path="res://player/player.gd" id="1_ddked"]
-[ext_resource type="Texture2D" uid="uid://dxph3ey2pdt6d" path="res://icon.svg" id="1_t3me7"]
+[ext_resource type="Texture2D" uid="uid://chaxx532qy5my" path="res://assets/player/heros_1.png" id="2_863qp"]
+[ext_resource type="Texture2D" uid="uid://pmwd3hbwl0uu" path="res://assets/player/heros_2.png" id="3_hi81y"]
+[ext_resource type="Texture2D" uid="uid://bmi3fxhojni5t" path="res://assets/player/ANIM-HERO_FRAME_1.png" id="4_lg2fh"]
+[ext_resource type="Texture2D" uid="uid://bfdx3u8blnn60" path="res://assets/player/ANIM-HERO_FRAME_3.png" id="5_ggun4"]
+[ext_resource type="Texture2D" uid="uid://cjnj033hoj6wg" path="res://assets/player/ANIM-HERO_FRAME_2.png" id="6_ydw64"]
+[ext_resource type="Texture2D" uid="uid://c8fy21iy7r1mg" path="res://assets/player/ANIM-HERO_FRAME_4.png" id="7_vady8"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_2fphp"]
 size = Vector2(119, 120)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_fw1vc"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_863qp")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_hi81y")
+}],
+"loop": true,
+"name": &"idle",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("4_lg2fh")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_ggun4")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_ydw64")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_vady8")
+}],
+"loop": true,
+"name": &"walk",
+"speed": 7.0
+}]
 
 [node name="MainCharacter" type="Area2D"]
 position = Vector2(900, 500)
 script = ExtResource("1_ddked")
 
-[node name="AnimatedSprite2D" type="Sprite2D" parent="."]
-texture = ExtResource("1_t3me7")
-
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(-0.5, 0)
 shape = SubResource("RectangleShape2D_2fphp")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+sprite_frames = SubResource("SpriteFrames_fw1vc")
+animation = &"walk"
+frame_progress = 0.929643

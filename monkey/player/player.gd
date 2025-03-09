@@ -9,12 +9,16 @@ signal leave_left
 var screen_origin: Vector2
 var screen_size: Vector2
 
+# movement variables
+var is_walking = false
+var face_right = true
 
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
 	screen_origin = Vector2.ZERO
 	screen_size = get_viewport_rect().size
+	$AnimatedSprite2D.play("idle")
 
 func set_screen(origin: Vector2, size: Vector2) -> void:
 	screen_origin = origin
@@ -32,13 +36,20 @@ func _process(delta: float) -> void:
 	if Input.is_action_pressed("move_up"):
 		velocity.y -= 1
 	
+	var now_is_walking = false
+	var now_face_right = false
 	# Get real velocity
 	if velocity.length() > 0:
 		velocity = velocity.normalized() * speed
-		# $AnimatedSprite2D.play()
-	#else:
-	#	$AnimatedSprite2D.stop()
+		now_is_walking = true
+	else:
+		now_is_walking = false
 	
+	if velocity.x >= 0:
+		now_face_right = true
+	else:
+		now_face_right = false
+
 	position += velocity * delta
 	# Clamp up and down
 	if position.y <= screen_origin.y:
@@ -57,3 +68,17 @@ func _process(delta: float) -> void:
 	# Compute scale
 	var y_prop = (position.y - screen_origin.y) / screen_size.y
 	scale = Vector2.ONE * (min_scale + (max_scale - min_scale) * y_prop)
+	
+	# Update animation
+	if not is_walking and now_is_walking:
+		$AnimatedSprite2D.play("walk")
+	if is_walking and not now_is_walking:
+		$AnimatedSprite2D.play("idle")
+	
+	is_walking = now_is_walking
+	if velocity.x != 0:
+		face_right = now_face_right
+	if face_right:
+		$AnimatedSprite2D.flip_h = true
+	else:
+		$AnimatedSprite2D.flip_h = false
