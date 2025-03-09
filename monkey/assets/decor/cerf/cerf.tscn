@@ -1,0 +1,27 @@
+[gd_scene load_steps=5 format=3 uid="uid://cxs6mtsc51uex"]
+
+[ext_resource type="Script" path="res://assets/decor/cerf/cerf.gd" id="1_60a86"]
+[ext_resource type="Texture2D" uid="uid://dwoxnc3cf3xxo" path="res://assets/decor/cerf/cerf_1.png" id="2_q6l7j"]
+[ext_resource type="Texture2D" uid="uid://4lh1flvd73qq" path="res://assets/decor/cerf/cerf_2.png" id="3_i4aqt"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_yjp30"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_q6l7j")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_i4aqt")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[node name="Cerf" type="Node2D"]
+scale = Vector2(0.8, 0.8)
+script = ExtResource("1_60a86")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+position = Vector2(55.7143, 0)
+sprite_frames = SubResource("SpriteFrames_yjp30")
