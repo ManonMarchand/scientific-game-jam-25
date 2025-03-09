@@ -32,15 +32,19 @@ node_2 = NodePath("../case3")
 
 [node name="Portrait" parent="." instance=ExtResource("3_yv04q")]
 position = Vector2(1122, 169)
+portrait_number = 1
 
 [node name="Portrait2" parent="." instance=ExtResource("3_yv04q")]
 position = Vector2(1119, 321)
+portrait_number = 2
 
 [node name="Portrait3" parent="." instance=ExtResource("3_yv04q")]
 position = Vector2(1120, 470)
+portrait_number = 3
 
 [node name="Portrait4" parent="." instance=ExtResource("3_yv04q")]
 position = Vector2(1114, 624)
+portrait_number = 4
 
 [node name="Inventory" parent="." instance=ExtResource("2_4qcb3")]
 z_index = -1
