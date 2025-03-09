@@ -35,8 +35,9 @@ func clean_manager():
 	child.queue_free()
 	
 func _on_next_level():
+	print(current_level, " ", nb_level)
 	if current_level == nb_level:
-		get_tree().change_scene_to_file(end_path)
+		get_tree().change_scene_to_file("res://game/end.tscn")
 		return
 	clean_manager()
 	current_level += 1

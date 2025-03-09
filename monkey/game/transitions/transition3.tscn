@@ -41,6 +41,5 @@ offset_top = 274.0
 offset_right = 1724.0
 offset_bottom = 536.0
 theme = SubResource("Theme_o03ch")
-text = "Enfin arrivé dans un nouveau clan ! Pour m’intégrer à mes nouveaux congénères, je vais essayer de comprendre leurs relations et débusquer le robot intrus qui nous observe en cachette…
-Généralement, les bons amis passent du temps à s’épouiller !"
+text = "Ici, certains singes partagent un “comportement culturel” ! Quelqu’un a eu un jour l’idée de laver ses patates dans l’eau, et il l’a transmis à un de ses amis. Si je vois des singes partager un même comportement particulier, c’est qu’ils ont un lien !"
 autowrap_mode = 2
