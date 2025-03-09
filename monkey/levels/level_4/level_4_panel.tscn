@@ -9,15 +9,12 @@
 
 [node name="case1" parent="." instance=ExtResource("1_bmgxq")]
 position = Vector2(358, 234)
-is_trespaser_node = false
 
 [node name="case2" parent="." instance=ExtResource("1_bmgxq")]
 position = Vector2(783, 231)
-is_trespaser_node = false
 
 [node name="case3" parent="." instance=ExtResource("1_bmgxq")]
 position = Vector2(573, 434)
-is_trespaser_node = false
 
 [node name="case4" parent="." instance=ExtResource("1_bmgxq")]
 position = Vector2(847, 437)

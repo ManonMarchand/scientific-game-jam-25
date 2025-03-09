@@ -4,7 +4,7 @@
 [ext_resource type="Script" path="res://stage/stage.gd" id="1_mlk6n"]
 [ext_resource type="PackedScene" uid="uid://c4ysry6xndv5u" path="res://player/player.tscn" id="3_ukuwo"]
 
-[node name="Stage" type="Node2D"]
+[node name="Stage2" type="Node2D"]
 script = ExtResource("1_mlk6n")
 
 [node name="SwitchPanel" parent="." instance=ExtResource("1_726vd")]
