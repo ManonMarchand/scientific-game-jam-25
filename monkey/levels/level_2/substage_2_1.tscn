@@ -1,0 +1,36 @@
+[gd_scene load_steps=4 format=3 uid="uid://djtd7l1kk1v5d"]
+
+[ext_resource type="Texture2D" uid="uid://c3kaap0wux1u" path="res://assets/backgrounds/Forêt - cailloux.png" id="1_enpjl"]
+[ext_resource type="PackedScene" uid="uid://cw0aiwfwwm1fo" path="res://monkey/monkey.tscn" id="1_xdae7"]
+[ext_resource type="PackedScene" uid="uid://8nimbq03ewnt" path="res://assets/sounds/ambiance/audio_jungle_base.tscn" id="3_x7ivw"]
+
+[node name="Substage" type="Node2D"]
+
+[node name="Backgroud" type="Sprite2D" parent="."]
+texture = ExtResource("1_enpjl")
+centered = false
+
+[node name="MonkeyList" type="Node2D" parent="."]
+
+[node name="Monkey" parent="MonkeyList" instance=ExtResource("1_xdae7")]
+position = Vector2(1588, 846)
+monkey_number = 1
+monkey_animation = 2
+
+[node name="Monkey2" parent="MonkeyList" instance=ExtResource("1_xdae7")]
+position = Vector2(786, 873)
+monkey_number = 2
+monkey_animation = 1
+
+[node name="Monkey3" parent="MonkeyList" instance=ExtResource("1_xdae7")]
+position = Vector2(1210, 784)
+monkey_number = 3
+monkey_animation = 16
+
+[node name="Monkey4" parent="MonkeyList" instance=ExtResource("1_xdae7")]
+position = Vector2(2326, 852)
+monkey_animation = 16
+monkey_is_intruder = true
+
+[node name="Audio" parent="." instance=ExtResource("3_x7ivw")]
+position = Vector2(586, 609)
