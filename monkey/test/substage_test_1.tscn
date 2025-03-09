@@ -1,0 +1,18 @@
+[gd_scene load_steps=3 format=3 uid="uid://bcr686mxvmrxu"]
+
+[ext_resource type="PackedScene" uid="uid://cw0aiwfwwm1fo" path="res://monkey/monkey.tscn" id="1_1dqhv"]
+[ext_resource type="Texture2D" uid="uid://b8klfo14fh388" path="res://test/assets/tale_of_princess_kaguya_ghibli_01.jpg" id="1_3rrrd"]
+
+[node name="Substage" type="Node2D"]
+
+[node name="Backgroud" type="Sprite2D" parent="."]
+z_index = -1
+scale = Vector2(3.02844, 3.18935)
+texture = ExtResource("1_3rrrd")
+centered = false
+
+[node name="MonkeyList" type="Node2D" parent="."]
+
+[node name="Monkey" parent="MonkeyList" instance=ExtResource("1_1dqhv")]
+position = Vector2(562, 678)
+monkey_animation = 9

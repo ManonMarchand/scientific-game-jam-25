@@ -8,9 +8,11 @@
 script = ExtResource("1_mlk6n")
 
 [node name="SwitchPanel" parent="." instance=ExtResource("1_726vd")]
+z_index = 10
 panel_scene = null
 
 [node name="Player" parent="." instance=ExtResource("3_ukuwo")]
+z_index = 1
 position = Vector2(284, 696)
 
 [connection signal="leave_left" from="Player" to="." method="_on_player_leave_left"]
