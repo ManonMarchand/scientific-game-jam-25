@@ -1,13 +1,27 @@
-[gd_scene load_steps=2 format=3 uid="uid://c78nr4ag8v5oh"]
+[gd_scene load_steps=3 format=3 uid="uid://dsixorsmpqwhw"]
 
+[ext_resource type="Texture2D" uid="uid://4fbuuxk75onq" path="res://assets/backgrounds/lvl1_jungle_arriere_plan.png" id="1_fb4f5"]
 [ext_resource type="PackedScene" uid="uid://cw0aiwfwwm1fo" path="res://monkey/monkey.tscn" id="1_fcyn3"]
 
 [node name="Substage" type="Node2D"]
 
 [node name="Backgroud" type="Sprite2D" parent="."]
+texture = ExtResource("1_fb4f5")
 centered = false
 
 [node name="MonkeyList" type="Node2D" parent="."]
 
 [node name="Monkey" parent="MonkeyList" instance=ExtResource("1_fcyn3")]
-position = Vector2(562, 678)
+position = Vector2(1460, 656)
+monkey_animation = 7
+
+[node name="Monkey2" parent="MonkeyList" instance=ExtResource("1_fcyn3")]
+position = Vector2(640, 809)
+monkey_number = 1
+monkey_animation = 14
+monkey_is_intruder = true
+
+[node name="Monkey3" parent="MonkeyList" instance=ExtResource("1_fcyn3")]
+position = Vector2(1686, 617)
+monkey_number = 2
+monkey_animation = 10

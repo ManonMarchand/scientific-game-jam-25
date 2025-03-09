@@ -1,66 +1,54 @@
-[gd_scene load_steps=7 format=3 uid="uid://cnu5lb1dd6r48"]
+[gd_scene load_steps=9 format=3 uid="uid://m8udn0y3kpfp"]
 
-[ext_resource type="Texture2D" uid="uid://0b4r0psarxia" path="res://assets/panel/PANNEAU.png" id="1_6t6ur"]
-[ext_resource type="PackedScene" uid="uid://bu53lurbsq12e" path="res://panel/link.tscn" id="2_uw8co"]
-[ext_resource type="PackedScene" uid="uid://xj4y42plc61i" path="res://panel/diagram_node.tscn" id="3_0wm0f"]
-[ext_resource type="Texture2D" uid="uid://001wtpqrhsjt" path="res://assets/panel/separation.png" id="4_aw8ww"]
-[ext_resource type="PackedScene" uid="uid://m0h11i3p4wpb" path="res://panel/portraits/portrait.tscn" id="5_buplf"]
-[ext_resource type="PackedScene" uid="uid://dwln8mmiw7tpp" path="res://panel/inventory.tscn" id="6_l647h"]
+[ext_resource type="Texture2D" uid="uid://0b4r0psarxia" path="res://assets/panel/PANNEAU.png" id="1_xi3c5"]
+[ext_resource type="PackedScene" uid="uid://bu53lurbsq12e" path="res://panel/link.tscn" id="2_a37oo"]
+[ext_resource type="PackedScene" uid="uid://xj4y42plc61i" path="res://panel/diagram_node.tscn" id="3_85116"]
+[ext_resource type="Texture2D" uid="uid://001wtpqrhsjt" path="res://assets/panel/separation.png" id="4_lelih"]
+[ext_resource type="PackedScene" uid="uid://dwln8mmiw7tpp" path="res://panel/inventory.tscn" id="5_hwfi6"]
+[ext_resource type="PackedScene" uid="uid://nrrbs5nq11tj" path="res://panel/portraits/portrait_ginette.tscn" id="6_ksubw"]
+[ext_resource type="PackedScene" uid="uid://e2nx7xtg5gpt" path="res://panel/portraits/portrait_jacques.tscn" id="7_0apu0"]
+[ext_resource type="PackedScene" uid="uid://kxqjw53d2for" path="res://panel/portraits/portrait_michel.tscn" id="8_7k43m"]
 
 [node name="Level1" type="Node2D"]
 
 [node name="Background" type="Sprite2D" parent="."]
 z_index = -2
 scale = Vector2(0.998438, 1)
-texture = ExtResource("1_6t6ur")
+texture = ExtResource("1_xi3c5")
 centered = false
 
-[node name="link12" parent="." node_paths=PackedStringArray("node_1", "node_2") instance=ExtResource("2_uw8co")]
-position = Vector2(492, 746)
-node_1 = NodePath("../case1")
-node_2 = NodePath("../case2")
-
-[node name="case1" parent="." instance=ExtResource("3_0wm0f")]
+[node name="case1" parent="." instance=ExtResource("3_85116")]
+z_index = 1
 position = Vector2(351, 362)
 
-[node name="case2" parent="." instance=ExtResource("3_0wm0f")]
+[node name="case2" parent="." instance=ExtResource("3_85116")]
+z_index = 1
 position = Vector2(778, 362)
 
-[node name="case3" parent="." instance=ExtResource("3_0wm0f")]
-position = Vector2(552, 701)
+[node name="case3" parent="." instance=ExtResource("3_85116")]
+z_index = 1
+position = Vector2(275, 748)
 is_trespaser_node = true
 
 [node name="Separation" type="Sprite2D" parent="."]
 position = Vector2(1079, 473)
 scale = Vector2(0.772727, 0.772727)
-texture = ExtResource("4_aw8ww")
+texture = ExtResource("4_lelih")
 
-[node name="Portrait1" parent="." instance=ExtResource("5_buplf")]
-position = Vector2(1308, 216)
+[node name="Link" parent="." node_paths=PackedStringArray("node_1", "node_2") instance=ExtResource("2_a37oo")]
+node_1 = NodePath("../case1")
+node_2 = NodePath("../case2")
+
+[node name="Portrait" parent="." instance=ExtResource("6_ksubw")]
+position = Vector2(1314, 249)
+
+[node name="Portrait2" parent="." instance=ExtResource("7_0apu0")]
+position = Vector2(1614, 243)
 portrait_number = 1
 
-[node name="Portrait2" parent="." instance=ExtResource("5_buplf")]
-position = Vector2(1308, 472)
+[node name="Portrait3" parent="." instance=ExtResource("8_7k43m")]
+position = Vector2(1331, 515)
 portrait_number = 2
 
-[node name="Portrait3" parent="." instance=ExtResource("5_buplf")]
-position = Vector2(1308, 727)
-portrait_number = 3
-
-[node name="Portrait4" parent="." instance=ExtResource("5_buplf")]
-position = Vector2(1566, 216)
-portrait_number = 2
-
-[node name="Portrait5" parent="." instance=ExtResource("5_buplf")]
-position = Vector2(1566, 472)
-portrait_number = 3
-
-[node name="Portrait6" parent="." instance=ExtResource("5_buplf")]
-position = Vector2(1566, 722)
-portrait_number = 3
-
-[node name="Inventory" parent="." instance=ExtResource("6_l647h")]
-visible = false
-z_index = -1
-position = Vector2(1423, 496)
-scale = Vector2(2.39909, -1.55216)
+[node name="Inventory" parent="." instance=ExtResource("5_hwfi6")]
+position = Vector2(1462, 466)
