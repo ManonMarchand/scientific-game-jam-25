@@ -17,7 +17,7 @@ curve = SubResource("Curve2D_gk2py")
 rotates = false
 
 [node name="Rope" parent="Path2D/PathFollow2D" instance=ExtResource("1_tlpge")]
-position = Vector2(1896, 33)
+position = Vector2(1769, 155)
 
 [connection signal="panel_go_down" from="Path2D/PathFollow2D/Rope" to="." method="_on_rope_panel_go_down"]
 [connection signal="panel_go_up" from="Path2D/PathFollow2D/Rope" to="." method="_on_rope_panel_go_up"]

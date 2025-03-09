@@ -1,17 +1,17 @@
 [gd_scene load_steps=6 format=3 uid="uid://dy5imff4lw4qe"]
 
 [ext_resource type="PackedScene" uid="uid://bu53lurbsq12e" path="res://panel/link.tscn" id="1_1h4xr"]
-[ext_resource type="Texture2D" uid="uid://dxph3ey2pdt6d" path="res://icon.svg" id="1_u4rvl"]
+[ext_resource type="Texture2D" uid="uid://0b4r0psarxia" path="res://assets/panel/PANNEAU.png" id="1_vdl53"]
 [ext_resource type="PackedScene" uid="uid://xj4y42plc61i" path="res://panel/diagram_node.tscn" id="2_2o77u"]
-[ext_resource type="PackedScene" uid="uid://m0h11i3p4wpb" path="res://panel/portrait.tscn" id="3_2iul3"]
+[ext_resource type="PackedScene" uid="uid://m0h11i3p4wpb" path="res://panel/portraits/portrait.tscn" id="3_2iul3"]
 [ext_resource type="PackedScene" uid="uid://dwln8mmiw7tpp" path="res://panel/inventory.tscn" id="4_4bekm"]
 
 [node name="Level1" type="Node2D"]
 
 [node name="Background" type="Sprite2D" parent="."]
 z_index = -2
-scale = Vector2(15, 8.4375)
-texture = ExtResource("1_u4rvl")
+scale = Vector2(0.998438, 1)
+texture = ExtResource("1_vdl53")
 centered = false
 
 [node name="link12" parent="." node_paths=PackedStringArray("node_1", "node_2") instance=ExtResource("1_1h4xr")]
