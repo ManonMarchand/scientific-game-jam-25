@@ -1,8 +1,10 @@
-[gd_scene load_steps=2 format=3 uid="uid://deifecheulsfg"]
+[gd_scene load_steps=3 format=3 uid="uid://deifecheulsfg"]
 
+[ext_resource type="Script" path="res://game/layton_win.gd" id="1_lr4dl"]
 [ext_resource type="Theme" uid="uid://dpdiloka1t8xb" path="res://game/theme.tres" id="1_x3n7h"]
 
 [node name="LaytonWin" type="Node2D"]
+script = ExtResource("1_lr4dl")
 
 [node name="Label" type="Label" parent="."]
 offset_right = 40.0

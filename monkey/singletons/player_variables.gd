@@ -6,3 +6,6 @@ var intruder_monkey_number: int = 0
 signal player_clicked_monkey(monkey_number: int, select: bool)
 
 signal layton_event(monkey_identified: bool)
+
+signal next_level()
+signal replay_level()
