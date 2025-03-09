@@ -1,6 +1,9 @@
-[gd_scene load_steps=2 format=3 uid="uid://dw0osuuj056bv"]
+[gd_scene load_steps=5 format=3 uid="uid://b2nl16tl71rjc"]
 
-[ext_resource type="PackedScene" uid="uid://cw0aiwfwwm1fo" path="res://monkey/monkey.tscn" id="1_a0d6p"]
+[ext_resource type="PackedScene" uid="uid://cw0aiwfwwm1fo" path="res://monkey/monkey.tscn" id="1_5pw45"]
+[ext_resource type="Texture2D" uid="uid://c1nnqjvdgv5v2" path="res://assets/backgrounds/lvl3_plage_arriere_plan_2.png" id="2_6f8ji"]
+[ext_resource type="PackedScene" uid="uid://8nimbq03ewnt" path="res://assets/sounds/ambiance/audio_jungle_base.tscn" id="3_upq8s"]
+[ext_resource type="PackedScene" uid="uid://dc1qymq8b4m84" path="res://assets/sounds/ambiance/audio_jungle_piano.tscn" id="4_hpdpt"]
 
 [node name="Substage" type="Node2D"]
 
@@ -9,6 +12,34 @@ centered = false
 
 [node name="MonkeyList" type="Node2D" parent="."]
 
-[node name="Monkey" parent="MonkeyList" instance=ExtResource("1_a0d6p")]
-position = Vector2(562, 678)
-monkey_animation = 14
+[node name="Monkey1" parent="MonkeyList" instance=ExtResource("1_5pw45")]
+position = Vector2(318, 830)
+monkey_number = 1
+monkey_animation = 7
+
+[node name="Monkey2" parent="MonkeyList" instance=ExtResource("1_5pw45")]
+position = Vector2(457, 839)
+monkey_number = 3
+monkey_animation = 15
+
+[node name="Monkey3" parent="MonkeyList" instance=ExtResource("1_5pw45")]
+position = Vector2(888, 826)
+monkey_number = 2
+monkey_animation = 30
+
+[node name="Monkey4" parent="MonkeyList" instance=ExtResource("1_5pw45")]
+position = Vector2(1550, 756)
+monkey_number = 4
+monkey_animation = 16
+monkey_is_intruder = true
+
+[node name="Lvl3PlageArrierePlan2" type="Sprite2D" parent="."]
+z_index = -1
+position = Vector2(960, 542)
+texture = ExtResource("2_6f8ji")
+
+[node name="Audio" parent="." instance=ExtResource("3_upq8s")]
+position = Vector2(2099, 115)
+
+[node name="Audio2" parent="." instance=ExtResource("4_hpdpt")]
+position = Vector2(2090, 204)

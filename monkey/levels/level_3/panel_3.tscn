@@ -1,0 +1,75 @@
+[gd_scene load_steps=10 format=3 uid="uid://gl2dk4mr25j5"]
+
+[ext_resource type="Texture2D" uid="uid://0b4r0psarxia" path="res://assets/panel/PANNEAU.png" id="1_hwnem"]
+[ext_resource type="PackedScene" uid="uid://bu53lurbsq12e" path="res://panel/link.tscn" id="2_vckf3"]
+[ext_resource type="PackedScene" uid="uid://xj4y42plc61i" path="res://panel/diagram_node.tscn" id="3_r056e"]
+[ext_resource type="Texture2D" uid="uid://001wtpqrhsjt" path="res://assets/panel/separation.png" id="4_wdssx"]
+[ext_resource type="PackedScene" uid="uid://nrrbs5nq11tj" path="res://panel/portraits/portrait_ginette.tscn" id="5_jde74"]
+[ext_resource type="PackedScene" uid="uid://djolbi3o3lol3" path="res://panel/portraits/portrait_jean.tscn" id="7_beoto"]
+[ext_resource type="PackedScene" uid="uid://kxqjw53d2for" path="res://panel/portraits/portrait_michel.tscn" id="8_gn1vi"]
+[ext_resource type="PackedScene" uid="uid://c74ek7engj1x8" path="res://panel/portraits/portrait_veronique.tscn" id="10_q5xm5"]
+[ext_resource type="PackedScene" uid="uid://dwln8mmiw7tpp" path="res://panel/inventory.tscn" id="11_bp08c"]
+
+[node name="Level1" type="Node2D"]
+
+[node name="Background" type="Sprite2D" parent="."]
+z_index = -2
+scale = Vector2(0.998438, 1)
+texture = ExtResource("1_hwnem")
+centered = false
+
+[node name="link12" parent="." node_paths=PackedStringArray("node_1", "node_2") instance=ExtResource("2_vckf3")]
+position = Vector2(492, 746)
+node_1 = NodePath("../case1")
+node_2 = NodePath("../case2")
+
+[node name="link13" parent="." node_paths=PackedStringArray("node_1", "node_2") instance=ExtResource("2_vckf3")]
+position = Vector2(492, 746)
+node_1 = NodePath("../case1")
+node_2 = NodePath("../case3")
+
+[node name="link23" parent="." node_paths=PackedStringArray("node_1", "node_2") instance=ExtResource("2_vckf3")]
+position = Vector2(492, 746)
+node_1 = NodePath("../case2")
+node_2 = NodePath("../case3")
+
+[node name="case1" parent="." instance=ExtResource("3_r056e")]
+z_index = 1
+position = Vector2(351, 362)
+
+[node name="case2" parent="." instance=ExtResource("3_r056e")]
+z_index = 1
+position = Vector2(778, 362)
+
+[node name="case3" parent="." instance=ExtResource("3_r056e")]
+z_index = 1
+position = Vector2(598, 657)
+
+[node name="case4" parent="." instance=ExtResource("3_r056e")]
+z_index = 1
+position = Vector2(978, 661)
+is_trespaser_node = true
+
+[node name="Separation" type="Sprite2D" parent="."]
+position = Vector2(1227, 537)
+scale = Vector2(0.772727, 0.772727)
+texture = ExtResource("4_wdssx")
+
+[node name="Portrait1" parent="." instance=ExtResource("5_jde74")]
+position = Vector2(1358, 276)
+portrait_number = 1
+
+[node name="Portrait2" parent="." instance=ExtResource("10_q5xm5")]
+position = Vector2(1613, 321)
+portrait_number = 2
+
+[node name="Portrait3" parent="." instance=ExtResource("7_beoto")]
+position = Vector2(1358, 561)
+portrait_number = 3
+
+[node name="Portrait4" parent="." instance=ExtResource("8_gn1vi")]
+position = Vector2(1606, 614)
+portrait_number = 4
+
+[node name="Inventory" parent="." instance=ExtResource("11_bp08c")]
+position = Vector2(1596, 469)
