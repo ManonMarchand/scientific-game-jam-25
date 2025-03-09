@@ -41,5 +41,7 @@ offset_top = 274.0
 offset_right = 1724.0
 offset_bottom = 536.0
 theme = SubResource("Theme_o03ch")
-text = "L’environnement est bien plus vaste ici ! "
+text = "Enfin arrivé dans un nouveau clan ! Pour m’intégrer à mes nouveaux congénères, je vais essayer de comprendre leurs relations et débusquer le robot intrus qui nous observe en cachette…
+Généralement, les bons amis passent du temps à s’épouiller !
+"
 autowrap_mode = 2
