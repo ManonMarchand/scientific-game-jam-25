@@ -4,6 +4,7 @@ extends Node2D
 var current_level = 1
 const level_path = "res://levels/level_"
 const intro_path = "res://game/transitions/transition"
+const end_path = "res://game/end.tcsn"
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
@@ -35,7 +36,7 @@ func clean_manager():
 	
 func _on_next_level():
 	if current_level == nb_level:
-		pass  # écran de fin
+		get_tree().change_scene_to_file(end_path)
 		return
 	clean_manager()
 	current_level += 1
