@@ -13,7 +13,7 @@ func _ready() -> void:
 	PlayerVariables.transition_done.connect(_on_end_transition)
 	
 	# Launch first level
-	#load_level(current_level)
+	load_intro(current_level)
 
 
 func load_level(i: int):
@@ -23,7 +23,9 @@ func load_level(i: int):
 
 func load_intro(i: int):
 	var path = intro_path + str(i) + ".tscn"
+	print(path)
 	var scene: PackedScene = load(path)
+	print(scene)
 	add_child(scene.instantiate())
 
 
