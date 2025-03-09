@@ -1,17 +1,17 @@
-[gd_scene load_steps=4 format=3 uid="uid://bhasj52uqeui7"]
+[gd_scene load_steps=4 format=3 uid="uid://cbnjlpltvwv7"]
 
-[ext_resource type="Script" path="res://stage/stage.gd" id="1_f3bpk"]
-[ext_resource type="PackedScene" uid="uid://cd8g353hqck3h" path="res://switch-panel/switch_panel.tscn" id="2_5oi7c"]
-[ext_resource type="PackedScene" uid="uid://c4ysry6xndv5u" path="res://player/player.tscn" id="3_fb15x"]
+[ext_resource type="Script" path="res://stage/stage.gd" id="1_2tybv"]
+[ext_resource type="PackedScene" uid="uid://cd8g353hqck3h" path="res://switch-panel/switch_panel.tscn" id="2_11k5o"]
+[ext_resource type="PackedScene" uid="uid://c4ysry6xndv5u" path="res://player/player.tscn" id="3_off3d"]
 
 [node name="Stage2" type="Node2D"]
-script = ExtResource("1_f3bpk")
+script = ExtResource("1_2tybv")
 
-[node name="SwitchPanel" parent="." instance=ExtResource("2_5oi7c")]
+[node name="SwitchPanel" parent="." instance=ExtResource("2_11k5o")]
 z_index = 10
 panel_scene = null
 
-[node name="Player" parent="." instance=ExtResource("3_fb15x")]
+[node name="Player" parent="." instance=ExtResource("3_off3d")]
 z_index = 1
 position = Vector2(284, 696)
 

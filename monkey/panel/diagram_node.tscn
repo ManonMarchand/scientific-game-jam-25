@@ -1,10 +1,10 @@
 [gd_scene load_steps=4 format=3 uid="uid://xj4y42plc61i"]
 
 [ext_resource type="Script" path="res://panel/diagram_node.gd" id="1_m4sxd"]
-[ext_resource type="Texture2D" uid="uid://b5deocrr6uyjo" path="res://assets/diagram_panel/portait_place.png" id="2_rcg3s"]
+[ext_resource type="Texture2D" uid="uid://b3k623etvkqi5" path="res://assets/panel/emplacement_portrait.png" id="2_ug8gg"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_3qel4"]
-size = Vector2(99, 100)
+size = Vector2(252, 274)
 
 [node name="diagram_node" type="StaticBody2D" groups=["dropable_area"]]
 script = ExtResource("1_m4sxd")
@@ -14,5 +14,5 @@ shape = SubResource("RectangleShape2D_3qel4")
 
 [node name="ColorRect" type="Sprite2D" parent="."]
 modulate = Color(0.498039, 1, 0.831373, 0.5)
-scale = Vector2(0.15, 0.15)
-texture = ExtResource("2_rcg3s")
+scale = Vector2(1.109, 1.109)
+texture = ExtResource("2_ug8gg")
