@@ -3,13 +3,10 @@ class_name Portrait
 
 extends Node2D
 
+
 @export_group("Portrait properties")
 @export
 var portrait_number: int
-@export
-var portrait_image: Texture:
-	set(x):
-		$Sprite2D.texture = x
 	
 var can_be_dragged: bool = false
 var can_be_dropped: bool = false
@@ -23,6 +20,7 @@ var initial_position: Vector2
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
 	PlayerVariables.player_clicked_monkey.connect(_player_clicked_monkey)
+	
 	
 
 func _input(event: InputEvent) -> void:
