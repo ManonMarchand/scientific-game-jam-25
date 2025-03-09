@@ -4,15 +4,15 @@
 [ext_resource type="Texture2D" uid="uid://b3k623etvkqi5" path="res://assets/panel/emplacement_portrait.png" id="2_ug8gg"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_3qel4"]
-size = Vector2(252, 274)
+size = Vector2(136, 129)
 
 [node name="diagram_node" type="StaticBody2D" groups=["dropable_area"]]
 script = ExtResource("1_m4sxd")
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-shape = SubResource("RectangleShape2D_3qel4")
-
 [node name="ColorRect" type="Sprite2D" parent="."]
 modulate = Color(0.498039, 1, 0.831373, 0.5)
-scale = Vector2(1.109, 1.109)
+scale = Vector2(0.644547, 0.644547)
 texture = ExtResource("2_ug8gg")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("RectangleShape2D_3qel4")

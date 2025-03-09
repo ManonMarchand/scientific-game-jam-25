@@ -4,7 +4,7 @@
 [ext_resource type="Texture2D" uid="uid://ox7ssda0lmiy" path="res://assets/cadres/cadre_ginette.png" id="2_i3w3x"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_7vpmn"]
-size = Vector2(220, 220)
+size = Vector2(168, 181)
 
 [node name="Portrait" type="Node2D" groups=["dropable_area"]]
 script = ExtResource("1_tl56b")
@@ -12,6 +12,7 @@ script = ExtResource("1_tl56b")
 [node name="Area2D" type="Area2D" parent="."]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+position = Vector2(-3, -0.5)
 shape = SubResource("RectangleShape2D_7vpmn")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
