@@ -59,13 +59,13 @@ var animations_correspondances: Dictionary = {
 	21: &"onsen_jean",
 	22: &"onsen_michel",
 	23: &"onsen_paul",
-	25: &"onsen_veronique",
-	26: &"patate_ginette",
-	27: &"patate_jacques",
-	28: &"patate_jean",
-	29: &"patate_michel",
-	30: &"patate_paul",
-	31: &"patate_veronique"
+	24: &"onsen_veronique",
+	25: &"patate_ginette",
+	26: &"patate_jacques",
+	27: &"patate_jean",
+	28: &"patate_michel",
+	29: &"patate_paul",
+	30: &"patate_veronique"
 }
 
 @export_group("Monkey Properties")
