@@ -1,0 +1,11 @@
+[gd_scene load_steps=3 format=3 uid="uid://cbj2vgcli1vx"]
+
+[ext_resource type="Script" path="res://assets/sounds/ambiance/audio.gd" id="1_aaygd"]
+[ext_resource type="AudioStream" uid="uid://crwh8aufj05g" path="res://assets/sounds/ambiance/MUSIQUE_NEIGE_BASE.wav" id="2_0qi80"]
+
+[node name="Audio" type="Node2D"]
+script = ExtResource("1_aaygd")
+
+[node name="MusiqueNeigeBase" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("2_0qi80")
+autoplay = true

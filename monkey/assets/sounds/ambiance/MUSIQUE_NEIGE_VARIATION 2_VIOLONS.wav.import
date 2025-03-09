@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://bue4kxiwndh2a"
+path="res://.godot/imported/MUSIQUE_NEIGE_VARIATION 2_VIOLONS.wav-0000a7b372e5b84199451b38bb64396f.sample"
+
+[deps]
+
+source_file="res://assets/sounds/ambiance/MUSIQUE_NEIGE_VARIATION 2_VIOLONS.wav"
+dest_files=["res://.godot/imported/MUSIQUE_NEIGE_VARIATION 2_VIOLONS.wav-0000a7b372e5b84199451b38bb64396f.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=0

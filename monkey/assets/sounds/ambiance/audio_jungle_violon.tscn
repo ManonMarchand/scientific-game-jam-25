@@ -1,0 +1,11 @@
+[gd_scene load_steps=3 format=3 uid="uid://4jkown1bb062"]
+
+[ext_resource type="Script" path="res://assets/sounds/ambiance/audio.gd" id="1_lem74"]
+[ext_resource type="AudioStream" uid="uid://hm5ld1rn4fxd" path="res://assets/sounds/ambiance/MUSIQUE_JUNGLE_VARIATION 2_VIOLONS.wav" id="2_ceruk"]
+
+[node name="Audio" type="Node2D"]
+script = ExtResource("1_lem74")
+
+[node name="MusiqueJungleVariation2Violons" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("2_ceruk")
+autoplay = true

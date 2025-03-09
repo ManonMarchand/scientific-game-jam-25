@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://bv0dbx3k071f2"
+path="res://.godot/imported/MUSIQUE_NEIGE_VARIATION 1_PIANO.wav-954070f7a3e99445bbaabec4dfd38859.sample"
+
+[deps]
+
+source_file="res://assets/sounds/ambiance/MUSIQUE_NEIGE_VARIATION 1_PIANO.wav"
+dest_files=["res://.godot/imported/MUSIQUE_NEIGE_VARIATION 1_PIANO.wav-954070f7a3e99445bbaabec4dfd38859.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=0
