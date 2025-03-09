@@ -4,7 +4,7 @@
 [ext_resource type="Texture2D" uid="uid://b5deocrr6uyjo" path="res://assets/diagram_panel/portait_place.png" id="1_qj77t"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_8xq8n"]
-size = Vector2(300, 600)
+size = Vector2(500, 1080)
 
 [node name="Inventory" type="StaticBody2D" groups=["dropable_area", "inventory"]]
 script = ExtResource("1_ln1cf")
@@ -13,6 +13,7 @@ script = ExtResource("1_ln1cf")
 shape = SubResource("RectangleShape2D_8xq8n")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
+visible = false
 modulate = Color(1, 0.894118, 0.768627, 0.7)
 position = Vector2(3.99999, -2.99997)
 scale = Vector2(0.370277, 0.758186)

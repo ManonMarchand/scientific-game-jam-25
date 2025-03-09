@@ -4,7 +4,7 @@
 [ext_resource type="Texture2D" uid="uid://dgba502lpth16" path="res://assets/cadres/cadre_jean.png" id="2_27rq0"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_7vpmn"]
-size = Vector2(220, 220)
+size = Vector2(170, 184)
 
 [node name="Portrait" type="Node2D" groups=["dropable_area"]]
 script = ExtResource("1_etkre")
@@ -12,6 +12,7 @@ script = ExtResource("1_etkre")
 [node name="Area2D" type="Area2D" parent="."]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+position = Vector2(1, -1)
 shape = SubResource("RectangleShape2D_7vpmn")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
