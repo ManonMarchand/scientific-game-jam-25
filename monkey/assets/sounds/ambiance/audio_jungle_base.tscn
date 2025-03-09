@@ -9,4 +9,3 @@ script = ExtResource("1_qui0k")
 [node name="MusiqueJungleBase" type="AudioStreamPlayer" parent="."]
 stream = ExtResource("2_am7wf")
 autoplay = true
-stream_paused = true

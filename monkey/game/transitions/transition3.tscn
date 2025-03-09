@@ -1,0 +1,46 @@
+[gd_scene load_steps=7 format=3 uid="uid://3h13hv8x10sa"]
+
+[ext_resource type="Script" path="res://game/transitions/transition_1.gd" id="1_haggr"]
+[ext_resource type="Texture2D" uid="uid://dq0nm8qnasqy3" path="res://assets/game_ui/ecran_inter_niveau/SINGE_PENSIF_FRAME 1.png" id="2_anm3v"]
+[ext_resource type="Texture2D" uid="uid://kpo3j3ck8bco" path="res://assets/game_ui/ecran_inter_niveau/SINGE_PENSIF_FRAME 2.png" id="3_n2ipi"]
+[ext_resource type="FontFile" uid="uid://dv2a4yk6s3fmj" path="res://assets/game_ui/hvd_edding.otf" id="4_x5qbl"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_1ipj1"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_anm3v")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_n2ipi")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[sub_resource type="Theme" id="Theme_o03ch"]
+default_font = ExtResource("4_x5qbl")
+default_font_size = 40
+
+[node name="Transition" type="Node2D"]
+script = ExtResource("1_haggr")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+position = Vector2(965, 542)
+sprite_frames = SubResource("SpriteFrames_1ipj1")
+
+[node name="Control" type="ColorRect" parent="."]
+offset_right = 1921.0
+offset_bottom = 1070.0
+color = Color(0, 0, 0, 0.176471)
+
+[node name="Label" type="Label" parent="."]
+offset_left = 807.0
+offset_top = 274.0
+offset_right = 1724.0
+offset_bottom = 536.0
+theme = SubResource("Theme_o03ch")
+text = "Enfin arrivé dans un nouveau clan ! Pour m’intégrer à mes nouveaux congénères, je vais essayer de comprendre leurs relations et débusquer le robot intrus qui nous observe en cachette…
+Généralement, les bons amis passent du temps à s’épouiller !"
+autowrap_mode = 2
