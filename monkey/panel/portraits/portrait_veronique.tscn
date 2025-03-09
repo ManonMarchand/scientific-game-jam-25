@@ -1,0 +1,23 @@
+[gd_scene load_steps=4 format=3 uid="uid://c74ek7engj1x8"]
+
+[ext_resource type="Script" path="res://panel/portraits/portrait.gd" id="1_hwbgo"]
+[ext_resource type="Texture2D" uid="uid://ifvk1e2l4xis" path="res://assets/cadres/cadre_veronique.png" id="2_eop32"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_7vpmn"]
+size = Vector2(220, 220)
+
+[node name="Portrait" type="Node2D"]
+script = ExtResource("1_hwbgo")
+
+[node name="Area2D" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+shape = SubResource("RectangleShape2D_7vpmn")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("2_eop32")
+
+[connection signal="body_entered" from="Area2D" to="." method="_on_area_2d_body_entered"]
+[connection signal="body_exited" from="Area2D" to="." method="_on_area_2d_body_exited"]
+[connection signal="mouse_entered" from="Area2D" to="." method="_on_area_2d_mouse_entered"]
+[connection signal="mouse_exited" from="Area2D" to="." method="_on_area_2d_mouse_exited"]
