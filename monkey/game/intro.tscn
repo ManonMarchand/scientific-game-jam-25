@@ -18,3 +18,11 @@ text = "Appuyez sur n'importe quelle touche pour commencer..."
 [node name="Sprite2D" type="Sprite2D" parent="."]
 position = Vector2(940, 343)
 texture = ExtResource("2_4bwe5")
+
+[node name="Label2" type="Label" parent="."]
+offset_left = 435.0
+offset_top = 680.0
+offset_right = 1482.0
+offset_bottom = 737.0
+theme = ExtResource("2_5dqlw")
+text = "Reconnaît les macaques, Reconstitue le réseau, Trouve l’intrus !"

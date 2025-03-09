@@ -9,3 +9,5 @@ signal layton_event(monkey_identified: bool)
 
 signal next_level()
 signal replay_level()
+
+signal transition_done()
