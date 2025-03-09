@@ -10,9 +10,10 @@ func _ready() -> void:
 	# Connect signals
 	PlayerVariables.next_level.connect(_on_next_level)
 	PlayerVariables.replay_level.connect(_on_replay_level)
+	PlayerVariables.transition_done.connect(_on_end_transition)
 	
 	# Launch first level
-	load_level(current_level)
+	#load_level(current_level)
 
 
 func load_level(i: int):
@@ -41,3 +42,8 @@ func _on_next_level():
 func _on_replay_level():
 	clean_manager()
 	load_intro(current_level)
+
+func _on_end_transition():
+	clean_manager()
+	load_level(current_level)
+	
