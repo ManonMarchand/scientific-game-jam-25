@@ -1,21 +1,21 @@
-[gd_scene load_steps=7 format=3 uid="uid://ctx2mrt3aennh"]
+[gd_scene load_steps=7 format=3 uid="uid://cjd5gooe8ukm"]
 
-[ext_resource type="Script" path="res://stage/stage.gd" id="1_s4esh"]
-[ext_resource type="PackedScene" uid="uid://cgho70gaqq117" path="res://levels/level_3/substage_3_1.tscn" id="2_888gr"]
-[ext_resource type="PackedScene" uid="uid://cd8g353hqck3h" path="res://switch-panel/switch_panel.tscn" id="2_f3kl2"]
-[ext_resource type="PackedScene" uid="uid://c4ysry6xndv5u" path="res://player/player.tscn" id="3_1ag4o"]
-[ext_resource type="PackedScene" uid="uid://dw0osuuj056bv" path="res://levels/level_3/substage_3_2.tscn" id="3_sq0hw"]
-[ext_resource type="PackedScene" uid="uid://sni25viakfdc" path="res://levels/level_3/level_3_panel.tscn" id="5_hcxmi"]
+[ext_resource type="Script" path="res://stage/stage.gd" id="1_nkm7g"]
+[ext_resource type="PackedScene" uid="uid://cd8g353hqck3h" path="res://switch-panel/switch_panel.tscn" id="2_a1vag"]
+[ext_resource type="PackedScene" uid="uid://cuwqkxotsq1ef" path="res://levels/level_3/substage_3_1.tscn" id="2_csuqn"]
+[ext_resource type="PackedScene" uid="uid://c4ysry6xndv5u" path="res://player/player.tscn" id="3_6qpo0"]
+[ext_resource type="PackedScene" uid="uid://b2nl16tl71rjc" path="res://levels/level_3/substage_3_2.tscn" id="3_lsvae"]
+[ext_resource type="PackedScene" uid="uid://gl2dk4mr25j5" path="res://levels/level_3/panel_3.tscn" id="3_x16rd"]
 
 [node name="Stage2" type="Node2D"]
-script = ExtResource("1_s4esh")
-substage_list = Array[PackedScene]([ExtResource("2_888gr"), ExtResource("3_sq0hw")])
+script = ExtResource("1_nkm7g")
+substage_list = Array[PackedScene]([ExtResource("2_csuqn"), ExtResource("3_lsvae")])
 
-[node name="SwitchPanel" parent="." instance=ExtResource("2_f3kl2")]
+[node name="SwitchPanel" parent="." instance=ExtResource("2_a1vag")]
 z_index = 10
-panel_scene = ExtResource("5_hcxmi")
+panel_scene = ExtResource("3_x16rd")
 
-[node name="Player" parent="." instance=ExtResource("3_1ag4o")]
+[node name="Player" parent="." instance=ExtResource("3_6qpo0")]
 z_index = 1
 position = Vector2(284, 696)
 

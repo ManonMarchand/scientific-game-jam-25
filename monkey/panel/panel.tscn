@@ -39,30 +39,27 @@ position = Vector2(552, 701)
 is_trespaser_node = true
 
 [node name="Separation" type="Sprite2D" parent="."]
-position = Vector2(1079, 473)
+position = Vector2(1227, 537)
 scale = Vector2(0.772727, 0.772727)
 texture = ExtResource("6_xpm88")
 
-[node name="Inventory" parent="." instance=ExtResource("5_8ng2e")]
-visible = false
-z_index = -1
-position = Vector2(1423, 496)
-scale = Vector2(2.39909, -1.55216)
-
 [node name="Portrait" parent="." instance=ExtResource("6_n656f")]
-position = Vector2(1264, 202)
+position = Vector2(1314, 276)
 
 [node name="Portrait2" parent="." instance=ExtResource("7_xmoem")]
-position = Vector2(1566, 192)
+position = Vector2(1586, 298)
 
 [node name="Portrait3" parent="." instance=ExtResource("8_unfkg")]
-position = Vector2(1286, 460)
+position = Vector2(1336, 516)
 
 [node name="Portrait4" parent="." instance=ExtResource("9_coaba")]
-position = Vector2(1548, 420)
+position = Vector2(1596, 524)
 
 [node name="Portrait5" parent="." instance=ExtResource("10_aqqvg")]
-position = Vector2(1286, 694)
+position = Vector2(1312, 802)
 
 [node name="Portrait6" parent="." instance=ExtResource("11_q52m4")]
-position = Vector2(1578, 674)
+position = Vector2(1578, 780)
+
+[node name="Inventory" parent="." instance=ExtResource("5_8ng2e")]
+position = Vector2(1596, 470)
