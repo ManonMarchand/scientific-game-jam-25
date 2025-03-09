@@ -1,7 +1,7 @@
 [gd_scene load_steps=4 format=3 uid="uid://e2nx7xtg5gpt"]
 
 [ext_resource type="Script" path="res://panel/portraits/portrait.gd" id="1_5thyg"]
-[ext_resource type="Texture2D" uid="uid://ox7ssda0lmiy" path="res://assets/cadres/cadre_ginette.png" id="2_o8qqr"]
+[ext_resource type="Texture2D" uid="uid://csfnshaenwrxr" path="res://assets/cadres/cadre_jacques.png" id="2_d3bqg"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_7vpmn"]
 size = Vector2(220, 220)
@@ -15,7 +15,7 @@ script = ExtResource("1_5thyg")
 shape = SubResource("RectangleShape2D_7vpmn")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
-texture = ExtResource("2_o8qqr")
+texture = ExtResource("2_d3bqg")
 
 [connection signal="body_entered" from="Area2D" to="." method="_on_area_2d_body_entered"]
 [connection signal="body_exited" from="Area2D" to="." method="_on_area_2d_body_exited"]

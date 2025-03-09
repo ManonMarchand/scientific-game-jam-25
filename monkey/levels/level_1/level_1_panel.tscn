@@ -1,9 +1,11 @@
-[gd_scene load_steps=5 format=3 uid="uid://csjksxnleujnl"]
+[gd_scene load_steps=7 format=3 uid="uid://csjksxnleujnl"]
 
 [ext_resource type="PackedScene" uid="uid://xj4y42plc61i" path="res://panel/diagram_node.tscn" id="1_02n26"]
 [ext_resource type="PackedScene" uid="uid://dwln8mmiw7tpp" path="res://panel/inventory.tscn" id="2_4qcb3"]
 [ext_resource type="PackedScene" uid="uid://bu53lurbsq12e" path="res://panel/link.tscn" id="3_e3sxs"]
-[ext_resource type="PackedScene" uid="uid://m0h11i3p4wpb" path="res://panel/portrait.tscn" id="3_yv04q"]
+[ext_resource type="PackedScene" uid="uid://nrrbs5nq11tj" path="res://panel/portraits/portrait_ginette.tscn" id="4_otcl8"]
+[ext_resource type="PackedScene" uid="uid://e2nx7xtg5gpt" path="res://panel/portraits/portrait_jacques.tscn" id="5_owo07"]
+[ext_resource type="PackedScene" uid="uid://kxqjw53d2for" path="res://panel/portraits/portrait_michel.tscn" id="6_2d3gd"]
 
 [node name="Level1" type="Node2D"]
 
@@ -22,18 +24,15 @@ position = Vector2(732, 239)
 position = Vector2(498, 451)
 is_trespaser_node = true
 
-[node name="Portrait" parent="." instance=ExtResource("3_yv04q")]
-position = Vector2(1238, 201)
-portrait_number = 1
-
-[node name="Portrait2" parent="." instance=ExtResource("3_yv04q")]
-position = Vector2(1240, 362)
-portrait_number = 2
-
-[node name="Portrait3" parent="." instance=ExtResource("3_yv04q")]
-position = Vector2(1225, 523)
-portrait_number = 3
-
 [node name="Inventory" parent="." instance=ExtResource("2_4qcb3")]
 z_index = -1
 position = Vector2(1492, 401)
+
+[node name="Portrait" parent="." instance=ExtResource("4_otcl8")]
+position = Vector2(1181, 182)
+
+[node name="Portrait2" parent="." instance=ExtResource("5_owo07")]
+position = Vector2(1171, 424)
+
+[node name="Portrait3" parent="." instance=ExtResource("6_2d3gd")]
+position = Vector2(1176, 686)
