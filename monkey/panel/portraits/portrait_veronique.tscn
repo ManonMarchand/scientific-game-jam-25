@@ -1,13 +1,25 @@
-[gd_scene load_steps=4 format=3 uid="uid://c74ek7engj1x8"]
+[gd_scene load_steps=7 format=3 uid="uid://c74ek7engj1x8"]
 
 [ext_resource type="Script" path="res://panel/portraits/portrait.gd" id="1_hwbgo"]
 [ext_resource type="Texture2D" uid="uid://ifvk1e2l4xis" path="res://assets/cadres/cadre_veronique.png" id="2_eop32"]
+[ext_resource type="AudioStream" uid="uid://dx3j1meq4liqt" path="res://assets/sounds/interface/INTERFACE/SON_INTERFACE_JETON_LACHAGE.mp3" id="2_kn4bv"]
+[ext_resource type="AudioStream" uid="uid://dnprv3dfk4kt5" path="res://assets/sounds/interface/INTERFACE/SON_INTERFACE_JETON_PLACAGE.mp3" id="3_i3yv0"]
+[ext_resource type="AudioStream" uid="uid://bmrlam5ws36yk" path="res://assets/sounds/interface/INTERFACE/SON_INTERFACE_JETON_PRISE EN MAIN.mp3" id="4_jeqxk"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_7vpmn"]
 size = Vector2(220, 220)
 
 [node name="Portrait" type="Node2D" groups=["portrait"]]
 script = ExtResource("1_hwbgo")
+
+[node name="SonInterfaceJetonLachage" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("2_kn4bv")
+
+[node name="SonInterfaceJetonPlacage" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("3_i3yv0")
+
+[node name="SonInterfaceJetonPriseEnMain" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("4_jeqxk")
 
 [node name="Area2D" type="Area2D" parent="."]
 

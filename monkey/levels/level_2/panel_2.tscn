@@ -12,6 +12,9 @@
 
 [node name="Level1" type="Node2D"]
 
+[node name="Inventory" parent="." instance=ExtResource("5_fa36r")]
+position = Vector2(1482, 517)
+
 [node name="Background" type="Sprite2D" parent="."]
 z_index = -2
 scale = Vector2(0.998438, 1)
@@ -51,7 +54,6 @@ portrait_number = 3
 
 [node name="Portrait2" parent="." instance=ExtResource("6_yijl4")]
 position = Vector2(1342, 478)
-portrait_number = 2
 
 [node name="Portrait3" parent="." instance=ExtResource("9_rhj6e")]
 position = Vector2(1564, 212)
@@ -59,10 +61,6 @@ portrait_number = 1
 
 [node name="Portrait4" parent="." instance=ExtResource("10_y7oxj")]
 position = Vector2(1316, 208)
-
-[node name="Inventory" parent="." instance=ExtResource("5_fa36r")]
-visible = false
-position = Vector2(1482, 517)
 
 [node name="case3" parent="." instance=ExtResource("3_5dtxo")]
 z_index = 1

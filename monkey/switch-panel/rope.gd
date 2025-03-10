@@ -19,8 +19,10 @@ func _input(event: InputEvent) -> void:
 	if can_click:
 		if event is InputEventMouseButton and event.button_index == MOUSE_BUTTON_LEFT and event.is_pressed():
 			rope_pressed()
+			
 
 func rope_pressed() -> void:
+	$SonInterfaceLianeLachage.play()
 	if is_down:
 		panel_go_up.emit()
 		is_down = false
@@ -36,4 +38,6 @@ func _on_mouse_exited() -> void:
 
 func _on_mouse_entered() -> void:
 	scale = Vector2(1.05, 1.05)
+	$SonInterfaceLianePriseEnMain.play()
 	can_click = true
+	

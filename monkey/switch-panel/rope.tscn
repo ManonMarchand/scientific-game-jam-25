@@ -1,9 +1,11 @@
-[gd_scene load_steps=7 format=3 uid="uid://cqu60r06x6a24"]
+[gd_scene load_steps=9 format=3 uid="uid://cqu60r06x6a24"]
 
 [ext_resource type="Script" path="res://switch-panel/rope.gd" id="1_4sl2t"]
 [ext_resource type="Texture2D" uid="uid://dqwmbpdhdyj6r" path="res://assets/panel/CORDE FRAME 1.png" id="2_6cwbr"]
 [ext_resource type="Texture2D" uid="uid://ba1wms0q3pbcx" path="res://assets/panel/CORDE FRAME 2.png" id="3_1iup7"]
 [ext_resource type="Texture2D" uid="uid://1edyi2jq2h25" path="res://assets/panel/CORDE FRAME 3.png" id="4_4xj14"]
+[ext_resource type="AudioStream" uid="uid://ch5ulgl26bxtj" path="res://assets/sounds/interface/INTERFACE/SON_INTERFACE_LIANE_LACHAGE.mp3" id="5_3u66j"]
+[ext_resource type="AudioStream" uid="uid://bjrhtfxa7egpo" path="res://assets/sounds/interface/INTERFACE/SON_INTERFACE_LIANE_PRISE EN MAIN.mp3" id="6_op3vc"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_w5m56"]
 animations = [{
@@ -38,6 +40,12 @@ frame_progress = 0.417821
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 shape = SubResource("CapsuleShape2D_fuli7")
+
+[node name="SonInterfaceLianeLachage" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("5_3u66j")
+
+[node name="SonInterfaceLianePriseEnMain" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("6_op3vc")
 
 [connection signal="mouse_entered" from="." to="." method="_on_mouse_entered"]
 [connection signal="mouse_exited" from="." to="." method="_on_mouse_exited"]

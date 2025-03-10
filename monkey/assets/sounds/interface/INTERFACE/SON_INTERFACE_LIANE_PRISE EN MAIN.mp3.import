@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://bjrhtfxa7egpo"
+path="res://.godot/imported/SON_INTERFACE_LIANE_PRISE EN MAIN.mp3-68787ad41b482ca998436df6569b78f7.mp3str"
+
+[deps]
+
+source_file="res://assets/sounds/interface/INTERFACE/SON_INTERFACE_LIANE_PRISE EN MAIN.mp3"
+dest_files=["res://.godot/imported/SON_INTERFACE_LIANE_PRISE EN MAIN.mp3-68787ad41b482ca998436df6569b78f7.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

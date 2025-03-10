@@ -28,6 +28,7 @@ func _input(event: InputEvent) -> void:
 			initial_position = global_position
 			offset = get_global_mouse_position() - global_position
 			PlayerVariables.is_player_dragging = true
+			$SonInterfaceJetonPriseEnMain.play()
 		if event is InputEventMouseMotion and PlayerVariables.is_player_dragging == true:
 			global_position = get_global_mouse_position() - offset
 		elif event is InputEventMouseButton and event.is_released() and event.button_index == MOUSE_BUTTON_LEFT:
@@ -39,12 +40,15 @@ func _input(event: InputEvent) -> void:
 			if can_be_dropped:
 				if on_inventory:
 					self.position = get_global_mouse_position() - offset
+					$SonInterfaceJetonLachage.play()
 				else:
+					$SonInterfaceJetonPlacage.play()
 					var tween : Tween = get_tree().create_tween()
 					tween.tween_property(self, "position", reference_to_body.position, 0.2).set_ease(Tween.EASE_OUT)
 					if on_intruder:
 						PlayerVariables.layton_event.emit(portrait_number == PlayerVariables.intruder_monkey_number)
 			else:
+				$SonInterfaceJetonLachage.play()
 				var tween : Tween = get_tree().create_tween()
 				tween.tween_property(self, "position", initial_position, 0.2).set_ease(Tween.EASE_OUT)
 			
