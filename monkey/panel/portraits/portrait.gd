@@ -68,7 +68,6 @@ func _on_area_2d_mouse_exited() -> void:
 func _on_area_2d_body_entered(body: Node2D) -> void:
 	if body.is_in_group("dropable_area"):
 		can_be_dropped = true
-		print("can be dropped")
 		body.modulate = Color.AQUAMARINE
 		reference_to_body = body
 		on_inventory = body.is_in_group("inventory")
@@ -77,7 +76,6 @@ func _on_area_2d_body_entered(body: Node2D) -> void:
 func _on_area_2d_body_exited(body: Node2D) -> void:
 	if body.is_in_group("dropable_area"):
 		can_be_dropped = false
-		print("cannot be dropped")
 		body.modulate = Color(Color.AQUAMARINE, 0.7)
 	if PlayerVariables.is_player_dragging and body.is_in_group("inventory"):
 		was_in_inventory = true

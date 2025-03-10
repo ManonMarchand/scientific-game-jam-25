@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://bx23gk0rthc7h"
+path="res://.godot/imported/SON_COMPORTEMENT_LAVAGE POMME DE TERRE.mp3-b0c14b623a2c6b99cbe9f8aafbf7d9fe.mp3str"
+
+[deps]
+
+source_file="res://assets/sounds/COMPORTEMENTS/SON_COMPORTEMENT_LAVAGE POMME DE TERRE.mp3"
+dest_files=["res://.godot/imported/SON_COMPORTEMENT_LAVAGE POMME DE TERRE.mp3-b0c14b623a2c6b99cbe9f8aafbf7d9fe.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

@@ -1,4 +1,4 @@
-[gd_scene load_steps=65 format=3 uid="uid://cw0aiwfwwm1fo"]
+[gd_scene load_steps=72 format=3 uid="uid://cw0aiwfwwm1fo"]
 
 [ext_resource type="Script" path="res://monkey/monkey.gd" id="1_703qr"]
 [ext_resource type="Texture2D" uid="uid://dxph3ey2pdt6d" path="res://icon.svg" id="1_ek0h2"]
@@ -62,6 +62,13 @@
 [ext_resource type="Texture2D" uid="uid://bsnelygntq0xk" path="res://assets/monkeys/anim_singes/Véronique/patate_Veronique_2.png" id="42_7unq3"]
 [ext_resource type="Texture2D" uid="uid://dl033m4ddw2bs" path="res://assets/monkeys/anim_singes/Jean/patate_Jean_1.png" id="45_rpfjn"]
 [ext_resource type="Texture2D" uid="uid://c7i43b8uvre4i" path="res://assets/monkeys/anim_singes/Jean/patate_Jean_2.png" id="46_ifyb6"]
+[ext_resource type="AudioStream" uid="uid://dgjdtsr7fkrt5" path="res://assets/sounds/COMPORTEMENTS/SON_COMPORTEMENT_SINGE 1.mp3" id="63_33hju"]
+[ext_resource type="AudioStream" uid="uid://y46qo0ab8mco" path="res://assets/sounds/COMPORTEMENTS/SON_COMPORTEMENT_SINGE 2.mp3" id="64_aisv7"]
+[ext_resource type="AudioStream" uid="uid://bul7gm7t625uh" path="res://assets/sounds/COMPORTEMENTS/SON_COMPORTEMENT_SINGE 3.mp3" id="65_n2kye"]
+[ext_resource type="AudioStream" uid="uid://bigmn5h5samjr" path="res://assets/sounds/COMPORTEMENTS/SON_COMPORTEMENT_SINGE 4.mp3" id="66_3pi3f"]
+[ext_resource type="AudioStream" uid="uid://dooa8jvnfl8y0" path="res://assets/sounds/COMPORTEMENTS/SON_COMPORTEMENT_CAILLOU CHOC.mp3" id="67_apgo5"]
+[ext_resource type="AudioStream" uid="uid://swwh7c87atnj" path="res://assets/sounds/COMPORTEMENTS/SON_COMPORTEMENT_GROOMING.mp3" id="68_k8tub"]
+[ext_resource type="AudioStream" uid="uid://bx23gk0rthc7h" path="res://assets/sounds/COMPORTEMENTS/SON_COMPORTEMENT_LAVAGE POMME DE TERRE.mp3" id="69_dyalh"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_wf4h7"]
 radius = 67.0
@@ -425,6 +432,34 @@ frame_progress = 0.0457962
 visible = false
 position = Vector2(53, -40)
 scale = Vector2(0.0878049, 0.0878049)
+
+[node name="ClickSounds" type="Node2D" parent="."]
+
+[node name="SonComportementSinge1" type="AudioStreamPlayer" parent="ClickSounds"]
+stream = ExtResource("63_33hju")
+
+[node name="SonComportementSinge2" type="AudioStreamPlayer" parent="ClickSounds"]
+stream = ExtResource("64_aisv7")
+
+[node name="SonComportementSinge3" type="AudioStreamPlayer" parent="ClickSounds"]
+stream = ExtResource("65_n2kye")
+
+[node name="SonComportementSinge4" type="AudioStreamPlayer" parent="ClickSounds"]
+stream = ExtResource("66_3pi3f")
+
+[node name="ActionsSounds" type="Node2D" parent="."]
+
+[node name="SoundCaillou" type="AudioStreamPlayer2D" parent="ActionsSounds"]
+stream = ExtResource("67_apgo5")
+parameters/looping = true
+
+[node name="SoundGrooming" type="AudioStreamPlayer2D" parent="ActionsSounds"]
+stream = ExtResource("68_k8tub")
+parameters/looping = true
+
+[node name="SoundPatate" type="AudioStreamPlayer2D" parent="ActionsSounds"]
+stream = ExtResource("69_dyalh")
+parameters/looping = true
 
 [connection signal="input_event" from="Area2D" to="." method="_on_area_2d_input_event"]
 [connection signal="mouse_entered" from="Area2D" to="." method="_on_area_2d_mouse_entered"]
