@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://bmrlam5ws36yk"
+path="res://.godot/imported/SON_INTERFACE_JETON_PRISE EN MAIN.mp3-f00a72b0fde0de1722a0014c6c0967b6.mp3str"
+
+[deps]
+
+source_file="res://assets/sounds/interface/INTERFACE/SON_INTERFACE_JETON_PRISE EN MAIN.mp3"
+dest_files=["res://.godot/imported/SON_INTERFACE_JETON_PRISE EN MAIN.mp3-f00a72b0fde0de1722a0014c6c0967b6.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4
