@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://bul7gm7t625uh"
+path="res://.godot/imported/SON_COMPORTEMENT_SINGE 3.mp3-76594b987e9f6ea906688c44042d6c22.mp3str"
+
+[deps]
+
+source_file="res://assets/sounds/COMPORTEMENTS/SON_COMPORTEMENT_SINGE 3.mp3"
+dest_files=["res://.godot/imported/SON_COMPORTEMENT_SINGE 3.mp3-76594b987e9f6ea906688c44042d6c22.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

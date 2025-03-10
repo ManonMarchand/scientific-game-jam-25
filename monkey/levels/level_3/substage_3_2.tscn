@@ -10,33 +10,34 @@
 [node name="Backgroud" type="Sprite2D" parent="."]
 centered = false
 
+[node name="Lvl3PlageArrierePlan2" type="Sprite2D" parent="."]
+z_index = -1
+position = Vector2(960, 542)
+texture = ExtResource("2_6f8ji")
+
 [node name="MonkeyList" type="Node2D" parent="."]
 
 [node name="Monkey1" parent="MonkeyList" instance=ExtResource("1_5pw45")]
 position = Vector2(318, 830)
 monkey_number = 1
-monkey_animation = 7
+monkey_action = 2
 
 [node name="Monkey2" parent="MonkeyList" instance=ExtResource("1_5pw45")]
 position = Vector2(457, 839)
 monkey_number = 3
-monkey_animation = 15
+monkey_name = 2
 
 [node name="Monkey3" parent="MonkeyList" instance=ExtResource("1_5pw45")]
 position = Vector2(888, 826)
 monkey_number = 2
-monkey_animation = 30
+monkey_action = 4
+monkey_name = 5
 
 [node name="Monkey4" parent="MonkeyList" instance=ExtResource("1_5pw45")]
 position = Vector2(1550, 756)
 monkey_number = 4
-monkey_animation = 16
+monkey_name = 3
 monkey_is_intruder = true
-
-[node name="Lvl3PlageArrierePlan2" type="Sprite2D" parent="."]
-z_index = -1
-position = Vector2(960, 542)
-texture = ExtResource("2_6f8ji")
 
 [node name="Audio" parent="." instance=ExtResource("3_upq8s")]
 position = Vector2(2099, 115)

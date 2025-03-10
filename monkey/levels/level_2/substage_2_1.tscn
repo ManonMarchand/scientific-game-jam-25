@@ -15,21 +15,22 @@ centered = false
 [node name="Monkey" parent="MonkeyList" instance=ExtResource("1_xdae7")]
 position = Vector2(1588, 846)
 monkey_number = 1
-monkey_animation = 2
+monkey_action = 1
+monkey_name = 1
 
 [node name="Monkey2" parent="MonkeyList" instance=ExtResource("1_xdae7")]
 position = Vector2(786, 873)
 monkey_number = 2
-monkey_animation = 1
+monkey_action = 1
 
 [node name="Monkey3" parent="MonkeyList" instance=ExtResource("1_xdae7")]
 position = Vector2(1210, 784)
 monkey_number = 3
-monkey_animation = 16
+monkey_name = 3
 
 [node name="Monkey4" parent="MonkeyList" instance=ExtResource("1_xdae7")]
 position = Vector2(2326, 852)
-monkey_animation = 16
+monkey_name = 3
 monkey_is_intruder = true
 
 [node name="Audio" parent="." instance=ExtResource("3_x7ivw")]
