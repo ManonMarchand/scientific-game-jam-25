@@ -6,7 +6,7 @@
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_7vpmn"]
 size = Vector2(220, 220)
 
-[node name="Portrait" type="Node2D" groups=["dropable_area"]]
+[node name="Portrait" type="Node2D" groups=["portrait"]]
 script = ExtResource("1_tdy8s")
 
 [node name="Area2D" type="Area2D" parent="."]

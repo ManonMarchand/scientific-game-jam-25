@@ -6,7 +6,7 @@
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_7vpmn"]
 size = Vector2(170, 191)
 
-[node name="Portrait" type="Node2D"]
+[node name="Portrait" type="Node2D" groups=["portrait"]]
 script = ExtResource("1_5thyg")
 metadata/_edit_horizontal_guides_ = [-92.0]
 

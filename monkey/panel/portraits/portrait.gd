@@ -20,8 +20,7 @@ var initial_position: Vector2
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
 	PlayerVariables.player_clicked_monkey.connect(_player_clicked_monkey)
-	
-	
+
 
 func _input(event: InputEvent) -> void:
 	if can_be_dragged:
@@ -34,8 +33,9 @@ func _input(event: InputEvent) -> void:
 		elif event is InputEventMouseButton and event.is_released() and event.button_index == MOUSE_BUTTON_LEFT:
 			was_in_inventory = false
 			PlayerVariables.is_player_dragging = false
-			if len($Area2D.get_overlapping_areas()) > 0:
-				can_be_dropped = false
+			for area: Area2D in $Area2D.get_overlapping_areas():
+				if area.is_in_group("portrait"):
+					can_be_dropped = false
 			if can_be_dropped:
 				if on_inventory:
 					self.position = get_global_mouse_position() - offset
