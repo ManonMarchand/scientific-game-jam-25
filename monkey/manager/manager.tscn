@@ -4,4 +4,4 @@
 
 [node name="Manager" type="Node2D"]
 script = ExtResource("1_lm1j0")
-nb_level = 1
+nb_level = 3
