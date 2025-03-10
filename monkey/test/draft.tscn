@@ -13,7 +13,7 @@
 script = ExtResource("1_hp4xy")
 
 [node name="Monkey3" parent="." instance=ExtResource("1_gp1gk")]
-position = Vector2(308, 873)
+position = Vector2(623, 600)
 monkey_number = 3
 monkey_animation = 4
 monkey_is_intruder = true
