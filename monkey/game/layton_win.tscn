@@ -1,6 +1,7 @@
-[gd_scene load_steps=3 format=3 uid="uid://deifecheulsfg"]
+[gd_scene load_steps=4 format=3 uid="uid://deifecheulsfg"]
 
 [ext_resource type="Script" path="res://game/layton_win.gd" id="1_lr4dl"]
+[ext_resource type="AudioStream" uid="uid://dlfwwjmchcwln" path="res://assets/sounds/WIN-LOOSE/SON VICTOIRE.mp3" id="3_2k8qc"]
 [ext_resource type="Texture2D" uid="uid://cywsh1xk1qivd" path="res://assets/game_ui/ecran_layton/ILLU_WIN.png" id="3_5nnpf"]
 
 [node name="LaytonWin" type="Node2D"]
@@ -15,3 +16,6 @@ offset_bottom = 1193.0
 [node name="Sprite2D" type="Sprite2D" parent="."]
 position = Vector2(963, 536)
 texture = ExtResource("3_5nnpf")
+
+[node name="SonVictoire" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("3_2k8qc")
