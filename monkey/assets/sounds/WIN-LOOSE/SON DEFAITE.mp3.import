@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://dutn2mv4w44tb"
+path="res://.godot/imported/SON DEFAITE.mp3-786655c68ff861eec4c8debe6c64d5fa.mp3str"
+
+[deps]
+
+source_file="res://assets/sounds/WIN-LOOSE/SON DEFAITE.mp3"
+dest_files=["res://.godot/imported/SON DEFAITE.mp3-786655c68ff861eec4c8debe6c64d5fa.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4
