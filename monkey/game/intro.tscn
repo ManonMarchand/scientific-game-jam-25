@@ -1,11 +1,8 @@
-[gd_scene load_steps=7 format=3 uid="uid://b2e7yoamjm6gs"]
+[gd_scene load_steps=4 format=3 uid="uid://b2e7yoamjm6gs"]
 
 [ext_resource type="Script" path="res://game/intro.gd" id="1_pu7ta"]
 [ext_resource type="Texture2D" uid="uid://cw6pcj67wllb1" path="res://assets/intro/logo.png" id="2_4bwe5"]
 [ext_resource type="Theme" uid="uid://dpdiloka1t8xb" path="res://game/theme.tres" id="2_5dqlw"]
-[ext_resource type="AudioStream" uid="uid://dx3j1meq4liqt" path="res://assets/sounds/interface/INTERFACE/SON_INTERFACE_JETON_LACHAGE.mp3" id="4_yhr8a"]
-[ext_resource type="AudioStream" uid="uid://dnprv3dfk4kt5" path="res://assets/sounds/interface/INTERFACE/SON_INTERFACE_JETON_PLACAGE.mp3" id="5_eyl12"]
-[ext_resource type="AudioStream" uid="uid://bmrlam5ws36yk" path="res://assets/sounds/interface/INTERFACE/SON_INTERFACE_JETON_PRISE EN MAIN.mp3" id="6_aikwj"]
 
 [node name="Intro" type="Node2D"]
 script = ExtResource("1_pu7ta")
@@ -29,12 +26,3 @@ offset_right = 1482.0
 offset_bottom = 737.0
 theme = ExtResource("2_5dqlw")
 text = "Reconnaît les macaques, Reconstitue le réseau, Trouve l’intrus !"
-
-[node name="SonInterfaceJetonLachage" type="AudioStreamPlayer" parent="."]
-stream = ExtResource("4_yhr8a")
-
-[node name="SonInterfaceJetonPlacage" type="AudioStreamPlayer" parent="."]
-stream = ExtResource("5_eyl12")
-
-[node name="SonInterfaceJetonPriseEnMain" type="AudioStreamPlayer" parent="."]
-stream = ExtResource("6_aikwj")
