@@ -1,11 +1,10 @@
-[gd_scene load_steps=9 format=3 uid="uid://d155qsi0t52r5"]
+[gd_scene load_steps=8 format=3 uid="uid://d155qsi0t52r5"]
 
 [ext_resource type="PackedScene" uid="uid://cw0aiwfwwm1fo" path="res://monkey/monkey.tscn" id="1_gp1gk"]
 [ext_resource type="Script" path="res://panel/portraits/portrait.gd" id="1_hp4xy"]
 [ext_resource type="PackedScene" uid="uid://dwln8mmiw7tpp" path="res://panel/inventory.tscn" id="5_b6nir"]
 [ext_resource type="PackedScene" uid="uid://xj4y42plc61i" path="res://panel/diagram_node.tscn" id="5_x5s1r"]
 [ext_resource type="AudioStream" uid="uid://dv7v81rgw8irl" path="res://assets/sounds/ambiance/MUSIQUE_JUNGLE_BASE.wav" id="7_iasma"]
-[ext_resource type="PackedScene" uid="uid://8nimbq03ewnt" path="res://assets/sounds/ambiance/audio_jungle_base.tscn" id="7_nxhgl"]
 [ext_resource type="PackedScene" uid="uid://e2nx7xtg5gpt" path="res://panel/portraits/portrait_jacques.tscn" id="8_yyjyt"]
 [ext_resource type="PackedScene" uid="uid://kxqjw53d2for" path="res://panel/portraits/portrait_michel.tscn" id="9_wv8ug"]
 
@@ -25,9 +24,6 @@ is_trespaser_node = true
 position = Vector2(204, 642)
 stream = ExtResource("7_iasma")
 volume_db = 24.0
-
-[node name="Audio" parent="." instance=ExtResource("7_nxhgl")]
-position = Vector2(467, 261)
 
 [node name="Portrait" parent="." instance=ExtResource("8_yyjyt")]
 position = Vector2(1536, 613)
