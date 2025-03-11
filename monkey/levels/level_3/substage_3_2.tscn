@@ -1,11 +1,11 @@
 [gd_scene load_steps=4 format=3 uid="uid://b2nl16tl71rjc"]
 
 [ext_resource type="PackedScene" uid="uid://cw0aiwfwwm1fo" path="res://monkey/monkey.tscn" id="1_5pw45"]
-[ext_resource type="Script" path="res://substage/substage.gd" id="1_x2s0t"]
+[ext_resource type="Script" path="res://substage/substage.gd" id="1_7nxse"]
 [ext_resource type="Texture2D" uid="uid://c1nnqjvdgv5v2" path="res://assets/backgrounds/lvl3_plage_arriere_plan_2.png" id="2_6f8ji"]
 
 [node name="Substage" type="Node2D"]
-script = ExtResource("1_x2s0t")
+script = ExtResource("1_7nxse")
 music_variation = 1
 
 [node name="Backgroud" type="Sprite2D" parent="."]
@@ -39,6 +39,3 @@ position = Vector2(1550, 756)
 monkey_number = 4
 monkey_name = 3
 monkey_is_intruder = true
-
-[node name="Audio" parent="." instance=ExtResource("3_upq8s")]
-position = Vector2(2099, 115)
