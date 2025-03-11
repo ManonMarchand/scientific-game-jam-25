@@ -1,7 +1,10 @@
-[gd_scene load_steps=4 format=3 uid="uid://m0h11i3p4wpb"]
+[gd_scene load_steps=7 format=3 uid="uid://m0h11i3p4wpb"]
 
 [ext_resource type="Script" path="res://panel/portraits/portrait.gd" id="1_tdy8s"]
 [ext_resource type="Texture2D" uid="uid://csfnshaenwrxr" path="res://assets/cadres/cadre_jacques.png" id="2_i8rsk"]
+[ext_resource type="AudioStream" uid="uid://dx3j1meq4liqt" path="res://assets/sounds/interface/INTERFACE/SON_INTERFACE_JETON_LACHAGE.mp3" id="3_7tejo"]
+[ext_resource type="AudioStream" uid="uid://dnprv3dfk4kt5" path="res://assets/sounds/interface/INTERFACE/SON_INTERFACE_JETON_PLACAGE.mp3" id="4_tfcbv"]
+[ext_resource type="AudioStream" uid="uid://bmrlam5ws36yk" path="res://assets/sounds/interface/INTERFACE/SON_INTERFACE_JETON_PRISE EN MAIN.mp3" id="5_s0tqc"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_7vpmn"]
 size = Vector2(220, 220)
@@ -9,13 +12,23 @@ size = Vector2(220, 220)
 [node name="Portrait" type="Node2D" groups=["portrait"]]
 script = ExtResource("1_tdy8s")
 
+[node name="Sprite2D" type="Sprite2D" parent="."]
+unique_name_in_owner = true
+texture = ExtResource("2_i8rsk")
+
 [node name="Area2D" type="Area2D" parent="."]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
 shape = SubResource("RectangleShape2D_7vpmn")
 
-[node name="Sprite2D" type="Sprite2D" parent="."]
-texture = ExtResource("2_i8rsk")
+[node name="SonInterfaceJetonLachage" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("3_7tejo")
+
+[node name="SonInterfaceJetonPlacage" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("4_tfcbv")
+
+[node name="SonInterfaceJetonPriseEnMain" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("5_s0tqc")
 
 [connection signal="body_entered" from="Area2D" to="." method="_on_area_2d_body_entered"]
 [connection signal="body_exited" from="Area2D" to="." method="_on_area_2d_body_exited"]

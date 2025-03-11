@@ -1,7 +1,7 @@
 extends Node
 
 var is_player_dragging: bool = false
-var intruder_monkey_number: int = 0
+var intruder_monkey: PossibleNames
 
 signal player_clicked_monkey(monkey_number: int, select: bool)
 
@@ -14,3 +14,12 @@ signal transition_done()
 
 signal play_music(type: String, variation: String)
 signal stop_music()
+
+enum PossibleNames {
+	GINETTE,
+	JACQUES,
+	JEAN,
+	MICHEL,
+	PAUL,
+	VERONIQUE
+}

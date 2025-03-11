@@ -1,0 +1,13 @@
+[gd_scene load_steps=2 format=3 uid="uid://c63ofx5aau0br"]
+
+[ext_resource type="PackedScene" uid="uid://m0h11i3p4wpb" path="res://panel/portraits/portrait.tscn" id="1_ncpl8"]
+
+[node name="TestPortraits" type="Node2D"]
+
+[node name="Portrait" parent="." instance=ExtResource("1_ncpl8")]
+position = Vector2(392, 261)
+monkey_name = 4
+
+[node name="Portrait2" parent="." instance=ExtResource("1_ncpl8")]
+position = Vector2(763, 288)
+monkey_name = 1
