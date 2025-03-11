@@ -5,5 +5,4 @@ func _ready():
 
 func _input(event: InputEvent) -> void:
 	if event is InputEventKey and event.is_pressed():
-		print("transition done")
 		PlayerVariables.emit_signal("transition_done")
