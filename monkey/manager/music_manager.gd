@@ -19,13 +19,11 @@ func _ready() -> void:
 		var ext = extsplit[1]
 		if len(extsplit) != 2 or ext != "wav":
 			continue
-		print(file)
 		# Create new player
 		var music_path = MUSIC_PATH + "/" + file
 		var player = AudioStreamPlayer.new()
 		var stream = load(music_path)
 		player.stream = stream
-		print(player.stream)
 		
 		# Put player in dict
 		var file_param = filename.split("_")
