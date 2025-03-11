@@ -12,6 +12,8 @@ func _ready() -> void:
 	PlayerVariables.next_level.connect(_on_next_level)
 	PlayerVariables.replay_level.connect(_on_replay_level)
 	PlayerVariables.transition_done.connect(_on_end_transition)
+	PlayerVariables.play_music.connect(_on_play_music)
+	PlayerVariables.stop_music.connect(_on_stop_music)
 	
 	# Launch first level
 	load_intro(current_level)
@@ -23,15 +25,14 @@ func load_level(i: int):
 	add_child(scene.instantiate())
 
 func load_intro(i: int):
+	_on_stop_music()
 	var path = intro_path + str(i) + ".tscn"
-	print(path)
 	var scene: PackedScene = load(path)
-	print(scene)
 	add_child(scene.instantiate())
 
 
 func clean_manager():
-	var child = get_child(0)
+	var child = get_child(1)
 	child.queue_free()
 	
 func _on_next_level():
@@ -50,4 +51,10 @@ func _on_replay_level():
 func _on_end_transition():
 	clean_manager()
 	load_level(current_level)
+
+func _on_play_music(type: String, variation: String):
+	$MusicManager.play(type, variation)
+
+func _on_stop_music():
+	$MusicManager.clean_tree()
 	

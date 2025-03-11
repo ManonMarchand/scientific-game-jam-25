@@ -2,9 +2,9 @@
 
 [ext_resource type="Script" path="res://stage/stage.gd" id="1_gji2g"]
 [ext_resource type="PackedScene" uid="uid://dsixorsmpqwhw" path="res://levels/level_1/substage_1_1.tscn" id="2_1yhj1"]
-[ext_resource type="PackedScene" uid="uid://cd8g353hqck3h" path="res://switch-panel/switch_panel.tscn" id="2_3htmj"]
-[ext_resource type="PackedScene" uid="uid://c4ysry6xndv5u" path="res://player/player.tscn" id="3_bd76i"]
-[ext_resource type="PackedScene" uid="uid://cvjauqvj0teta" path="res://levels/level_1/panel_22.tscn" id="4_kpdem"]
+[ext_resource type="PackedScene" uid="uid://cd8g353hqck3h" path="res://switch-panel/switch_panel.tscn" id="2_4a3em"]
+[ext_resource type="PackedScene" uid="uid://c4ysry6xndv5u" path="res://player/player.tscn" id="3_1qxo2"]
+[ext_resource type="PackedScene" uid="uid://m8udn0y3kpfp" path="res://levels/level_1/panel_1.tscn" id="4_mjpo4"]
 
 [node name="Stage2" type="Node2D"]
 script = ExtResource("1_gji2g")
@@ -12,7 +12,7 @@ substage_list = Array[PackedScene]([ExtResource("2_1yhj1")])
 
 [node name="SwitchPanel" parent="." instance=ExtResource("2_3htmj")]
 z_index = 10
-panel_scene = ExtResource("4_kpdem")
+panel_scene = ExtResource("4_mjpo4")
 
 [node name="Player" parent="." instance=ExtResource("3_bd76i")]
 z_index = 1
