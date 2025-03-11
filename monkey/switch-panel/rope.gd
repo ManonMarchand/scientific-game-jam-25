@@ -4,7 +4,7 @@ signal panel_go_down
 signal panel_go_up
 
 var is_down: bool = false
-var can_click: bool = false
+
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
@@ -16,7 +16,7 @@ func _process(_delta: float) -> void:
 		rope_pressed()
 
 func _input(event: InputEvent) -> void:
-	if can_click:
+	if PlayerVariables.mouse_on_rope:
 		if event is InputEventMouseButton and event.button_index == MOUSE_BUTTON_LEFT and event.is_pressed():
 			rope_pressed()
 			
@@ -33,11 +33,11 @@ func rope_pressed() -> void:
 
 func _on_mouse_exited() -> void:
 	scale = Vector2(1., 1.)
-	can_click = false
+	PlayerVariables.mouse_on_rope = false
 
 
 func _on_mouse_entered() -> void:
 	scale = Vector2(1.05, 1.05)
 	$SonInterfaceLianePriseEnMain.play()
-	can_click = true
+	PlayerVariables.mouse_on_rope = true
 	

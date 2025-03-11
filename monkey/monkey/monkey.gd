@@ -19,6 +19,7 @@ var monkey_name: PlayerVariables.PossibleNames
 var monkey_is_intruder: bool
 
 var mouse_on_monkey: bool = false
+var monkey_selected: bool = false
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
@@ -61,18 +62,24 @@ func _on_area_2d_mouse_exited() -> void:
 
 
 func _on_area_2d_input_event(viewport: Node, event: InputEvent, shape_idx: int) -> void:
-		if event is InputEventMouseButton and event.button_index == MOUSE_BUTTON_LEFT and event.is_pressed():
-			modulate = Color(Color.AZURE, 0.2)
+		if (
+			event is InputEventMouseButton 
+			and event.button_index == MOUSE_BUTTON_LEFT and event.is_pressed()
+			):
+			modulate = Color(1, 1, 1, 0.2)
+			monkey_selected = true
 			PlayerVariables.player_clicked_monkey.emit(monkey_name, true)
 			click_sounds[randi() % len(click_sounds)].play()
 
 
 func _input(event: InputEvent) -> void:
-	if (
-		event is InputEventMouseButton 
-		and event.button_index == MOUSE_BUTTON_LEFT 
-		and event.is_pressed() and mouse_on_monkey == false
-		):
-		modulate = Color(1, 1, 1, 1)
-		PlayerVariables.player_clicked_monkey.emit(monkey_name, false)
+	if monkey_selected:
+		if (
+			event is InputEventMouseButton 
+			and event.button_index == MOUSE_BUTTON_LEFT 
+			and event.is_pressed() and mouse_on_monkey == false
+			and PlayerVariables.mouse_on_rope == false
+			):
+			modulate = Color(1, 1, 1, 1)
+			PlayerVariables.player_clicked_monkey.emit(monkey_name, false)
 		

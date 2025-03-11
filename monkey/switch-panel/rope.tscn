@@ -28,7 +28,7 @@ animations = [{
 radius = 15.0
 height = 170.0
 
-[node name="Rope" type="Area2D"]
+[node name="Rope" type="Area2D" groups=["rope"]]
 position = Vector2(390, 237)
 script = ExtResource("1_4sl2t")
 
