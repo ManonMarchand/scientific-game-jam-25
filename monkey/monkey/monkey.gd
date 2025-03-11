@@ -24,10 +24,14 @@ var monkey_selected: bool = false
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
 	# scale the monkey depending on its y position
-	var proportion: float = (global_position[1] - (1080 - 335)) / 335
-	var scale_to_apply = 0.65 + proportion * 0.45
-	if global_position[1] < (1080 - 335):
-		scale = Vector2(0.65, 0.65)
+	var screen_size = get_viewport_rect().size
+	# the ground is 30% of the screen height
+	var horizon_limit: float = screen_size[1] * 0.30
+	var proportion: float = (global_position[1] - (screen_size[1] - horizon_limit)) / horizon_limit
+	var monkey_min_scale: float = 0.65
+	var scale_to_apply = monkey_min_scale + proportion * (1 - monkey_min_scale)
+	if global_position[1] < (screen_size[1] - horizon_limit):
+		scale = Vector2(monkey_min_scale, monkey_min_scale)
 	else:
 		scale =  Vector2(scale_to_apply, scale_to_apply)
 	# play animation

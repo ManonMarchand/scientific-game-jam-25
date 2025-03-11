@@ -1,13 +1,24 @@
-[gd_scene load_steps=2 format=3 uid="uid://c63ofx5aau0br"]
+[gd_scene load_steps=3 format=3 uid="uid://c63ofx5aau0br"]
 
 [ext_resource type="PackedScene" uid="uid://m0h11i3p4wpb" path="res://panel/portraits/portrait.tscn" id="1_ncpl8"]
+[ext_resource type="PackedScene" uid="uid://cw0aiwfwwm1fo" path="res://monkey/monkey.tscn" id="2_xema5"]
 
 [node name="TestPortraits" type="Node2D"]
 
 [node name="Portrait" parent="." instance=ExtResource("1_ncpl8")]
-position = Vector2(392, 261)
+position = Vector2(1014, 258)
 monkey_name = 4
 
 [node name="Portrait2" parent="." instance=ExtResource("1_ncpl8")]
-position = Vector2(763, 288)
+position = Vector2(1493, 248)
 monkey_name = 1
+
+[node name="Monkey" parent="." instance=ExtResource("2_xema5")]
+position = Vector2(747, 888)
+monkey_action = 1
+monkey_name = 1
+
+[node name="Monkey2" parent="." instance=ExtResource("2_xema5")]
+position = Vector2(1053, 652)
+monkey_action = 1
+monkey_name = 2
