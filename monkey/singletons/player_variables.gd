@@ -11,3 +11,6 @@ signal next_level()
 signal replay_level()
 
 signal transition_done()
+
+signal play_music(type: String, variation: String)
+signal stop_music()

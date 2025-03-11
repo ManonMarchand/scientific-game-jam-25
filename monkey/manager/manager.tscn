@@ -1,7 +1,10 @@
-[gd_scene load_steps=2 format=3 uid="uid://qni6qufk2l11"]
+[gd_scene load_steps=3 format=3 uid="uid://qni6qufk2l11"]
 
 [ext_resource type="Script" path="res://manager/manager.gd" id="1_lm1j0"]
+[ext_resource type="PackedScene" uid="uid://bvjtq2vfqwfbc" path="res://manager/music_manager.tscn" id="2_wasum"]
 
 [node name="Manager" type="Node2D"]
 script = ExtResource("1_lm1j0")
 nb_level = 3
+
+[node name="MusicManager" parent="." instance=ExtResource("2_wasum")]

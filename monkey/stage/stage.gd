@@ -38,8 +38,12 @@ func init_substage(stage_index: int, from_left: bool):
 		$Player.position.x = player_offset_on_arrival
 	else:
 		$Player.position.x = get_viewport_rect().size.x - player_offset_on_arrival
-	
-	
+	# Play music
+	PlayerVariables.play_music.emit(
+		new_substage.get_music_type_str(),
+		new_substage.get_music_variation_str()
+	)
+
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(_delta: float) -> void:
