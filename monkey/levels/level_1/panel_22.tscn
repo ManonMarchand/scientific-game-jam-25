@@ -1,13 +1,11 @@
-[gd_scene load_steps=9 format=3 uid="uid://cvjauqvj0teta"]
+[gd_scene load_steps=7 format=3 uid="uid://cvjauqvj0teta"]
 
 [ext_resource type="Texture2D" uid="uid://0b4r0psarxia" path="res://assets/panel/PANNEAU.png" id="1_5ojst"]
 [ext_resource type="PackedScene" uid="uid://bu53lurbsq12e" path="res://panel/link.tscn" id="2_3horw"]
 [ext_resource type="PackedScene" uid="uid://xj4y42plc61i" path="res://panel/diagram_node.tscn" id="3_eomuk"]
 [ext_resource type="Texture2D" uid="uid://001wtpqrhsjt" path="res://assets/panel/separation.png" id="4_um0ji"]
-[ext_resource type="PackedScene" uid="uid://e2nx7xtg5gpt" path="res://panel/portraits/portrait_jacques.tscn" id="5_xkxyw"]
-[ext_resource type="PackedScene" uid="uid://nrrbs5nq11tj" path="res://panel/portraits/portrait_ginette.tscn" id="6_1ui34"]
-[ext_resource type="PackedScene" uid="uid://kxqjw53d2for" path="res://panel/portraits/portrait_michel.tscn" id="7_y3hxx"]
 [ext_resource type="PackedScene" uid="uid://dwln8mmiw7tpp" path="res://panel/inventory.tscn" id="9_cx3n8"]
+[ext_resource type="PackedScene" uid="uid://m0h11i3p4wpb" path="res://panel/portraits/portrait.tscn" id="9_xl4eb"]
 
 [node name="Level1" type="Node2D"]
 
@@ -35,18 +33,6 @@ position = Vector2(1079, 473)
 scale = Vector2(0.772727, 0.772727)
 texture = ExtResource("4_um0ji")
 
-[node name="Portrait" parent="." instance=ExtResource("5_xkxyw")]
-position = Vector2(1611, 512)
-portrait_number = 1
-
-[node name="Portrait2" parent="." instance=ExtResource("6_1ui34")]
-position = Vector2(1308, 297)
-portrait_number = 2
-
-[node name="Portrait3" parent="." instance=ExtResource("7_y3hxx")]
-position = Vector2(1307, 662)
-portrait_number = 2
-
 [node name="Inventory" parent="." instance=ExtResource("9_cx3n8")]
 visible = false
 position = Vector2(1482, 517)
@@ -56,3 +42,14 @@ z_index = 1
 position = Vector2(348, 774)
 scale = Vector2(0.998438, 1)
 is_trespaser_node = true
+
+[node name="Portrait4" parent="." instance=ExtResource("9_xl4eb")]
+position = Vector2(1287, 224)
+
+[node name="Portrait5" parent="." instance=ExtResource("9_xl4eb")]
+position = Vector2(1635, 337)
+monkey_name = 1
+
+[node name="Portrait6" parent="." instance=ExtResource("9_xl4eb")]
+position = Vector2(1408, 613)
+monkey_name = 3

@@ -8,24 +8,13 @@ enum PossibleActions {
 	PATATE
 }
 
-enum PossibleNames {
-	GINETTE,
-	JACQUES,
-	JEAN,
-	MICHEL,
-	PAUL,
-	VERONIQUE
-}
-
 var click_sounds: Array[Node]
 
 @export_group("Monkey Properties")
 @export
-var monkey_number: int
-@export
 var monkey_action: PossibleActions
 @export
-var monkey_name: PossibleNames
+var monkey_name: PlayerVariables.PossibleNames
 @export
 var monkey_is_intruder: bool
 
@@ -41,10 +30,11 @@ func _ready() -> void:
 	else:
 		scale =  Vector2(scale_to_apply, scale_to_apply)
 	# play animation
-	$AnimatedSprite2D.play(&"%s_%s" % [PossibleActions.keys()[monkey_action].to_lower(),PossibleNames.keys()[monkey_name].to_lower()], 1.0)
+	$AnimatedSprite2D.play(&"%s_%s" % [PossibleActions.keys()[monkey_action].to_lower(),
+			PlayerVariables.PossibleNames.keys()[monkey_name].to_lower()], 1.0)
 	# register intruder
 	if monkey_is_intruder:
-		PlayerVariables.intruder_monkey_number = monkey_number
+		PlayerVariables.intruder_monkey = monkey_name
 	# register the sounds to play on click
 	click_sounds = $ClickSounds.get_children()
 	# play action sound
@@ -73,7 +63,7 @@ func _on_area_2d_mouse_exited() -> void:
 func _on_area_2d_input_event(viewport: Node, event: InputEvent, shape_idx: int) -> void:
 		if event is InputEventMouseButton and event.button_index == MOUSE_BUTTON_LEFT and event.is_pressed():
 			modulate = Color(Color.AZURE, 0.2)
-			PlayerVariables.player_clicked_monkey.emit(monkey_number, true)
+			PlayerVariables.player_clicked_monkey.emit(monkey_name, true)
 			click_sounds[randi() % len(click_sounds)].play()
 
 
@@ -84,5 +74,5 @@ func _input(event: InputEvent) -> void:
 		and event.is_pressed() and mouse_on_monkey == false
 		):
 		modulate = Color(1, 1, 1, 1)
-		PlayerVariables.player_clicked_monkey.emit(monkey_number, false)
+		PlayerVariables.player_clicked_monkey.emit(monkey_name, false)
 		
