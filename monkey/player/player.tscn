@@ -9,7 +9,7 @@
 [ext_resource type="Texture2D" uid="uid://c8fy21iy7r1mg" path="res://assets/player/ANIM-HERO_FRAME_4.png" id="7_vady8"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_2fphp"]
-size = Vector2(119, 120)
+size = Vector2(172, 170)
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_fw1vc"]
 animations = [{
@@ -47,7 +47,7 @@ position = Vector2(900, 500)
 script = ExtResource("1_ddked")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(-0.5, 0)
+position = Vector2(11, 39)
 shape = SubResource("RectangleShape2D_2fphp")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
