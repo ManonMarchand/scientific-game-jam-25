@@ -30,5 +30,5 @@ monkey_name = 3
 [node name="Monkey4" parent="MonkeyList" instance=ExtResource("1_xdae7")]
 visible = false
 position = Vector2(2326, 852)
-monkey_name = 3
+monkey_name = 4
 monkey_is_intruder = true
