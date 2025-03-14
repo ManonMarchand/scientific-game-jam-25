@@ -50,20 +50,8 @@ func _process(delta: float) -> void:
 	else:
 		now_face_right = false
 
-	position += velocity * delta
-	# Clamp up and down
-	if position.y <= screen_origin.y:
-		position.y = screen_origin.y
-	if position.y >= screen_origin.y + screen_size.y:
-		position.y = screen_origin.y + screen_size.y
-	
-	# Clamp left and right
-	if position.x <= screen_origin.x:
-		position.x = screen_origin.x
-		leave_left.emit()
-	if position.x >= screen_origin.x + screen_size.x:
-		position.x = screen_origin.x + screen_size.x
-		leave_right.emit()
+	# clamp position
+	my_clamp(position + velocity * delta)
 	
 	# Compute scale
 	var y_prop = (position.y - screen_origin.y) / screen_size.y
@@ -82,3 +70,20 @@ func _process(delta: float) -> void:
 		$AnimatedSprite2D.flip_h = true
 	else:
 		$AnimatedSprite2D.flip_h = false
+
+
+func my_clamp(new_position: Vector2):
+	# Clamp up and down
+	if new_position.y + $CollisionShape2D.position.y - $CollisionShape2D.shape.size.y/2 <= screen_origin.y:
+		new_position.y = position.y
+	if new_position.y + $CollisionShape2D.position.y + $CollisionShape2D.shape.size.y/2 >= screen_origin.y + screen_size.y:
+		new_position.y = position.y
+	
+	# Clamp left and right
+	if new_position.x + $CollisionShape2D.position.x - $CollisionShape2D.shape.size.x/2 <= screen_origin.x:
+		new_position.x = position.x
+		leave_left.emit()
+	if new_position.x + $CollisionShape2D.position.x + $CollisionShape2D.shape.size.x/2 >= screen_origin.x + screen_size.x:
+		new_position.x = position.x
+		leave_right.emit()
+	position = new_position
