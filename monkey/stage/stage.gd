@@ -1,7 +1,7 @@
 extends Node2D
 
 @export var player_offset_on_arrival = 150
-@export var playable_width = 380
+@export var playable_width = 460
 @export var substage_list: Array[PackedScene]
 
 var nb_substage: int = 0
