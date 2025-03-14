@@ -1,6 +1,6 @@
 extends Node2D
 
-@export var player_offset_on_arrival = 50
+@export var player_offset_on_arrival = 150
 @export var playable_width = 380
 @export var substage_list: Array[PackedScene]
 
@@ -18,6 +18,7 @@ func _ready() -> void:
 	lose_screen = load("res://game/layton_lose.tscn")
 	# Init player
 	$Player.set_screen(Vector2(0, 1080-playable_width), Vector2(1920, playable_width))
+	$Player.position.y = 1080-playable_width/2  
 	nb_substage = len(substage_list)
 	init_substage(0, true)
 
@@ -47,7 +48,16 @@ func init_substage(stage_index: int, from_left: bool):
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(_delta: float) -> void:
-	pass
+	var substage = get_node_or_null("Substage")
+	if substage != null:
+		var monkey_list: Node = substage.get_node("MonkeyList")
+		print("a")
+		for monkey in monkey_list.get_children():
+			print(monkey.get_node("Floor").position.y, " ", $Player/Floor.position.y)
+			if monkey.position.y + monkey.get_node("Floor").position.y < $Player.position.y + $Player/Floor.position.y:
+				monkey.z_index = 0
+			else:
+				monkey.z_index = 1
 
 
 func _on_player_leave_left() -> void:

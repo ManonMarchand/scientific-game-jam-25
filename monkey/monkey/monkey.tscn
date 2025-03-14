@@ -417,6 +417,7 @@ animations = [{
 
 [node name="Monkey" type="Node2D"]
 script = ExtResource("1_703qr")
+monkey_action = 2
 
 [node name="Area2D" type="Area2D" parent="."]
 
@@ -425,8 +426,7 @@ shape = SubResource("CapsuleShape2D_wf4h7")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 sprite_frames = SubResource("SpriteFrames_3ti58")
-animation = &"caillou_ginette"
-frame_progress = 0.0457962
+animation = &"patate_ginette"
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 visible = false
@@ -460,6 +460,9 @@ parameters/looping = true
 [node name="SoundPatate" type="AudioStreamPlayer2D" parent="ActionsSounds"]
 stream = ExtResource("69_dyalh")
 parameters/looping = true
+
+[node name="Floor" type="Node2D" parent="."]
+position = Vector2(-4, 119)
 
 [connection signal="input_event" from="Area2D" to="." method="_on_area_2d_input_event"]
 [connection signal="mouse_entered" from="Area2D" to="." method="_on_area_2d_mouse_entered"]
