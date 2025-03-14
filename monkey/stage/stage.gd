@@ -24,6 +24,8 @@ func _ready() -> void:
 
 
 func init_substage(stage_index: int, from_left: bool):
+	print("init_substage("+str(stage_index)+","+str(from_left)   +")")
+	print($Player.position.x)
 	current_stage_index = stage_index
 	# Remove current substage if necessary
 	var substage_node = get_node_or_null("Substage")
@@ -44,6 +46,7 @@ func init_substage(stage_index: int, from_left: bool):
 		new_substage.get_music_type_str(),
 		new_substage.get_music_variation_str()
 	)
+	print($Player.position.x)
 
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
@@ -51,9 +54,7 @@ func _process(_delta: float) -> void:
 	var substage = get_node_or_null("Substage")
 	if substage != null:
 		var monkey_list: Node = substage.get_node("MonkeyList")
-		print("a")
 		for monkey in monkey_list.get_children():
-			print(monkey.get_node("Floor").position.y, " ", $Player/Floor.position.y)
 			if monkey.position.y + monkey.get_node("Floor").position.y < $Player.position.y + $Player/Floor.position.y:
 				monkey.z_index = 0
 			else:

@@ -83,7 +83,9 @@ func my_clamp(new_position: Vector2):
 	if new_position.x + $CollisionShape2D.position.x - $CollisionShape2D.shape.size.x/2 <= screen_origin.x:
 		new_position.x = position.x
 		leave_left.emit()
+		return
 	if new_position.x + $CollisionShape2D.position.x + $CollisionShape2D.shape.size.x/2 >= screen_origin.x + screen_size.x:
 		new_position.x = position.x
 		leave_right.emit()
+		return
 	position = new_position

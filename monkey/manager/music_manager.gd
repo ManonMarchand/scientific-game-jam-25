@@ -9,21 +9,17 @@ var current_variation = null
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
 	# Load the musics
-	print("Loading musics")
 	var music_dir: DirAccess = DirAccess.open(MUSIC_PATH)
 	if music_dir == null:
 		print("Could not open music folder")
 		return
-	print(music_dir.get_current_dir())
 	for file: String in music_dir.get_files():
-		print(file)
 		var extsplit = file.split(".")
 		var filename = extsplit[0]
 		var ext = extsplit[1]
 		if len(extsplit) != 3 or ext != "wav" or extsplit[2] != "import":
 			continue
 		var file_to_load = filename + "." + ext
-		print("Loading ", file_to_load)
 		# Create new player
 		var music_path = MUSIC_PATH + "/" + file_to_load
 		var player = AudioStreamPlayer.new()
