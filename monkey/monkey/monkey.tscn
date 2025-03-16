@@ -70,9 +70,9 @@
 [ext_resource type="AudioStream" uid="uid://swwh7c87atnj" path="res://assets/sounds/COMPORTEMENTS/SON_COMPORTEMENT_GROOMING.mp3" id="68_k8tub"]
 [ext_resource type="AudioStream" uid="uid://bx23gk0rthc7h" path="res://assets/sounds/COMPORTEMENTS/SON_COMPORTEMENT_LAVAGE POMME DE TERRE.mp3" id="69_dyalh"]
 
-[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_wf4h7"]
-radius = 67.0
-height = 134.0
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_cbwgf"]
+radius = 62.0
+height = 214.0
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_3ti58"]
 animations = [{
@@ -422,16 +422,11 @@ monkey_action = 2
 [node name="Area2D" type="Area2D" parent="."]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
-shape = SubResource("CapsuleShape2D_wf4h7")
+shape = SubResource("CapsuleShape2D_cbwgf")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 sprite_frames = SubResource("SpriteFrames_3ti58")
 animation = &"patate_ginette"
-
-[node name="Sprite2D" type="Sprite2D" parent="."]
-visible = false
-position = Vector2(53, -40)
-scale = Vector2(0.0878049, 0.0878049)
 
 [node name="ClickSounds" type="Node2D" parent="."]
 

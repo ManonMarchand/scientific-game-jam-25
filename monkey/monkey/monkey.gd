@@ -17,6 +17,8 @@ var monkey_action: PossibleActions
 var monkey_name: PlayerVariables.PossibleNames
 @export
 var monkey_is_intruder: bool
+@export
+var flip_y: bool = false
 
 var mouse_on_monkey: bool = false
 var monkey_selected: bool = false
@@ -35,6 +37,7 @@ func _ready() -> void:
 	else:
 		scale =  Vector2(scale_to_apply, scale_to_apply)
 	# play animation
+	$AnimatedSprite2D.flip_h = flip_y
 	$AnimatedSprite2D.play(&"%s_%s" % [PossibleActions.keys()[monkey_action].to_lower(),
 			PlayerVariables.PossibleNames.keys()[monkey_name].to_lower()], 1.0)
 	# register intruder

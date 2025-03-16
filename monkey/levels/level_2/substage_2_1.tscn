@@ -22,9 +22,11 @@ monkey_name = 1
 [node name="Monkey2" parent="MonkeyList" instance=ExtResource("1_xdae7")]
 position = Vector2(786, 873)
 monkey_action = 1
+flip_y = true
 
 [node name="Monkey3" parent="MonkeyList" instance=ExtResource("1_xdae7")]
-position = Vector2(1210, 784)
+position = Vector2(1368, 702)
+monkey_action = 0
 monkey_name = 3
 
 [node name="Monkey4" parent="MonkeyList" instance=ExtResource("1_xdae7")]

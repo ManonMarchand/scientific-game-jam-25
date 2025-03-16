@@ -14,15 +14,17 @@ centered = false
 [node name="MonkeyList" type="Node2D" parent="."]
 
 [node name="Monkey" parent="MonkeyList" instance=ExtResource("1_fcyn3")]
-position = Vector2(1460, 656)
-monkey_action = 2
+position = Vector2(1419, 714)
 
 [node name="Monkey2" parent="MonkeyList" instance=ExtResource("1_fcyn3")]
 position = Vector2(640, 809)
+scale = Vector2(-1, 1)
+monkey_action = 0
 monkey_name = 1
 monkey_is_intruder = true
+flip_y = true
 
 [node name="Monkey3" parent="MonkeyList" instance=ExtResource("1_fcyn3")]
-position = Vector2(1686, 617)
-monkey_action = 2
+position = Vector2(1539, 747)
+monkey_action = 0
 monkey_name = 3
