@@ -1,8 +1,10 @@
-[gd_scene load_steps=4 format=3 uid="uid://dsixorsmpqwhw"]
+[gd_scene load_steps=6 format=3 uid="uid://dsixorsmpqwhw"]
 
 [ext_resource type="Texture2D" uid="uid://4fbuuxk75onq" path="res://assets/backgrounds/lvl1_jungle_arriere_plan.png" id="1_fb4f5"]
 [ext_resource type="PackedScene" uid="uid://cw0aiwfwwm1fo" path="res://monkey/monkey.tscn" id="1_fcyn3"]
 [ext_resource type="Script" path="res://substage/substage.gd" id="1_k8pkw"]
+[ext_resource type="Texture2D" uid="uid://c4r3cea3lh6av" path="res://assets/foregrounds/lvl1_jungle_1er_plan.png" id="4_d261n"]
+[ext_resource type="Texture2D" uid="uid://qxf11wov2n3e" path="res://assets/foregrounds/lvl1_jungle_racine.png" id="5_nxgyj"]
 
 [node name="Substage" type="Node2D"]
 script = ExtResource("1_k8pkw")
@@ -28,3 +30,13 @@ flip_y = true
 position = Vector2(1539, 747)
 monkey_action = 0
 monkey_name = 3
+
+[node name="Lvl1Jungle1ErPlan" type="Sprite2D" parent="."]
+z_index = 1
+position = Vector2(960, 540)
+texture = ExtResource("4_d261n")
+
+[node name="Lvl1JungleRacine" type="Sprite2D" parent="."]
+z_index = 1
+position = Vector2(960, 540)
+texture = ExtResource("5_nxgyj")
