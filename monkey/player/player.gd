@@ -10,8 +10,9 @@ var screen_origin: Vector2
 var screen_size: Vector2
 
 # movement variables
-var is_walking = false
-var face_right = true
+var is_walking: bool = false
+var face_right: bool = true
+var angle_moving_up_down: float = 0.1
 
 
 # Called when the node enters the scene tree for the first time.
@@ -70,6 +71,13 @@ func _process(delta: float) -> void:
 		$AnimatedSprite2D.flip_h = true
 	else:
 		$AnimatedSprite2D.flip_h = false
+		
+	if velocity.y > 0 and velocity.x > 0 or velocity.y < 0 and velocity.x < 0:
+		$AnimatedSprite2D.rotation = angle_moving_up_down
+	elif velocity.y < 0 and velocity.x > 0 or velocity.y > 0 and velocity.x < 0:
+		$AnimatedSprite2D.rotation = - angle_moving_up_down
+	else:
+		$AnimatedSprite2D.rotation = 0
 
 
 func my_clamp(new_position: Vector2):
