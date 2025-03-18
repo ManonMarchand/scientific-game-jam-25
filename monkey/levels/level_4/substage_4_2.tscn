@@ -1,0 +1,41 @@
+[gd_scene load_steps=5 format=3 uid="uid://bcuijh7dakjwq"]
+
+[ext_resource type="Script" path="res://substage/substage.gd" id="1_2hb7k"]
+[ext_resource type="Texture2D" uid="uid://oyahupcf445e" path="res://assets/backgrounds/lvl4_jungle_arriere_plan_1.png" id="2_merf0"]
+[ext_resource type="PackedScene" uid="uid://cxs6mtsc51uex" path="res://assets/decor/cerf/cerf.tscn" id="3_op3d5"]
+[ext_resource type="PackedScene" uid="uid://cw0aiwfwwm1fo" path="res://monkey/monkey.tscn" id="4_11gk3"]
+
+[node name="Substage" type="Node2D"]
+script = ExtResource("1_2hb7k")
+
+[node name="Lvl3PlageArrierePlan1" type="Sprite2D" parent="."]
+z_index = -1
+position = Vector2(963, 544)
+texture = ExtResource("2_merf0")
+
+[node name="Cerf" parent="." instance=ExtResource("3_op3d5")]
+position = Vector2(1342, 722)
+
+[node name="MonkeyList" type="Node2D" parent="."]
+
+[node name="Monkey1" parent="MonkeyList" instance=ExtResource("4_11gk3")]
+position = Vector2(363, 817)
+monkey_action = 0
+monkey_name = 4
+monkey_is_intruder = true
+
+[node name="Monkey2" parent="MonkeyList" instance=ExtResource("4_11gk3")]
+position = Vector2(964, 814)
+scale = Vector2(-1, 1)
+monkey_action = 0
+
+[node name="Monkey3" parent="MonkeyList" instance=ExtResource("4_11gk3")]
+position = Vector2(830, 821)
+scale = Vector2(-1, 1)
+monkey_name = 5
+
+[node name="Monkey4" parent="MonkeyList" instance=ExtResource("4_11gk3")]
+position = Vector2(1340, 653)
+monkey_action = 0
+monkey_name = 3
+flip_y = true

@@ -1,0 +1,71 @@
+[gd_scene load_steps=7 format=3 uid="uid://cxew3whmunwk0"]
+
+[ext_resource type="Texture2D" uid="uid://0b4r0psarxia" path="res://assets/panel/PANNEAU.png" id="1_jyt7u"]
+[ext_resource type="PackedScene" uid="uid://bu53lurbsq12e" path="res://panel/link.tscn" id="2_kxxll"]
+[ext_resource type="PackedScene" uid="uid://xj4y42plc61i" path="res://panel/diagram_node.tscn" id="3_64k6f"]
+[ext_resource type="Texture2D" uid="uid://001wtpqrhsjt" path="res://assets/panel/separation.png" id="4_h3bnb"]
+[ext_resource type="PackedScene" uid="uid://dwln8mmiw7tpp" path="res://panel/inventory.tscn" id="5_pridx"]
+[ext_resource type="PackedScene" uid="uid://m0h11i3p4wpb" path="res://panel/portraits/portrait.tscn" id="6_govud"]
+
+[node name="Level1" type="Node2D"]
+
+[node name="Background" type="Sprite2D" parent="."]
+z_index = -2
+scale = Vector2(0.998438, 1)
+texture = ExtResource("1_jyt7u")
+centered = false
+
+[node name="link12" parent="." node_paths=PackedStringArray("node_1", "node_2") instance=ExtResource("2_kxxll")]
+position = Vector2(492, 746)
+node_1 = NodePath("../case1")
+node_2 = NodePath("../case2")
+
+[node name="link13" parent="." node_paths=PackedStringArray("node_1", "node_2") instance=ExtResource("2_kxxll")]
+position = Vector2(492, 746)
+node_1 = NodePath("../case1")
+node_2 = NodePath("../case3")
+
+[node name="link23" parent="." node_paths=PackedStringArray("node_1", "node_2") instance=ExtResource("2_kxxll")]
+position = Vector2(492, 746)
+node_1 = NodePath("../case2")
+node_2 = NodePath("../case3")
+
+[node name="case1" parent="." instance=ExtResource("3_64k6f")]
+z_index = 1
+position = Vector2(351, 362)
+
+[node name="case2" parent="." instance=ExtResource("3_64k6f")]
+z_index = 1
+position = Vector2(778, 362)
+
+[node name="case3" parent="." instance=ExtResource("3_64k6f")]
+z_index = 1
+position = Vector2(598, 657)
+
+[node name="case4" parent="." instance=ExtResource("3_64k6f")]
+z_index = 1
+position = Vector2(978, 661)
+is_trespaser_node = true
+
+[node name="Separation" type="Sprite2D" parent="."]
+position = Vector2(1227, 537)
+scale = Vector2(0.772727, 0.772727)
+texture = ExtResource("4_h3bnb")
+
+[node name="Inventory" parent="." instance=ExtResource("5_pridx")]
+position = Vector2(1596, 469)
+
+[node name="Portrait" parent="." instance=ExtResource("6_govud")]
+position = Vector2(1440, 243)
+monkey_name = 4
+
+[node name="Portrait2" parent="." instance=ExtResource("6_govud")]
+position = Vector2(1686, 254)
+
+[node name="Portrait3" parent="." instance=ExtResource("6_govud")]
+position = Vector2(1440, 565)
+monkey_name = 5
+
+[node name="Portrait4" parent="." instance=ExtResource("6_govud")]
+position = Vector2(1731, 585)
+monkey_name = 1

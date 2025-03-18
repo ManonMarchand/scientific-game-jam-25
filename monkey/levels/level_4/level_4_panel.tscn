@@ -1,8 +1,8 @@
-[gd_scene load_steps=5 format=3 uid="uid://dm5rfd5b5wveo"]
+[gd_scene load_steps=5 format=3 uid="uid://dd25crlygtfg2"]
 
 [ext_resource type="PackedScene" uid="uid://xj4y42plc61i" path="res://panel/diagram_node.tscn" id="1_bmgxq"]
 [ext_resource type="PackedScene" uid="uid://bu53lurbsq12e" path="res://panel/link.tscn" id="2_ewd7p"]
-[ext_resource type="PackedScene" uid="uid://m0h11i3p4wpb" path="res://panel/portrait.tscn" id="3_4mvo0"]
+[ext_resource type="PackedScene" uid="uid://m0h11i3p4wpb" path="res://panel/portraits/portrait.tscn" id="3_4mvo0"]
 [ext_resource type="PackedScene" uid="uid://dwln8mmiw7tpp" path="res://panel/inventory.tscn" id="4_jjbkk"]
 
 [node name="Level3" type="Node2D"]
