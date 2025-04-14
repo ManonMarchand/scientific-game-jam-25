@@ -1,0 +1,23 @@
+[gd_scene load_steps=7 format=3 uid="uid://evj83suq8mjg"]
+
+[ext_resource type="Script" path="res://stage/stage.gd" id="1_jc7nj"]
+[ext_resource type="PackedScene" uid="uid://d0ss777vdbi2v" path="res://levels/level_4/substage_4_1.tscn" id="2_2kixe"]
+[ext_resource type="PackedScene" uid="uid://bcuijh7dakjwq" path="res://levels/level_4/substage_4_2.tscn" id="3_vwlpa"]
+[ext_resource type="PackedScene" uid="uid://cd8g353hqck3h" path="res://switch-panel/switch_panel.tscn" id="4_k0qid"]
+[ext_resource type="PackedScene" uid="uid://cxew3whmunwk0" path="res://levels/level_4/panel_4.tscn" id="5_2u7jb"]
+[ext_resource type="PackedScene" uid="uid://c4ysry6xndv5u" path="res://player/player.tscn" id="6_qwno0"]
+
+[node name="Stage4" type="Node2D"]
+script = ExtResource("1_jc7nj")
+substage_list = Array[PackedScene]([ExtResource("2_2kixe"), ExtResource("3_vwlpa")])
+
+[node name="SwitchPanel" parent="." instance=ExtResource("4_k0qid")]
+z_index = 10
+panel_scene = ExtResource("5_2u7jb")
+
+[node name="Player" parent="." instance=ExtResource("6_qwno0")]
+z_index = 1
+position = Vector2(284, 696)
+
+[connection signal="leave_left" from="Player" to="." method="_on_player_leave_left"]
+[connection signal="leave_right" from="Player" to="." method="_on_player_leave_right"]
