@@ -47,27 +47,27 @@ node_2 = NodePath("../case5")
 
 [node name="case1" parent="." instance=ExtResource("3_7g7pi")]
 z_index = 1
-position = Vector2(468, 306)
+position = Vector2(460, 150)
 
 [node name="case2" parent="." instance=ExtResource("3_7g7pi")]
 z_index = 1
-position = Vector2(741, 512)
+position = Vector2(714, 470)
 
 [node name="case3" parent="." instance=ExtResource("3_7g7pi")]
 z_index = 1
-position = Vector2(466, 709)
+position = Vector2(460, 800)
 
 [node name="case4" parent="." instance=ExtResource("3_7g7pi")]
 z_index = 1
-position = Vector2(1013, 312)
+position = Vector2(970, 150)
 
 [node name="case5" parent="." instance=ExtResource("3_7g7pi")]
 z_index = 1
-position = Vector2(1017, 704)
+position = Vector2(970, 800)
 
 [node name="case6" parent="." instance=ExtResource("3_7g7pi")]
 z_index = 1
-position = Vector2(218, 502)
+position = Vector2(240, 470)
 is_trespaser_node = true
 
 [node name="Separation" type="Sprite2D" parent="."]
