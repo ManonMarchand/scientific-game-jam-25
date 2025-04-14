@@ -1,6 +1,6 @@
 extends Node2D
 
-@export var nb_level = 4
+@export var nb_level = 6
 var current_level = 1
 const level_path = "res://levels/level_"
 const intro_path = "res://game/transitions/transition"
