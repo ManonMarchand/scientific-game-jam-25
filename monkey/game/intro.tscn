@@ -1,11 +1,18 @@
-[gd_scene load_steps=4 format=3 uid="uid://b2e7yoamjm6gs"]
+[gd_scene load_steps=7 format=3 uid="uid://b2e7yoamjm6gs"]
 
 [ext_resource type="Script" path="res://game/intro.gd" id="1_pu7ta"]
 [ext_resource type="Texture2D" uid="uid://cw6pcj67wllb1" path="res://assets/intro/logo.png" id="2_4bwe5"]
 [ext_resource type="Theme" uid="uid://dpdiloka1t8xb" path="res://game/theme.tres" id="2_5dqlw"]
+[ext_resource type="Texture2D" uid="uid://dge2ivieobho0" path="res://assets/backgrounds/lvl3_plage_arriere_plan_1.png" id="2_m3m6f"]
+[ext_resource type="Texture2D" uid="uid://bpenlxxkebsab" path="res://assets/monkeys/anim_singes/Ginette/patate_Ginette_1.png" id="5_gdmqi"]
+[ext_resource type="Texture2D" uid="uid://4fhx88ufrc26" path="res://assets/monkeys/anim_singes/Jean/idle_Jean_2.png" id="6_stvp0"]
 
 [node name="Intro" type="Node2D"]
 script = ExtResource("1_pu7ta")
+
+[node name="Lvl3PlageArrierePlan1" type="Sprite2D" parent="."]
+position = Vector2(960, 540)
+texture = ExtResource("2_m3m6f")
 
 [node name="Label" type="Label" parent="."]
 offset_left = 872.0
@@ -26,3 +33,13 @@ offset_right = 1482.0
 offset_bottom = 737.0
 theme = ExtResource("2_5dqlw")
 text = "Reconnaît les macaques, Reconstitue le réseau, Trouve l’intrus !"
+
+[node name="PatateGinette1" type="Sprite2D" parent="."]
+position = Vector2(270, 641)
+scale = Vector2(0.429348, 0.429348)
+texture = ExtResource("5_gdmqi")
+
+[node name="IdleJean2" type="Sprite2D" parent="."]
+position = Vector2(1668, 809)
+scale = Vector2(-0.630435, 0.630435)
+texture = ExtResource("6_stvp0")
