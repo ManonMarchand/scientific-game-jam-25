@@ -1,0 +1,102 @@
+[gd_scene load_steps=7 format=3 uid="uid://bplub3ec52kep"]
+
+[ext_resource type="Texture2D" uid="uid://0b4r0psarxia" path="res://assets/panel/PANNEAU.png" id="1_4k056"]
+[ext_resource type="PackedScene" uid="uid://bu53lurbsq12e" path="res://panel/link.tscn" id="2_mu6ff"]
+[ext_resource type="PackedScene" uid="uid://xj4y42plc61i" path="res://panel/diagram_node.tscn" id="3_7g7pi"]
+[ext_resource type="Texture2D" uid="uid://001wtpqrhsjt" path="res://assets/panel/separation.png" id="4_qykbc"]
+[ext_resource type="PackedScene" uid="uid://dwln8mmiw7tpp" path="res://panel/inventory.tscn" id="5_txngf"]
+[ext_resource type="PackedScene" uid="uid://m0h11i3p4wpb" path="res://panel/portraits/portrait.tscn" id="6_1eevh"]
+
+[node name="Level1" type="Node2D"]
+
+[node name="Background" type="Sprite2D" parent="."]
+z_index = -2
+scale = Vector2(0.998438, 1)
+texture = ExtResource("1_4k056")
+centered = false
+
+[node name="link12" parent="." node_paths=PackedStringArray("node_1", "node_2") instance=ExtResource("2_mu6ff")]
+position = Vector2(492, 746)
+node_1 = NodePath("../case1")
+node_2 = NodePath("../case2")
+
+[node name="link13" parent="." node_paths=PackedStringArray("node_1", "node_2") instance=ExtResource("2_mu6ff")]
+position = Vector2(492, 746)
+node_1 = NodePath("../case1")
+node_2 = NodePath("../case3")
+
+[node name="link23" parent="." node_paths=PackedStringArray("node_1", "node_2") instance=ExtResource("2_mu6ff")]
+position = Vector2(492, 746)
+node_1 = NodePath("../case2")
+node_2 = NodePath("../case3")
+
+[node name="link24" parent="." node_paths=PackedStringArray("node_1", "node_2") instance=ExtResource("2_mu6ff")]
+position = Vector2(492, 746)
+node_1 = NodePath("../case2")
+node_2 = NodePath("../case4")
+
+[node name="link25" parent="." node_paths=PackedStringArray("node_1", "node_2") instance=ExtResource("2_mu6ff")]
+position = Vector2(492, 746)
+node_1 = NodePath("../case2")
+node_2 = NodePath("../case5")
+
+[node name="link45" parent="." node_paths=PackedStringArray("node_1", "node_2") instance=ExtResource("2_mu6ff")]
+position = Vector2(492, 746)
+node_1 = NodePath("../case4")
+node_2 = NodePath("../case5")
+
+[node name="case1" parent="." instance=ExtResource("3_7g7pi")]
+z_index = 1
+position = Vector2(468, 306)
+
+[node name="case2" parent="." instance=ExtResource("3_7g7pi")]
+z_index = 1
+position = Vector2(741, 512)
+
+[node name="case3" parent="." instance=ExtResource("3_7g7pi")]
+z_index = 1
+position = Vector2(466, 709)
+
+[node name="case4" parent="." instance=ExtResource("3_7g7pi")]
+z_index = 1
+position = Vector2(1013, 312)
+
+[node name="case5" parent="." instance=ExtResource("3_7g7pi")]
+z_index = 1
+position = Vector2(1017, 704)
+
+[node name="case6" parent="." instance=ExtResource("3_7g7pi")]
+z_index = 1
+position = Vector2(218, 502)
+is_trespaser_node = true
+
+[node name="Separation" type="Sprite2D" parent="."]
+position = Vector2(1227, 537)
+scale = Vector2(0.772727, 0.772727)
+texture = ExtResource("4_qykbc")
+
+[node name="Inventory" parent="." instance=ExtResource("5_txngf")]
+position = Vector2(1596, 469)
+
+[node name="Portrait" parent="." instance=ExtResource("6_1eevh")]
+position = Vector2(1394, 208)
+monkey_name = 2
+
+[node name="Portrait2" parent="." instance=ExtResource("6_1eevh")]
+position = Vector2(1705, 212)
+monkey_name = 5
+
+[node name="Portrait3" parent="." instance=ExtResource("6_1eevh")]
+position = Vector2(1398, 505)
+
+[node name="Portrait4" parent="." instance=ExtResource("6_1eevh")]
+position = Vector2(1696, 519)
+monkey_name = 4
+
+[node name="Portrait5" parent="." instance=ExtResource("6_1eevh")]
+position = Vector2(1694, 816)
+monkey_name = 3
+
+[node name="Portrait6" parent="." instance=ExtResource("6_1eevh")]
+position = Vector2(1405, 815)
+monkey_name = 1

@@ -52,4 +52,4 @@ monkey_name = 1
 
 [node name="Portrait6" parent="." instance=ExtResource("9_xl4eb")]
 position = Vector2(1408, 613)
-monkey_name = 3
+monkey_name = 5

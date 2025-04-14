@@ -19,12 +19,12 @@ texture = ExtResource("2_6f8ji")
 [node name="MonkeyList" type="Node2D" parent="."]
 
 [node name="Monkey1" parent="MonkeyList" instance=ExtResource("1_5pw45")]
-position = Vector2(318, 830)
+position = Vector2(354, 749)
 monkey_action = 0
 flip_y = true
 
 [node name="Monkey2" parent="MonkeyList" instance=ExtResource("1_5pw45")]
-position = Vector2(457, 839)
+position = Vector2(467, 758)
 monkey_name = 2
 flip_y = true
 
@@ -38,3 +38,4 @@ position = Vector2(1550, 756)
 monkey_action = 0
 monkey_name = 3
 monkey_is_intruder = true
+flip_y = true
