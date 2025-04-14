@@ -1,7 +1,8 @@
-[gd_scene load_steps=7 format=3 uid="uid://3h13hv8x10sa"]
+[gd_scene load_steps=8 format=3 uid="uid://3h13hv8x10sa"]
 
 [ext_resource type="Script" path="res://game/transitions/transition_1.gd" id="1_haggr"]
 [ext_resource type="Texture2D" uid="uid://dq0nm8qnasqy3" path="res://assets/game_ui/ecran_inter_niveau/SINGE_PENSIF_FRAME 1.png" id="2_anm3v"]
+[ext_resource type="Texture2D" uid="uid://dge2ivieobho0" path="res://assets/backgrounds/lvl3_plage_arriere_plan_1.png" id="2_y0fh1"]
 [ext_resource type="Texture2D" uid="uid://kpo3j3ck8bco" path="res://assets/game_ui/ecran_inter_niveau/SINGE_PENSIF_FRAME 2.png" id="3_n2ipi"]
 [ext_resource type="FontFile" uid="uid://dv2a4yk6s3fmj" path="res://assets/game_ui/hvd_edding.otf" id="4_x5qbl"]
 
@@ -26,14 +27,18 @@ default_font_size = 40
 [node name="Transition" type="Node2D"]
 script = ExtResource("1_haggr")
 
-[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
-position = Vector2(965, 542)
-sprite_frames = SubResource("SpriteFrames_1ipj1")
+[node name="Lvl3PlageArrierePlan1" type="Sprite2D" parent="."]
+position = Vector2(961, 545)
+texture = ExtResource("2_y0fh1")
 
 [node name="Control" type="ColorRect" parent="."]
 offset_right = 1921.0
-offset_bottom = 1070.0
-color = Color(0, 0, 0, 0.176471)
+offset_bottom = 1088.0
+color = Color(0, 0, 0, 0.729412)
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+position = Vector2(965, 542)
+sprite_frames = SubResource("SpriteFrames_1ipj1")
 
 [node name="Label" type="Label" parent="."]
 offset_left = 807.0
