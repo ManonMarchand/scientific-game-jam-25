@@ -5,5 +5,5 @@
 [resource]
 default_font = ExtResource("1_dsyop")
 default_font_size = 45
-Label/colors/font_color = Color(0.929412, 0.109804, 0.141176, 1)
+Label/colors/font_color = Color(0, 0.109804, 0.141176, 1)
 Label/colors/font_outline_color = Color(0.929412, 0.109804, 0.141176, 1)
