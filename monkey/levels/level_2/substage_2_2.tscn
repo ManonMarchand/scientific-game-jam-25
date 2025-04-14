@@ -17,20 +17,20 @@ centered = false
 
 [node name="MonkeyList" type="Node2D" parent="."]
 
-[node name="Monkey" parent="MonkeyList" instance=ExtResource("1_0hy71")]
-position = Vector2(968, 615)
-monkey_action = 3
-monkey_name = 3
-
 [node name="Monkey2" parent="MonkeyList" instance=ExtResource("1_0hy71")]
-position = Vector2(1228, 775)
-monkey_action = 3
+position = Vector2(860, 665)
+monkey_action = 0
 
 [node name="Monkey3" parent="MonkeyList" instance=ExtResource("1_0hy71")]
-position = Vector2(1646, 686)
+position = Vector2(1440, 920)
 monkey_action = 0
 monkey_name = 4
 monkey_is_intruder = true
+flip_y = true
+
+[node name="Monkey" parent="MonkeyList" instance=ExtResource("1_0hy71")]
+position = Vector2(726, 683)
+monkey_name = 3
 
 [node name="Forêt-Cailloux2CaillouDroite" type="Sprite2D" parent="."]
 z_index = 1

@@ -29,7 +29,7 @@ flip_y = true
 [node name="Monkey3" parent="MonkeyList" instance=ExtResource("1_fcyn3")]
 position = Vector2(1539, 747)
 monkey_action = 0
-monkey_name = 3
+monkey_name = 5
 
 [node name="Lvl1Jungle1ErPlan" type="Sprite2D" parent="."]
 z_index = 1

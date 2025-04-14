@@ -7,6 +7,7 @@
 
 [node name="Substage" type="Node2D"]
 script = ExtResource("1_78ys5")
+music_variation = 2
 
 [node name="Background" type="Sprite2D" parent="."]
 z_index = -1
@@ -14,30 +15,33 @@ position = Vector2(963, 544)
 texture = ExtResource("2_wv352")
 
 [node name="Cerf" parent="." instance=ExtResource("4_mdyke")]
-position = Vector2(400, 737)
+position = Vector2(648, 621)
 
 [node name="MonkeyList" type="Node2D" parent="."]
 
 [node name="Monkey1" parent="MonkeyList" instance=ExtResource("3_xfny7")]
-position = Vector2(373, 624)
+position = Vector2(624, 537)
 monkey_action = 0
 monkey_name = 4
-monkey_is_intruder = true
 
 [node name="Monkey2" parent="MonkeyList" instance=ExtResource("3_xfny7")]
-position = Vector2(964, 814)
-scale = Vector2(-1, 1)
+position = Vector2(1047, 858)
+rotation = -6.28319
+scale = Vector2(1, -1)
 flip_y = true
 
 [node name="Monkey3" parent="MonkeyList" instance=ExtResource("3_xfny7")]
-position = Vector2(830, 821)
-scale = Vector2(-1, 1)
+position = Vector2(1646, 899)
+rotation = -0.116937
+scale = Vector2(1, -1)
 monkey_action = 0
 monkey_name = 5
+flip_y = true
 
 [node name="Monkey4" parent="MonkeyList" instance=ExtResource("3_xfny7")]
-position = Vector2(1592, 824)
+position = Vector2(912, 865)
+rotation = -6.28319
 monkey_action = 0
-monkey_name = 3
+monkey_name = 1
 monkey_is_intruder = true
 flip_y = true

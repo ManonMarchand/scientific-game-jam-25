@@ -15,17 +15,16 @@ centered = false
 [node name="MonkeyList" type="Node2D" parent="."]
 
 [node name="Monkey" parent="MonkeyList" instance=ExtResource("1_xdae7")]
-position = Vector2(1588, 846)
-monkey_action = 1
+position = Vector2(1308, 836)
+monkey_action = 0
 monkey_name = 1
 
 [node name="Monkey2" parent="MonkeyList" instance=ExtResource("1_xdae7")]
-position = Vector2(786, 873)
-monkey_action = 1
+position = Vector2(1458, 851)
 flip_y = true
 
 [node name="Monkey3" parent="MonkeyList" instance=ExtResource("1_xdae7")]
-position = Vector2(1368, 702)
+position = Vector2(614, 632)
 monkey_action = 0
 monkey_name = 3
 

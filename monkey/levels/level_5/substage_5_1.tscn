@@ -1,0 +1,53 @@
+[gd_scene load_steps=4 format=3 uid="uid://dqxumd3agislr"]
+
+[ext_resource type="Script" path="res://substage/substage.gd" id="1_ph38e"]
+[ext_resource type="Texture2D" uid="uid://ll3wdr4dn6lj" path="res://assets/backgrounds/lvl5_onsen_arriere_plan.png" id="2_ehdow"]
+[ext_resource type="PackedScene" uid="uid://cw0aiwfwwm1fo" path="res://monkey/monkey.tscn" id="3_1yspg"]
+
+[node name="Substage" type="Node2D"]
+script = ExtResource("1_ph38e")
+music_type = 1
+music_variation = 1
+
+[node name="Background" type="Sprite2D" parent="."]
+z_index = -1
+position = Vector2(963, 544)
+texture = ExtResource("2_ehdow")
+
+[node name="MonkeyList" type="Node2D" parent="."]
+
+[node name="Monkey1" parent="MonkeyList" instance=ExtResource("3_1yspg")]
+position = Vector2(1169, 515)
+monkey_action = 0
+monkey_name = 2
+
+[node name="Monkey2" parent="MonkeyList" instance=ExtResource("3_1yspg")]
+position = Vector2(1273, 875)
+scale = Vector2(-1, 1)
+monkey_action = 3
+monkey_name = 5
+flip_y = true
+
+[node name="Monkey3" parent="MonkeyList" instance=ExtResource("3_1yspg")]
+position = Vector2(1673, 487)
+scale = Vector2(1, -1)
+monkey_action = 1
+flip_y = true
+
+[node name="Monkey4" parent="MonkeyList" instance=ExtResource("3_1yspg")]
+position = Vector2(1023, 974)
+monkey_action = 3
+monkey_name = 4
+flip_y = true
+
+[node name="Monkey5" parent="MonkeyList" instance=ExtResource("3_1yspg")]
+position = Vector2(761, 882)
+monkey_action = 3
+monkey_name = 3
+flip_y = true
+
+[node name="Monkey6" parent="MonkeyList" instance=ExtResource("3_1yspg")]
+position = Vector2(1297, 503)
+monkey_name = 1
+monkey_is_intruder = true
+flip_y = true
